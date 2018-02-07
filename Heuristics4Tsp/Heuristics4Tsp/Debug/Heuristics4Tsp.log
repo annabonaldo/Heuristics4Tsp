@@ -1,0 +1,8 @@
+﻿  Heuristics4Tsp.cpp
+c:\users\anna bonaldo\documents\github\tspheuristics\heuristics4tsp\heuristics4tsp\tspsolution.h(28): warning C4018: '<': signed/unsigned mismatch
+c:\users\anna bonaldo\documents\github\tspheuristics\heuristics4tsp\heuristics4tsp\tspsolution.h(35): warning C4018: '<': signed/unsigned mismatch
+c:\users\anna bonaldo\documents\github\tspheuristics\heuristics4tsp\heuristics4tsp\tspsolution.h(47): warning C4018: '<': signed/unsigned mismatch
+c:\users\anna bonaldo\documents\github\tspheuristics\heuristics4tsp\heuristics4tsp\solver.h(25): warning C4018: '<': signed/unsigned mismatch
+c:\users\anna bonaldo\documents\github\tspheuristics\heuristics4tsp\heuristics4tsp\solver.h(38): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\anna bonaldo\documents\github\tspheuristics\heuristics4tsp\heuristics4tsp\solver.h(39): warning C4018: '<': signed/unsigned mismatch
+  Heuristics4Tsp.vcxproj -> C:\Users\Anna Bonaldo\Documents\GitHub\TSPHeuristics\Heuristics4Tsp\Debug\Heuristics4Tsp.exe

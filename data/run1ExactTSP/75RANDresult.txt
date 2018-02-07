@@ -1,0 +1,3 @@
+Solution: 75.414213562
+Problem size: 75
+Time: 4.844
