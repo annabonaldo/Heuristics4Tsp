@@ -8,7 +8,11 @@ int n =...;
 int gridLine =...; 
 range holesN = 1..n; 
 string filename ="model.txt"; 
-int random = 0; 
+int random = 1; 
+int generateModelToFile = 0; 
+int seedY = 5;
+int seedX = 5; 
+int base = 10; 
 // generate random data
 
 tuple position{
@@ -29,8 +33,6 @@ position  holePositions[holesN];  // holes coordinates
 // preprocessing 
 // random location
 
-
-
 // decision variables 
 dvar boolean y[moves]; // arches in path
 dvar int+ x[moves];
@@ -43,14 +45,15 @@ execute {
 	}
 	
     var num = n;
-    if(random == 1)
+   if(generateModelToFile>0){
+       if(random == 1)
     {
 		var ofile = new IloOplOutputFile(n+"RAND"+filename); 		
 		for (var i in holesN)
 		{
 			holePositions[i].x= Opl.rand(100); 
 			holePositions[i].y= Opl.rand(100); 	
-			ofile.writeln(holePositions[i].x, " ", holePositions[i].y); 
+			if(generateModelToFile>0)ofile.writeln(holePositions[i].x, " ", holePositions[i].y); 
 		}
 		ofile.close();
 	}	
@@ -72,6 +75,67 @@ execute {
 		}
 		ofile.close(); 
 		
+	}	
+	
+	 if(random == 2) 
+	 {	
+	 	var ofile = new IloOplOutputFile(num+"SEMIGRID"+filename); 	
+		var offset = 0.0; 
+		for (var i in holesN)
+		{
+		  var m = (i % gridLine); 		
+		  if(m == 0)	
+			{	
+				offset = offset+base; 
+			}	
+			holePositions[i].x= m +seedX; 
+			holePositions[i].y= offset+ +Opl.rand(seedX); 
+			ofile.writeln(holePositions[i].x, " ", holePositions[i].y); 
+		}		
+		ofile.close(); 
+	 }	
+} 
+else
+{
+       if(random == 1)
+    {			
+		for (var i in holesN)
+		{
+			holePositions[i].x= Opl.rand(100); 
+			holePositions[i].y= Opl.rand(100); 				
+		}
+	}	
+	
+	 if(random == 0) 
+	 {	
+		var offset = 0.0; 
+		for (var i in holesN)
+		{
+		  var m = (i % gridLine); 		
+		  if(m == 0)	
+			{	
+			offset = offset+1.0; 
+			}	
+			holePositions[i].x= m; 
+			holePositions[i].y= offset; 
+		}		
+	 }	
+	 
+	 if(random == 2) 
+	 {	
+		var offset = 0.0; 
+		for (var i in holesN)
+		{
+		  var m = (i % gridLine); 		
+		  if(m == 0)	
+			{	
+				offset = offset+base; 
+			}	
+			holePositions[i].x= m +seedX; 
+			holePositions[i].y= offset+ +Opl.rand(seedX); 
+		}		
+	 }	
+
 	}	
 	
 	for (var e in moves)
@@ -115,8 +179,19 @@ subject to
 main {
 	var mod = thisOplModel.modelDefinition; 
 	var dat = thisOplModel.dataElements; 
+	var random = 1;
 	
-	for (var size = 5; size <= 10; size+=5) {
+	
+	var result = "result.csv";
+	var mode = "RAND";
+		if(random ==1 ) mode ="GRID";
+		if(random == 2) mode ="SEMIGRID";
+	var ofile = new IloOplOutputFile(mode+result); 
+	
+for(var sample =0; sample < 10; sample++){
+	ofile.writeln("SAMPLE ", sample);
+
+	for (var size = 5; size <= 200; size+=5) {
 		var MyCplex = new IloCplex(); 
 		var opl = new IloOplModel(mod, MyCplex); 
 		dat.n = size; 	
@@ -124,17 +199,20 @@ main {
 		opl.addDataSource(dat); 
 		// generate every time dat has been changed
 		opl.generate(); // model generation with new data
-		
+			
 		// solving + check it has been solved
-		if(MyCplex.solve()) {
-			 writeln("solution: ", 
-			 MyCplex.getObjValue(), 
-			 " / size: ", size, 
-			 "/ time: ", MyCplex.getCplexTime()); 
-		}
+		if(MyCplex.solve()) {		
+		     writeln("Solved problem with size:  "+size+ " in time = "+ (float)MyCplex.getCplexTime());	
+			 ofile.writeln("Solution;", MyCplex.getObjValue(), 
+			";Problem size; ", size,
+			 ";Time; ", MyCplex.getCplexTime());  	
+			 }
 		opl.end(); 
 		MyCplex.end(); 
 	}	
+	
+}	
+	ofile.close(); 
 	writeln("End execution");			
 }
 

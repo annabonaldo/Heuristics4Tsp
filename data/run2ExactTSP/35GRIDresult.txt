@@ -1,3 +1,0 @@
-Solution: 384.2694827
-Problem size: 35
-Time: 1
