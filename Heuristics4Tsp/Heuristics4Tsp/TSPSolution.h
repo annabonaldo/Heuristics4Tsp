@@ -37,6 +37,7 @@ public:
 			std::cout << sequence[i] << " ";
 		}
 	}
+
 	/** assignment method
 	* copy a solution into another one
 	* @param right TSP solution to get into

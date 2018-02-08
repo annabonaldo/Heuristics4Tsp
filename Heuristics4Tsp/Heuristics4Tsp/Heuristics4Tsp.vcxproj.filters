@@ -30,7 +30,7 @@
     <ClInclude Include="Solver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TestBuilder.h">
+    <ClInclude Include="TestExecution.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -50,7 +50,7 @@
     <ClCompile Include="Solver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TestBuilder.cpp">
+    <ClCompile Include="TestExecution.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

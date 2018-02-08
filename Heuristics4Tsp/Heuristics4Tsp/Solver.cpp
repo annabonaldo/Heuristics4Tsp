@@ -1,9 +1,26 @@
 #include "stdafx.h"
 #include "Solver.h"
 #include <iostream>
+#include <string>
+using namespace std;
 
-bool Solver::solve(const TSP& tsp, const TSPSolution& initSol, int tabulength, int maxIter, TSPSolution& bestSol)   /// TS: new param
+double Solver::getWallTime()
 {
+	LARGE_INTEGER time, freq;
+	if (!QueryPerformanceFrequency(&freq)) {
+		//  Handle error
+		return 0;
+	}
+	if (!QueryPerformanceCounter(&time)) {
+		//  Handle error
+		return 0;
+	}
+	return (double)time.QuadPart / freq.QuadPart;
+}
+
+std::string Solver::solve(const TSP& tsp, const TSPSolution& initSol, int tabulength, int maxIter, TSPSolution& bestSol)   /// TS: new param
+{
+	std::string line = "";
 	try
 	{
 		bool stop = false;
@@ -14,15 +31,15 @@ bool Solver::solve(const TSP& tsp, const TSPSolution& initSol, int tabulength, i
 		tabuList.reserve(tsp.n);
 		initTabuList(tsp.n);
 		///
-
+		double startTime = getWallTime(); 
 		TSPSolution currSol(initSol);
 		double bestValue, currValue;
-		bestValue = currValue = evaluate(currSol, tsp);
+		bestValue = currValue = solutionLengthValue(currSol, tsp);
 		TSPMove move;
 		while (!stop) {
 			++iter;                                                                                             /// TS: iter not only for displaying
 			if (tsp.n < 20) currSol.print();
-			std::cout << " (" << iter << ") value " << currValue << "\t(" << evaluate(currSol, tsp) << ")";      /// TS: iter
+			std::cout << " (" << iter << ") value " << currValue << "\t(" << solutionLengthValue(currSol, tsp) << ")";      /// TS: iter
 
 			double bestNeighValue = currValue + findBestNeighbor(tsp, currSol, iter, move);                        /// TS: iter
 																												   //if ( bestNeighValue < currValue ) {                                                               /// TS: replace stopping and moving criteria
@@ -56,16 +73,27 @@ bool Solver::solve(const TSP& tsp, const TSPSolution& initSol, int tabulength, i
 			}                                                                                                   ///
 			std::cout << std::endl;
 		}
+		double endTime = getWallTime();
+		string problemSize = to_string(tsp.n); 
+		string time = to_string(endTime - startTime);
+		string solSize = to_string(solutionLengthValue(currSol, tsp));
+
+
+		line = std::string("Solution;") + solSize +
+						   ";Problem size; " + problemSize +
+						   ";Time; " + time;
 		//bestSol = currSol;                                                                                  /// TS: not always the neighbor improves over 
 		///     the best available (incumbent) solution 
 	}
 	catch (std::exception& e)
 	{
 		std::cout << ">>>EXCEPTION: " << e.what() << std::endl;
-		return false;
+		return "error;";
 	}
-	return true;
+	
+	return line; 
 }
+
 TSPSolution& Solver::swap(TSPSolution& tspSol, const TSPMove& move)
 {
 	TSPSolution tmpSol(tspSol);
@@ -74,7 +102,6 @@ TSPSolution& Solver::swap(TSPSolution& tspSol, const TSPMove& move)
 	}
 	return tspSol;
 }
-
 
 double Solver::findBestNeighbor(const TSP& tsp, const TSPSolution& currSol, int currIter, TSPMove& move)
 /* Determine the *move* yielding the best 2-opt neigbor solution
@@ -102,8 +129,6 @@ double Solver::findBestNeighbor(const TSP& tsp, const TSPSolution& currSol, int 
 	return bestCostVariation;
 	return bestCostVariation;
 }
-
-
 
 
 

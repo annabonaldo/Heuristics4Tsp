@@ -3,7 +3,10 @@
 #include <time.h>
 #include "TSPSolution.h"
 #include "TSP.h"
-
+#ifndef _WIN32
+#define _WIN32
+#endif
+#include <Windows.h>
 typedef struct move {
 	int			from;
 	int			to;
@@ -20,7 +23,7 @@ public:
 	* @param TSP: TSP data
 	* @return the value of the solution
 	*/
-	double evaluate(const TSPSolution& sol, const TSP& tsp) const {
+	double solutionLengthValue(const TSPSolution& sol, const TSP& tsp) const {
 		double total = 0.0;
 		for (int i = 0; i < sol.sequence.size() - 1; ++i) {
 			int from = sol.sequence[i];
@@ -56,8 +59,8 @@ public:
 	bool initFormFile(TSPSolution& sol) {
 		bool exit = true;
 		try {
-			char* filename = sol.filename;
-			std::ifstream in(filename);
+			std::ifstream in(sol.filename.c_str());
+			int n;
 			// read size
 			in >> n;
 			std::cout << "number of nodes n = " << n << std::endl;
@@ -70,12 +73,10 @@ public:
 				sol.sequence.at(i) = c;
 			}
 		}
-		catch (Exception e) {
+		catch (...) {
 			exit = false;
 		}
-		finally{
-			in.close();
-		}
+
 		return exit;
 	}
 
@@ -86,9 +87,11 @@ public:
 	* @param bestSol best found solution (output)
 	* @return true id everything OK, false otherwise
 	*/
-	 bool solve(const TSP& tsp, const TSPSolution& initSol, int tabulength, int maxIter, TSPSolution& bestSol);
+	std::string solve(const TSP& tsp, const TSPSolution& initSol, int tabulength, int maxIter, TSPSolution& bestSol);
 
 protected:
+	static double getWallTime();
+
 	/**
 	* explore the neighbouhood
 	* @param tsp TSP data

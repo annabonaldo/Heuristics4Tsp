@@ -7,30 +7,65 @@
 #include <fstream>
 #include <vector>
 
+
 class TSP
 {
+	struct Point {
+		double x;
+		double y;
+		Point() : x(0), y(0) {}
+		Point(double a, double b) : x(a), y(b) {}
+	 };
+
 public:
 	TSP() : n(0), infinite(1e10) { }
 	int n; //number of nodes
 	std::vector< std::vector<double> > cost;
-	void read(const char* filename)
+	std::vector<Point>                 nodes;
+	
+	void read(const char* filename, int size)
 	{
 		std::ifstream in(filename);
-		// read size
-		in >> n;
-		std::cout << "number of nodes n = " << n << std::endl;
-		// read costs
-		cost.resize(n);
-		for (int i = 0; i < n; i++) {
-			cost[i].reserve(n);
-			for (int j = 0; j < n; j++) {
-				double c;
-				in >> c;
-				cost[i].push_back(c);
-			}
+		cost.resize(size);
+		//nodes.resize(size); 
+		for (int i = 0; i < size; i++) {
+			cost[i].reserve(size);
+			double x; in >> x;
+			double y; in >> y;
+			nodes.push_back(Point(x, y));
+			//std::cout << "[" << x << " , " << y << "] ";
 		}
 		in.close();
-	}
+		n = nodes.size(); 
+
+		for (int i = 0; i < size; i++) {
+			for (int j = 0; j < size; j++)
+			{
+				if (j != i)
+				{
+					std::cout << (distance(i, j) ); 
+					cost[i].push_back(distance(i, j));
+				}
+				else
+				{
+					std::cout << 0.0;
+					cost[i].push_back(0.0);
+				}
+			}
+			std::cout <<std::endl;
+		}
+	} 
+
+
 	double infinite; // infinite value (an upper bound on the value of any feasible solution
+
+
+private: 
+	double distance(int i, int j)
+	{
+		Point a = nodes.at(i);
+		Point b = nodes.at(j);
+		return (((a.x-b.x)*(a.x - b.x)) + ((a.y - b.y)*(a.y - b.y)));
+	}
 };
 
