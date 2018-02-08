@@ -7,22 +7,19 @@
 using namespace std;
  bool TestExecution::RANDactive    = true; 
  bool TestExecution::GRIDactive    = true;   
- //bool TestExecution::SEMIGRIDactive= true; 
+ bool TestExecution::SEMIGRIDactive= true; 
 
-void TestExecution::settingsSetup()
- {
-//	if(RANDactive) TestExecution::activeDatasets.push_back(DATASET_RAND);
-//	if(GRIDactive) TestExecution::activeDatasets.push_back(DATASET_GRID);
- }
+
 
 void TestExecution::ExecuteTest(Solver solver)
 {
 
 	bool VERBOSE = false;
 	std::vector < std::string> datasets;
-	datasets.push_back("GRID");
-	datasets.push_back("RAND");
-	datasets.push_back("SEMIGRID");
+    if (GRIDactive)     datasets.push_back("GRID");
+	if (RANDactive)     datasets.push_back("RAND");
+	if (SEMIGRIDactive) datasets.push_back("SEMIGRID");
+
 	std::string problemDir = "data\\GRIDdataset\\";
 	std::string solutionDir = "data\\results\\";
 	std::string solutionFile = "results.csv";
@@ -36,8 +33,8 @@ void TestExecution::ExecuteTest(Solver solver)
 		for (int i = 5; i <= 200; i = i + 5)
 		{
 
-			int tabuLength = 10;                                                          /// new parameters for TS
-			int maxIter = 10;
+			//int tabuLength = 10;                                                          /// new parameters for TS
+		//	int maxIter = 10;
 			string filename = problemDir + std::to_string(i) + modelFile;
 			cout <<*dataset  <<"--> processing file: " + filename << endl;;
 			TSP tspInstance; // read Problem 
@@ -46,7 +43,7 @@ void TestExecution::ExecuteTest(Solver solver)
 			TSPSolution aSolution(tspInstance); // build initial solution 
 			solver.initRnd(aSolution); // init RANDOM soultion
 			TSPSolution bestSolution(tspInstance); // build obj for best solution 
-			results.push_back(solver.solve(tspInstance, aSolution, tabuLength/*new*/, maxIter/*new*/, bestSolution)); /// new parameters for TS
+			results.push_back(solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
 
 			if (VERBOSE) {
 
