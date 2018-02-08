@@ -38,8 +38,8 @@ std::string Solver::solve(const TSP& tsp, const TSPSolution& initSol, int tabule
 		TSPMove move;
 		while (!stop) {
 			++iter;                                                                                             /// TS: iter not only for displaying
-			if (tsp.n < 20) currSol.print();
-			std::cout << " (" << iter << ") value " << currValue << "\t(" << solutionLengthValue(currSol, tsp) << ")";      /// TS: iter
+			if (verbose && tsp.n < 20) currSol.print();
+			if(verbose) std::cout << " (" << iter << ") value " << currValue << "\t(" << solutionLengthValue(currSol, tsp) << ")";      /// TS: iter
 
 			double bestNeighValue = currValue + findBestNeighbor(tsp, currSol, iter, move);                        /// TS: iter
 																												   //if ( bestNeighValue < currValue ) {                                                               /// TS: replace stopping and moving criteria
@@ -51,12 +51,12 @@ std::string Solver::solve(const TSP& tsp, const TSPSolution& initSol, int tabule
 																												   //}                                                                                                 ///
 
 			if (bestNeighValue >= tsp.infinite) {                                                             // TS: stop because all neighbours are tabu
-				std::cout << "\tmove: NO legal neighbour" << std::endl;                                           //
+				if (verbose) std::cout << "\tmove: NO legal neighbour" << std::endl;                                           //
 				stop = true;                                                                                      //
 				continue;                                                                                         //
 			}                                                                                                   //
 
-			std::cout << "\tmove: " << move.from << " , " << move.to;
+			if (verbose) std::cout << "\tmove: " << move.from << " , " << move.to;
 
 			tabuList[currSol.sequence[move.from]] = iter;                                                       /// TS: update tabu list
 			tabuList[currSol.sequence[move.to]] = iter;                                                       ///
@@ -65,13 +65,13 @@ std::string Solver::solve(const TSP& tsp, const TSPSolution& initSol, int tabule
 			if (currValue < bestValue - 0.01) {                                                               /// TS: update incumbent (if better -with tolerance- solution found)
 				bestValue = currValue;                                                                            ///
 				bestSol = currSol;                                                                                ///
-				std::cout << "\t***";                                                                             ///
+				if (verbose) std::cout << "\t***";                                                                             ///
 			}                                                                                                   /// 
 
 			if (iter > maxIter) {                                                                             /// TS: new stopping criteria
 				stop = true;                                                                                      ///
 			}                                                                                                   ///
-			std::cout << std::endl;
+			if (verbose) std::cout << std::endl;
 		}
 		double endTime = getWallTime();
 		string problemSize = to_string(tsp.n); 

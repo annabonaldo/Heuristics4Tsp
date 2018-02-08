@@ -26,8 +26,7 @@ public:
 	void read(const char* filename, int size)
 	{
 		std::ifstream in(filename);
-		cost.resize(size);
-		//nodes.resize(size); 
+		cost.resize(size); 
 		for (int i = 0; i < size; i++) {
 			cost[i].reserve(size);
 			double x; in >> x;
@@ -41,24 +40,15 @@ public:
 		for (int i = 0; i < size; i++) {
 			for (int j = 0; j < size; j++)
 			{
-				if (j != i)
-				{
-					std::cout << (distance(i, j) ); 
-					cost[i].push_back(distance(i, j));
-				}
+				if (j != i)	
+					cost[i].push_back(distance(i, j));	
 				else
-				{
-					std::cout << 0.0;
 					cost[i].push_back(0.0);
-				}
 			}
-			std::cout <<std::endl;
 		}
 	} 
 
-
 	double infinite; // infinite value (an upper bound on the value of any feasible solution
-
 
 private: 
 	double distance(int i, int j)

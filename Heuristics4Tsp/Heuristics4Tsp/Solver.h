@@ -16,7 +16,12 @@ class Solver
 {
 public:
 	/** Constructor */
-	Solver() { }
+	Solver() {
+		verbose = false; 
+	}
+	bool verbose; 
+
+	std::string name() { return "TSEARCH";  }
 	/**
 	* evaluate a solution
 	* @param sol: solution to be evaluated
@@ -47,7 +52,7 @@ public:
 			sol.sequence[idx1] = sol.sequence[idx2];
 			sol.sequence[idx2] = tmp;
 		}
-		std::cout << "### "; sol.print(); std::cout << " ###" << std::endl;
+//		std::cout << "### "; sol.print(); std::cout << " ###" << std::endl;
 		return true;
 	}
 
@@ -63,7 +68,7 @@ public:
 			int n;
 			// read size
 			in >> n;
-			std::cout << "number of nodes n = " << n << std::endl;
+		//	std::cout << "number of nodes n = " << n << std::endl;
 			// read nodes
 			sol.sequence.clear();
 			sol.sequence.reserve(n);
