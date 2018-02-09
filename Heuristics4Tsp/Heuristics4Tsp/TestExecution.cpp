@@ -6,15 +6,14 @@
 #include <string>
 using namespace std;
  bool TestExecution::RANDactive    = true; 
- bool TestExecution::GRIDactive    = true;   
- bool TestExecution::SEMIGRIDactive= true; 
+ bool TestExecution::GRIDactive    = false;   
+ bool TestExecution::SEMIGRIDactive= false; 
 
 
 
-void TestExecution::ExecuteTest(Solver solver)
+void TestExecution::ExecuteTest(Solver& solver)
 {
-
-	bool VERBOSE = false;
+	bool VERBOSE = true;
 	std::vector < std::string> datasets;
     if (GRIDactive)     datasets.push_back("GRID");
 	if (RANDactive)     datasets.push_back("RAND");
@@ -33,8 +32,6 @@ void TestExecution::ExecuteTest(Solver solver)
 		for (int i = 5; i <= 200; i = i + 5)
 		{
 
-			//int tabuLength = 10;                                                          /// new parameters for TS
-		//	int maxIter = 10;
 			string filename = problemDir + std::to_string(i) + modelFile;
 			cout <<*dataset  <<"--> processing file: " + filename << endl;;
 			TSP tspInstance; // read Problem 
@@ -43,7 +40,7 @@ void TestExecution::ExecuteTest(Solver solver)
 			TSPSolution aSolution(tspInstance); // build initial solution 
 			solver.initRnd(aSolution); // init RANDOM soultion
 			TSPSolution bestSolution(tspInstance); // build obj for best solution 
-			results.push_back(solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
+			results.push_back(*dataset +";"+solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
 
 			if (VERBOSE) {
 
@@ -58,10 +55,10 @@ void TestExecution::ExecuteTest(Solver solver)
 			}
 			
 		}
-		std::string outFile = solver.name() +*dataset + solutionFile;
-		writeResults(results, solutionDir + outFile);
+		
 		cout << std::endl << std::endl;
 	}
+	writeResults(results, solutionDir + solutionFile);
 	std::cout << "END EXECUTION " << std::endl; 
 }
 

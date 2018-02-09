@@ -150,6 +150,7 @@
   <ItemGroup>
     <ClInclude Include="GreedySolver.h" />
     <ClInclude Include="RandGreedySolver.h" />
+    <ClInclude Include="SimAnnealingSolver.h" />
     <ClInclude Include="Solver.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StrightGreedyLineSolver.h" />
@@ -163,6 +164,7 @@
     <ClCompile Include="GreedySolver.cpp" />
     <ClCompile Include="Heuristics4Tsp.cpp" />
     <ClCompile Include="RandGreedySolver.cpp" />
+    <ClCompile Include="SimAnnealingSolver.cpp" />
     <ClCompile Include="Solver.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

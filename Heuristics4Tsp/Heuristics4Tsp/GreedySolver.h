@@ -4,7 +4,7 @@ class GreedySolver :
 	public Solver
 {
 public:
-	GreedySolver();
-	~GreedySolver();
+	std::string name() override  { return  "GREEDY"; }
+	std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) override;
 };
 

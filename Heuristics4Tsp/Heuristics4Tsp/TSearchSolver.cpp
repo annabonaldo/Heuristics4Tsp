@@ -8,8 +8,6 @@ using namespace std;
 std::string TSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol,  TSPSolution& bestSol)   /// TS: new param
 {
 	std::string line = "";
-	try
-	{
 		bool stop = false;
 		int  iter = 0;
 
@@ -70,14 +68,8 @@ std::string TSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol,  TS
 			";Time; " + time;
 		//bestSol = currSol;                                                                                  /// TS: not always the neighbor improves over 
 		///     the best available (incumbent) solution 
-	}
-	catch (std::exception& e)
-	{
-		std::cout << ">>>EXCEPTION: " << e.what() << std::endl;
-		return "error;";
-	}
 
-	return line;
+	return getLine(solSize, problemSize, time);
 }
 
 double TSearchSolver::findBestNeighbor(const TSP& tsp, const TSPSolution& currSol, int currIter, TSPMove& move)
@@ -98,12 +90,12 @@ double TSearchSolver::findBestNeighbor(const TSP& tsp, const TSPSolution& currSo
 				+ tsp.cost[h][j] + tsp.cost[i][l];
 			if (neighCostVariation < bestCostVariation) {
 				bestCostVariation = neighCostVariation;
+
 				move.from = a;
 				move.to = b;
 			}
 		}
 	}
-	return bestCostVariation;
 	return bestCostVariation;
 }
 

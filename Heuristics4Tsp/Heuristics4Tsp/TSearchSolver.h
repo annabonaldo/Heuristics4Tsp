@@ -1,5 +1,7 @@
 #pragma once
 #include "Solver.h"
+#include <string>
+
 class TSearchSolver :
 	public Solver
 {
@@ -7,14 +9,15 @@ public:
 	/** Constructor */
 	TSearchSolver(): Solver() {} 
 	
-	TSearchSolver(int lenght, int iter ): Solver() {
+	TSearchSolver(int lenght, int iter, bool mixed = false): Solver() {
 		tabuLength = lenght;
 		maxIter = iter; 
 	}	
 
-	std::string name() { return "TSEARCH"; }
+	std::string name() override { return "len"+std::to_string(tabuLength)+"_iter"
+											+std::to_string(maxIter)+"TSEARCH"; }
 
-	std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol);
+	 std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) override;
 
 protected:
 	

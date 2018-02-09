@@ -49,13 +49,23 @@ public:
 	} 
 
 	double infinite; // infinite value (an upper bound on the value of any feasible solution
-
-private: 
-	double distance(int i, int j)
+	
+	double distance(int i, int j) const
 	{
 		Point a = nodes.at(i);
 		Point b = nodes.at(j);
-		return (((a.x-b.x)*(a.x - b.x)) + ((a.y - b.y)*(a.y - b.y)));
+		return (((a.x - b.x)*(a.x - b.x)) + ((a.y - b.y)*(a.y - b.y)));
 	}
+
+	double angle(int i, int j) const
+	{
+		Point a = nodes.at(i);
+		Point b = nodes.at(j);
+		double normA = std::sqrt((a.x *a.x) + (a.y *a.y));
+		double normB = std::sqrt((b.x *b.x) + (b.y *b.y));
+		double cos = ((a.x*b.x) + (a.y*b.y)) / (normA*normB); 
+		return std::acos(cos); 
+	}
+	
 };
 

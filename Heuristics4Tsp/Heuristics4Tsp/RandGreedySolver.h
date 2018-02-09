@@ -4,7 +4,7 @@ class RandGreedySolver :
 	public Solver
 {
 public:
-	RandGreedySolver();
-	~RandGreedySolver();
+	RandGreedySolver(): Solver() {}
+	std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol); 
 };
 

@@ -11,7 +11,7 @@ public:
 	static bool SEMIGRIDactive; 
 
 	static std::string  testSetup; 
-	static void ExecuteTest(Solver solver); 
+	static void ExecuteTest(Solver& solver); 
 	
 private: 
 	static std::vector < std::string> datasets;

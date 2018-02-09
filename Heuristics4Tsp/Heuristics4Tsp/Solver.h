@@ -10,6 +10,8 @@
 typedef struct move {
 	int			from;
 	int			to;
+	move() {}
+	move(int a, int b ): from(a), to(b){}
 } TSPMove;
 
 class Solver
@@ -22,7 +24,7 @@ public:
 
 	bool verbose; 
 	
-	virtual std::string name() { return  "VIRTUALSOLVER"; }
+	virtual std::string name() = 0; 
 
 	double solutionLengthValue(const TSPSolution& sol, const TSP& tsp) const; 
 	
@@ -52,11 +54,22 @@ public:
 		return exit;
 	}
 
-	virtual std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) { return "virtual solver";  }
+	virtual std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) = 0; 
 
 protected:
 	
 	static double getWallTime();
 	TSPSolution&  swap(TSPSolution& tspSol, const TSPMove& move);
+	int randomINT(int min, int max); 
+	double randomDOUBLE(double min, double max);
+	std::string getLine(std::string solSize, std::string  problemSize, std::string  time)
+	{
+		std::string  line = std::string("Solution;") + solSize +
+			";Problem size; " + problemSize +
+			";Time; " + time;
+
+	//	std::cout << "line " << line << std::endl;
+		return line; 
+	}
 
 };
