@@ -14,8 +14,8 @@ public:
 		maxIter = iter; 
 	}	
 
-	std::string name() override { return "len"+std::to_string(tabuLength)+"_iter"
-											+std::to_string(maxIter)+"TSEARCH"; }
+	std::string name() override { return "TSEARCH; ListLenght; "+std::to_string(tabuLength)+"; MaxIter;"
+		+ std::to_string(maxIter)+ ";" ;}
 
 	 std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) override;
 

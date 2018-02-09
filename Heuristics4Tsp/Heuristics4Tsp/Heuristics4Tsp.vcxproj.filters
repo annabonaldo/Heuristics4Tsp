@@ -42,9 +42,6 @@
     <ClInclude Include="StrightGreedyLineSolver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RandGreedySolver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="SimAnnealingSolver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -75,9 +72,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StrightGreedyLineSolver.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="RandGreedySolver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SimAnnealingSolver.cpp">

@@ -69,7 +69,7 @@ protected:
 			";Time; " + time;
 
 	//	std::cout << "line " << line << std::endl;
-		return line; 
+		return line+ ";" + name() ;
 	}
 
 };

@@ -1,5 +1,12 @@
-﻿  Heuristics4Tsp.cpp
+﻿  StrightGreedyLineSolver.cpp
 c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(29): warning C4018: '<': signed/unsigned mismatch
 c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(36): warning C4018: '<': signed/unsigned mismatch
 c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(49): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
+  Compiling...
+  Heuristics4Tsp.cpp
+c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(29): warning C4018: '<': signed/unsigned mismatch
+c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(36): warning C4018: '<': signed/unsigned mismatch
+c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(49): warning C4018: '<': signed/unsigned mismatch
+  Generating Code...
   Heuristics4Tsp.vcxproj -> C:\Users\Anna Bonaldo\Documents\GitHub\Heuristics4Tsp\Heuristics4Tsp\Debug\Heuristics4Tsp.exe

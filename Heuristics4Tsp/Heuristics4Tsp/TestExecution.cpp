@@ -16,8 +16,13 @@ void TestExecution::ExecuteTest(Solver& solver)
 	bool VERBOSE = true;
 	std::vector < std::string> datasets;
     if (GRIDactive)     datasets.push_back("GRID");
-	if (RANDactive)     datasets.push_back("RAND");
-	if (SEMIGRIDactive) datasets.push_back("SEMIGRID");
+	if (RANDactive)     { datasets.push_back("RAND50"); 
+						  datasets.push_back("RAND100"); 
+						  datasets.push_back("RAND500"); }
+
+	if (SEMIGRIDactive) { datasets.push_back("SEMIGRID_5-5-1"); 
+						  datasets.push_back("SEMIGRID_5-5-20"); }
+
 
 	std::string problemDir = "data\\GRIDdataset\\";
 	std::string solutionDir = "data\\results\\";
