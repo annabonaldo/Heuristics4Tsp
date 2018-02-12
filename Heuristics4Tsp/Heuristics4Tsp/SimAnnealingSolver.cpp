@@ -12,8 +12,8 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 	double nextValue, currValue;
 	nextValue = currValue = solutionLengthValue(currSol, tsp);
 	double temperature = T;
-
-	while (temperature>1) {
+	/*verbose = true; */
+	while (temperature > 1.0) {
 		// Create new neighbour tour
 		TSPSolution newSol = currSol; 
 		srand(time(NULL));
@@ -23,7 +23,7 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 		while(tourPos1== tourPos2) tourPos2 = randomINT(0, tsp.n);
 
 		TSPMove m(tourPos1, tourPos2); 
-		std::cout << "move : " << m.from << " -> " << m.to << std::endl; 
+		if(verbose) std::cout << "move : " << m.from << " -> " << m.to << std::endl; 
 		// Swap them
 		this->swap(newSol, m); 
 
@@ -36,7 +36,7 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 		double prob = acceptanceProbability(currPathLenght, neighPathLenght, T); 
 		if (prob > randomDOUBLE(0.0, 1.0)) {
 			currSol = newSol; 
-			std::cout << " new solution accepted: prob = " << prob << std::endl; 
+			if(verbose) std::cout << " new solution accepted: prob = " << prob << std::endl; 
 		}
 
 		// Keep track of the best solution found
@@ -46,11 +46,13 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 
 		// Cool system
 		temperature *= 1 - delta;
+		if (verbose) std::cout << " temperature = " << temperature << std::endl;
 	}
+	if (verbose) std::cout << "END EXECUTION" << std::endl; 
 	double endTime = getWallTime();
 	std::string problemSize = std::to_string(tsp.n);
 	std::string time = std::to_string(endTime - startTime);
-	std::string solSize = std::to_string(solutionLengthValue(currSol, tsp));
+	std::string solSize = std::to_string(solutionLengthValue(bestSol, tsp));
 
 	return getLine(solSize, problemSize, time);
 	

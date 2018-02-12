@@ -1,12 +1,14 @@
-﻿  StrightGreedyLineSolver.cpp
+﻿  SimAnnealingSolver.cpp
 c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(29): warning C4018: '<': signed/unsigned mismatch
 c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(36): warning C4018: '<': signed/unsigned mismatch
 c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(49): warning C4018: '<': signed/unsigned mismatch
+c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\simannealingsolver.cpp(19): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Generating Code...
-  Compiling...
+  Skipping... (no relevant changes detected)
+  TestExecution.cpp
+  TSearchSolver.cpp
+  StrightGreedyLineSolver.cpp
+  Solver.cpp
   Heuristics4Tsp.cpp
-c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(29): warning C4018: '<': signed/unsigned mismatch
-c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(36): warning C4018: '<': signed/unsigned mismatch
-c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\tspsolution.h(49): warning C4018: '<': signed/unsigned mismatch
-  Generating Code...
+  GreedySolver.cpp
   Heuristics4Tsp.vcxproj -> C:\Users\Anna Bonaldo\Documents\GitHub\Heuristics4Tsp\Heuristics4Tsp\Debug\Heuristics4Tsp.exe

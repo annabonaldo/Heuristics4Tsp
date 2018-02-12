@@ -32,7 +32,7 @@ public:
 	}
 public:
 
-	void print(void) {
+	void print(void) const{
 		for (int i = 0; i < sequence.size(); i++) {
 			std::cout << sequence[i] << " ";
 		}

@@ -40,12 +40,14 @@ public:
 		for (int i = 0; i < size; i++) {
 			for (int j = 0; j < size; j++)
 			{
-				if (j != i)	
-					cost[i].push_back(distance(i, j));	
+				if (j != i)
+					cost[i].push_back(distance(i, j));
+				
 				else
 					cost[i].push_back(0.0);
 			}
 		}
+
 	} 
 
 	double infinite; // infinite value (an upper bound on the value of any feasible solution
@@ -64,7 +66,22 @@ public:
 		double normA = std::sqrt((a.x *a.x) + (a.y *a.y));
 		double normB = std::sqrt((b.x *b.x) + (b.y *b.y));
 		double cos = ((a.x*b.x) + (a.y*b.y)) / (normA*normB); 
-		return std::acos(cos); 
+		double radAngle =  std::acos(cos); 
+		// x : 180 = radAngle : pi 
+		// x = (180*radAngle)/pi ; 
+		double pi = atan(1) * 4; 
+		return (180.0 * radAngle) / pi;
+	}
+
+	void printCosts()
+	{
+		for (int i = 0; i < cost.size(); i++)
+		{
+			for (int j = 0; j < cost[i].size(); j++)
+				std::cout << cost[i][j] << " ";
+
+			std::cout << std::endl;
+		}
 	}
 	
 };

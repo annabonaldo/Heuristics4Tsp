@@ -18,6 +18,7 @@ public:
 		+ std::to_string(maxIter)+ ";" ;}
 
 	 std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) override;
+	 std::string filename() override { return  "results"; };
 
 protected:
 	

@@ -48,11 +48,13 @@ std::string StrightGreedyLineSolver::solve(const TSP& tsp, const TSPSolution& in
 			if (step < tsp.n)
 			{
 				bestSol.sequence.at(step) = nextIndex;
-				if (angle > lineOffset)
-					linelenght = 0.0;
-				else
-				{
-					linelenght += tsp.distance(curNode, nextIndex); 
+				if (m > 0.001) {
+					if (angle > lineOffset)
+						linelenght = 0.0;
+					else
+					{
+						linelenght += tsp.distance(curNode, nextIndex);
+					}
 				}
 			}
 			curNode = nextIndex;

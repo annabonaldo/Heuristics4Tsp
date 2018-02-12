@@ -9,14 +9,28 @@ public:
 	static bool RANDactive;
 	static bool GRIDactive; 
 	static bool SEMIGRIDactive; 
-
-	static std::string  testSetup; 
+	static bool VERBOSE;
+	static bool PRINT_EX_METHOD;
+	static bool PRINT_IN_FILE; 
+	static bool PRINT_DATASET;
 	static void ExecuteTest(Solver& solver); 
+	static void ExecuteTestLowPerformamces(Solver& solver);
+
+	static void ExecuteTestOnTABU_SEARCH(); 
+	static void ExecuteTestOnGREEDY_SEARCH(); 
+	static void ExecuteTestOnSIM_ANNEALING(); 
+	static void ExecuteTestOnStrightGREEDYLine_SEARCH(); 
+
+	static void writeResults(std::string outFile);
+
+	
+
 	
 private: 
 	static std::vector < std::string> datasets;
-	static void writeResults(std::vector<std::string> results, std::string outFile);
-
+	static std::vector<std::string> results;
+	
+	
 	/*
 	clock_t t1, t2;
 	t1 = clock();

@@ -36,6 +36,7 @@ double Solver::solutionLengthValue(const TSPSolution& sol, const TSP& tsp) const
 		int to = sol.sequence[i + 1];
 		total += tsp.cost[from][to];
 	}
+
 	return total;
 }
 

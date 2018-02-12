@@ -55,7 +55,7 @@ public:
 	}
 
 	virtual std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) = 0; 
-
+	virtual std::string filename() = 0;
 protected:
 	
 	static double getWallTime();
