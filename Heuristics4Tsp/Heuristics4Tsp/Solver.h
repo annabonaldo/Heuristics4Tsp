@@ -68,8 +68,9 @@ protected:
 			";Problem size; " + problemSize +
 			";Time; " + time;
 
-	//	std::cout << "line " << line << std::endl;
-		return line+ ";" + name() ;
+		line = line + ";" + name();
+	//	line = line.replace(line.begin(), line.end(), ".", ","); 
+		return line;
 	}
 
 };

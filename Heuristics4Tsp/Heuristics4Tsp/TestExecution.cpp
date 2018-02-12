@@ -9,11 +9,11 @@
 #include <filesystem>
 #include <string>
 using namespace std;
- bool TestExecution::RANDactive    = false; 
- bool TestExecution::GRIDactive    = false;
+ bool TestExecution::RANDactive    = true;
+ bool TestExecution::GRIDactive    = true;
  bool TestExecution::SEMIGRIDactive= true;
  bool TestExecution::VERBOSE = false;
- bool TestExecution::PRINT_IN_FILE = false; 
+ bool TestExecution::PRINT_IN_FILE = true; 
  bool TestExecution::PRINT_EX_METHOD = true;
  bool TestExecution::PRINT_DATASET = true;
  std::vector<std::string> TestExecution::results = std::vector<std::string>(); 
