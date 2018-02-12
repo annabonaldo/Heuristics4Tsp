@@ -13,6 +13,7 @@ public:
 	static bool PRINT_EX_METHOD;
 	static bool PRINT_IN_FILE; 
 	static bool PRINT_DATASET;
+	static bool FIXED_PROBLEM_SIZE; 
 	static void ExecuteTest(Solver& solver); 
 	static void ExecuteTestLowPerformamces(Solver& solver);
 
@@ -20,6 +21,9 @@ public:
 	static void ExecuteTestOnGREEDY_SEARCH(); 
 	static void ExecuteTestOnSIM_ANNEALING(); 
 	static void ExecuteTestOnStrightGREEDYLine_SEARCH(); 
+	static void ExecuteTestALLPROBLEMSIZE(Solver& solver);
+	static void ExecuteTestFIXEDProblemSIZE(Solver& solver);
+	static void ExecuteTestOnTABU_SEARCHIterationNum(int lenght); 
 
 	static void writeResults(std::string outFile);
 

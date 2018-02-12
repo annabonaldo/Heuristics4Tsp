@@ -9,49 +9,58 @@
 #include <filesystem>
 #include <string>
 using namespace std;
- bool TestExecution::RANDactive    = true;
+ bool TestExecution::RANDactive    = false;
  bool TestExecution::GRIDactive    = true;
- bool TestExecution::SEMIGRIDactive= true;
+ bool TestExecution::SEMIGRIDactive= false;
  bool TestExecution::VERBOSE = false;
- bool TestExecution::PRINT_IN_FILE = true; 
+ bool TestExecution::PRINT_IN_FILE = false; 
  bool TestExecution::PRINT_EX_METHOD = true;
  bool TestExecution::PRINT_DATASET = true;
+ bool TestExecution::FIXED_PROBLEM_SIZE = true; 
  std::vector<std::string> TestExecution::results = std::vector<std::string>(); 
 
 
 void TestExecution::ExecuteTest(Solver& solver)
 {
+	if (FIXED_PROBLEM_SIZE) ExecuteTestFIXEDProblemSIZE(solver); 
+	else ExecuteTestALLPROBLEMSIZE(solver); 
+}
+
+void TestExecution::ExecuteTestALLPROBLEMSIZE(Solver& solver)
+{
 
 	std::vector < std::string> datasets;
-    if (GRIDactive)     datasets.push_back("GRID");
-	if (RANDactive)     { datasets.push_back("RAND50");
-						  datasets.push_back("RAND100"); 
-						  datasets.push_back("RAND500"); }
+	if (GRIDactive)     datasets.push_back("GRID");
+	if (RANDactive) {
+		datasets.push_back("RAND50");
+		datasets.push_back("RAND100");
+		datasets.push_back("RAND500");
+	}
 
 	if (SEMIGRIDactive) { datasets.push_back("SEMIGRID"); }
 
 
 
 
-	
+
 	std::vector<std::string>::iterator dataset = datasets.begin();
 	for (; dataset != datasets.end(); dataset++)
 	{
 
-		std::string problemDir =  "data\\"+*dataset+"dataset\\";
+		std::string problemDir = "data\\" + *dataset + "dataset\\";
 		std::string modelFile = "model.txt";
 		for (int i = 5; i <= 200; i = i + 5)
 		{
 
-			string filename = problemDir + std::to_string(i) + *dataset+modelFile;
-			if(PRINT_IN_FILE) cout <<*dataset  <<"--> processing file: " + filename << endl;;
+			string filename = problemDir + std::to_string(i) + *dataset + modelFile;
+			if (PRINT_IN_FILE) cout << *dataset << "--> processing file: " + filename << endl;;
 			TSP tspInstance; // read Problem 
 			tspInstance.read(filename.c_str(), i);
 
 			TSPSolution aSolution(tspInstance); // build initial solution 
 			solver.initRnd(aSolution); // init RANDOM soultion
 			TSPSolution bestSolution(tspInstance); // build obj for best solution 
-			results.push_back(*dataset +";"+solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
+			results.push_back(*dataset + ";" + solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
 
 			if (VERBOSE) {
 
@@ -63,8 +72,61 @@ void TestExecution::ExecuteTest(Solver& solver)
 				std::cout << "(Lenght value : " << solver.solutionLengthValue(bestSolution, tspInstance) << ")\n";
 				cout << "------------------------------------------" << std::endl;
 
-			}	
-		}		
+			}
+		}
+	}
+
+}
+
+void TestExecution::ExecuteTestFIXEDProblemSIZE(Solver& solver)
+{
+
+	std::vector < std::string> datasets;
+	if (GRIDactive)     datasets.push_back("GRID");
+	if (RANDactive) {
+		datasets.push_back("RAND50");
+		datasets.push_back("RAND100");
+		datasets.push_back("RAND500");
+	}
+
+	if (SEMIGRIDactive) { datasets.push_back("SEMIGRID"); }
+
+
+
+
+
+	std::vector<std::string>::iterator dataset = datasets.begin();
+	for (; dataset != datasets.end(); dataset++)
+	{
+
+		std::string problemDir = "data\\" + *dataset + "dataset\\";
+		std::string modelFile = "model.txt";
+		//for (int i = 5; i <= 200; i = i + 5)
+		int i = 50; 
+		{
+
+			string filename = problemDir + std::to_string(i) + *dataset + modelFile;
+			if (PRINT_IN_FILE) cout << *dataset << "--> processing file: " + filename << endl;;
+			TSP tspInstance; // read Problem 
+			tspInstance.read(filename.c_str(), i);
+
+			TSPSolution aSolution(tspInstance); // build initial solution 
+			solver.initRnd(aSolution); // init RANDOM soultion
+			TSPSolution bestSolution(tspInstance); // build obj for best solution 
+			results.push_back(*dataset + ";" + solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
+
+			if (VERBOSE) {
+
+				cout << "Solved problem --  size:  " << tspInstance.n << std::endl;
+				std::cout << "FROM solution: ";
+
+				std::cout << "(Lenght value : " << solver.solutionLengthValue(aSolution, tspInstance) << ")\n";
+				std::cout << "TO   solution: ";
+				std::cout << "(Lenght value : " << solver.solutionLengthValue(bestSolution, tspInstance) << ")\n";
+				cout << "------------------------------------------" << std::endl;
+
+			}
+		}
 	}
 
 }
@@ -152,6 +214,24 @@ void TestExecution::ExecuteTestOnTABU_SEARCH()
 		}
 	}
 	if (PRINT_EX_METHOD) std::cout <<"end TABU SEARCH" << std::endl << std::endl;
+}
+
+void TestExecution::ExecuteTestOnTABU_SEARCHIterationNum(int lenght)
+{
+	if (PRINT_EX_METHOD) std::cout << "TABU SEARCH ----------------------------------------------" << std::endl;
+
+	for (int iter = 500000; iter <= 5000000; iter += 500000)
+	{
+
+			if (PRINT_EX_METHOD)
+				std::cout << "TABU SEARCH -- max iter: " << iter
+				<< " tabulist length: " << lenght << std::endl;
+			TSearchSolver solver = TSearchSolver(lenght, iter);
+			TestExecution::ExecuteTest(solver);
+		
+		
+	}
+	if (PRINT_EX_METHOD) std::cout << "end TABU SEARCH" << std::endl << std::endl;
 }
 
 void TestExecution::ExecuteTestOnGREEDY_SEARCH()
