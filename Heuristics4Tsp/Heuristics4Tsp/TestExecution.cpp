@@ -31,6 +31,8 @@ void TestExecution::ExecuteTest(Solver& solver)
 		if (PT100_PROBLEM_SIZE) ExecuteTestFIXED_PROBLEM_SIZE(solver);
 		else ExecuteTestALL_PROBLEM_SIZE(solver);
 	}
+	std::string outFile = "data\\results\\"+solver.filename()+"IterValues.txt";
+	writeData(solver.solValues, outFile);
 
 }
 
@@ -94,7 +96,7 @@ void TestExecution::ExecuteTestFIXED_PROBLEM_SIZE(Solver& solver)
 	if (RANDactive) {
 	//	datasets.push_back("RAND50");
 		datasets.push_back("RAND100");
-	///	datasets.push_back("RAND500");
+	//	datasets.push_back("RAND500");
 	}
 
 	if (SEMIGRIDactive) { datasets.push_back("SEMIGRID"); }
@@ -145,9 +147,9 @@ void TestExecution::ExecuteTestLowPerformamcesALL_PROBLEM_SIZE(Solver& solver)
 	std::vector < std::string> datasets;
 	if (GRIDactive)     datasets.push_back("GRID");
 	if (RANDactive) {
-		datasets.push_back("RAND50");
-		//datasets.push_back("RAND100");
-		datasets.push_back("RAND500");
+		//datasets.push_back("RAND50");
+		datasets.push_back("RAND100");
+	//	datasets.push_back("RAND500");
 	}
 
 	if (SEMIGRIDactive) {
@@ -262,6 +264,19 @@ void TestExecution::writeResults(std::string outFile)
 	results.clear(); 
 }
 
+void TestExecution::writeData(std::vector<std::string>& data, std::string outFile)
+{
+	if (data.size() > 0) {
+		std::ofstream file;
+		file.open(outFile.c_str());
+		for (int i = 0; i < data.size(); i++)
+			file << results.at(i) + "\n";
+		file.close();
+		data.clear();
+	}
+}
+
+
 void TestExecution::ExecuteTestOnTABU_SEARCH()
 {
 	if (PRINT_EX_METHOD) std::cout << "TABU SEARCH ----------------------------------------------" << std::endl;
@@ -327,18 +342,19 @@ void TestExecution::ExecuteTestOnSIM_ANNEALING() {
 		
 	}*/
 	double delta = 0.05;
-	if (PRINT_EX_METHOD)
-		std::cout << "SIM_ANNEALIN SEARCH -- max temperature: " << 100 << " delta: " << delta << std::endl;
-	SimAnnealingSolver solver = SimAnnealingSolver(100, delta);
-	TestExecution::ExecuteTest(solver);
 
-	for (int temperature = 5000; temperature <= 10000; temperature += 5000)
+	std::vector<int> test = std::vector<int>(); 
+	test.push_back(5000); 
+	test.push_back(10000);
+	test.push_back(50000);
+	test.push_back(100000);
+	for (int j = 0; j< test.size(); j++)
 	{
 
 		if (PRINT_EX_METHOD)
-			std::cout << "SIM_ANNEALIN SEARCH -- max temperature: " << temperature
+			std::cout << "SIM_ANNEALIN SEARCH -- max temperature: " << test[j]
 			<< " delta: " << delta << std::endl;
-		SimAnnealingSolver solver = SimAnnealingSolver((double)temperature, delta);
+		SimAnnealingSolver solver = SimAnnealingSolver((double)test[j], delta);
 		TestExecution::ExecuteTest(solver);
 
 	}

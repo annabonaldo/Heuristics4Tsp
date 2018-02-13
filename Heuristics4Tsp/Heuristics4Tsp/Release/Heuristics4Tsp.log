@@ -1,19 +1,15 @@
-﻿  Heuristics4Tsp.cpp
+﻿  TestExecution.cpp
 c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\TSP.h(78): warning C4018: '<': signed/unsigned mismatch
 c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\TSP.h(80): warning C4018: '<': signed/unsigned mismatch
 c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\TSPSolution.h(29): warning C4018: '<': signed/unsigned mismatch
 c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\TSPSolution.h(36): warning C4018: '<': signed/unsigned mismatch
 c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\TSPSolution.h(49): warning C4018: '<': signed/unsigned mismatch
-  TestExecution.cpp
-c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\TSP.h(78): warning C4018: '<': signed/unsigned mismatch
-c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\TSP.h(80): warning C4018: '<': signed/unsigned mismatch
-c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\TSPSolution.h(29): warning C4018: '<': signed/unsigned mismatch
-c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\TSPSolution.h(36): warning C4018: '<': signed/unsigned mismatch
-c:\users\anna bonaldo\documents\github\heuristics4tsp\heuristics4tsp\heuristics4tsp\TSPSolution.h(49): warning C4018: '<': signed/unsigned mismatch
-TestExecution.cpp(259): warning C4018: '<': signed/unsigned mismatch
+TestExecution.cpp(261): warning C4018: '<': signed/unsigned mismatch
+TestExecution.cpp(272): warning C4018: '<': signed/unsigned mismatch
+TestExecution.cpp(351): warning C4018: '<': signed/unsigned mismatch
   Generating code
-  7 of 685 functions ( 1.0%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    38 functions had inline decision re-evaluated but remain unchanged
+  20 of 694 functions ( 2.9%) were compiled, the rest were copied from previous compilation.
+    1 functions were new in current compilation
+    56 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   Heuristics4Tsp.vcxproj -> C:\Users\Anna Bonaldo\Documents\GitHub\Heuristics4Tsp\Heuristics4Tsp\Release\Heuristics4Tsp.exe

@@ -5,7 +5,7 @@
 std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) {
 	bool stop = false;
 	int  iter = 0;
-
+	
 	double startTime = getWallTime();
 	TSPSolution currSol(initSol);
 	bestSol = initSol; 
@@ -19,6 +19,7 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 		srand(time(NULL));
 		// Get a random positions in the tour
 		int tourPos1, tourPos2; 
+
 		tourPos1 = tourPos2 = randomINT(0, tsp.n);
 		while(tourPos1== tourPos2) tourPos2 = randomINT(0, tsp.n);
 
@@ -42,12 +43,14 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 		// Keep track of the best solution found
 		if (solutionLengthValue(currSol, tsp) < solutionLengthValue(bestSol, tsp)) {
 			bestSol = currSol;
+			solValues.push_back(std::to_string(solutionLengthValue(bestSol, tsp))+"; "); 
 		}
 
 		// Cool system
 		temperature *= 1 - delta;
 		if (verbose) std::cout << " temperature = " << temperature << std::endl;
 	}
+	
 	if (verbose) std::cout << "END EXECUTION" << std::endl; 
 	double endTime = getWallTime();
 	std::string problemSize = std::to_string(tsp.n);

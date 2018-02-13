@@ -29,6 +29,7 @@ public:
 	static void ExecuteTestOnTABU_SEARCHIterationNum(int lenght); 
 
 	static void writeResults(std::string outFile);
+	static void writeData(std::vector<std::string>& data, std::string outFile); 
 
 	
 
