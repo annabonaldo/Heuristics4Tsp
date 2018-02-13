@@ -61,10 +61,12 @@ public:
 
 protected:
 	
+
 	static double getWallTime();
 	TSPSolution&  swap(TSPSolution& tspSol, const TSPMove& move);
 	int randomINT(int min, int max); 
 	double randomDOUBLE(double min, double max);
+	static double randProb(); 
 	std::string getLine(std::string solSize, std::string  problemSize, std::string  time)
 	{
 		std::string  line = std::string("Solution;") + solSize +

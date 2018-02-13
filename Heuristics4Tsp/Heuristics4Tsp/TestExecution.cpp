@@ -102,17 +102,13 @@ void TestExecution::ExecuteTestFIXED_PROBLEM_SIZE(Solver& solver)
 	if (SEMIGRIDactive) { datasets.push_back("SEMIGRID"); }
 
 
-
-
-
 	std::vector<std::string>::iterator dataset = datasets.begin();
 	for (; dataset != datasets.end(); dataset++)
 	{
-
 		std::string problemDir = "data\\" + *dataset + "dataset\\";
 		std::string modelFile = "model.txt";
 		//for (int i = 5; i <= 200; i = i + 5)
-		int i = 50; 
+		int i = 100; 
 		{
 
 			string filename = problemDir + std::to_string(i) + *dataset + modelFile;
@@ -147,9 +143,9 @@ void TestExecution::ExecuteTestLowPerformamcesALL_PROBLEM_SIZE(Solver& solver)
 	std::vector < std::string> datasets;
 	if (GRIDactive)     datasets.push_back("GRID");
 	if (RANDactive) {
-		//datasets.push_back("RAND50");
+		datasets.push_back("RAND50");
 		datasets.push_back("RAND100");
-	//	datasets.push_back("RAND500");
+		datasets.push_back("RAND500");
 	}
 
 	if (SEMIGRIDactive) {
@@ -203,9 +199,9 @@ void TestExecution::ExecuteTestLowPerformamcesFIXED_PROBLEM_SIZE(Solver& solver)
 	std::vector < std::string> datasets;
 	if (GRIDactive)     datasets.push_back("GRID");
 	if (RANDactive) {
-		datasets.push_back("RAND50");
-		//datasets.push_back("RAND100");
-		datasets.push_back("RAND500");
+		//datasets.push_back("RAND50");
+		datasets.push_back("RAND100");
+		//datasets.push_back("RAND500");
 	}
 
 	if (SEMIGRIDactive) {
@@ -248,8 +244,8 @@ void TestExecution::ExecuteTestLowPerformamcesFIXED_PROBLEM_SIZE(Solver& solver)
 			}
 
 		}
-		std::string outFile = "data\\results\\" + solver.filename() + std::string(*dataset) + std::string("2.csv");
-		writeResults(outFile);
+		//std::string outFile = "data\\results\\" + solver.filename() + std::string(*dataset) + std::string("2.csv");
+		//writeResults(outFile);
 	}
 	PRINT_IN_FILE = false;
 }
@@ -266,14 +262,14 @@ void TestExecution::writeResults(std::string outFile)
 
 void TestExecution::writeData(std::vector<std::string>& data, std::string outFile)
 {
-	if (data.size() > 0) {
-		std::ofstream file;
-		file.open(outFile.c_str());
-		for (int i = 0; i < data.size(); i++)
-			file << results.at(i) + "\n";
-		file.close();
-		data.clear();
-	}
+	//if (data.size() > 0) {
+	//	std::ofstream file;
+	//	file.open(outFile.c_str());
+	//	for (int i = 0; i < data.size(); i++)
+	//		file << results.at(i) + "\n";
+	//	file.close();
+	//	data.clear();
+	//}
 }
 
 
@@ -299,9 +295,8 @@ void TestExecution::ExecuteTestOnTABU_SEARCHIterationNum(int lenght)
 {
 	if (PRINT_EX_METHOD) std::cout << "TABU SEARCH ----------------------------------------------" << std::endl;
 
-	for (int iter = 500000; iter <= 5000000; iter += 500000)
+	for (int iter = 100000; iter <= 15000000; iter += 5000000)
 	{
-
 			if (PRINT_EX_METHOD)
 				std::cout << "TABU SEARCH -- max iter: " << iter
 				<< " tabulist length: " << lenght << std::endl;
@@ -324,41 +319,69 @@ void TestExecution::ExecuteTestOnGREEDY_SEARCH()
 
 void TestExecution::ExecuteTestOnSIM_ANNEALING() {
 	if (PRINT_EX_METHOD) std::cout << "SIM_ANNEALIN SEARCH ----------------------------------------------"<< std::endl;
-	/*for (int temperature = 100; temperature <= 1000; temperature += 450)
-	{
-		double delta = 0.1; 
-			if (PRINT_EX_METHOD)
-				std::cout << "SIM_ANNEALIN SEARCH -- max temperature: " << temperature 
-				<< " delta: " << delta << std::endl;
-			SimAnnealingSolver solver = SimAnnealingSolver((double)temperature, delta);
-			TestExecution::ExecuteTest(solver);
+	
+	//std::vector<double> test = {500000.0, 100000.0}; 
+	//for (int j = 0; j < test.size(); j++) {
+	//
+	//		
+	//	double delta = 0.0005; 
+	//		if (PRINT_EX_METHOD)
+	//			std::cout << "SIM_ANNEALIN SEARCH -- max temperature: " << test[j]
+	//			<< " delta: " << delta << std::endl;
+	//		SimAnnealingSolver solver = SimAnnealingSolver(test[j], delta);
+	//		//solver.verbose = true; 
+	//		TestExecution::ExecuteTest(solver);
+	//
+	//	/*	delta = 0.6; 
+	//			if (PRINT_EX_METHOD)
+	//				std::cout << "SIM_ANNEALIN SEARCH -- max temperature: " << test[j] << " delta: " << delta << std::endl;
+	//		solver = SimAnnealingSolver(test[j], delta);
+	//		TestExecution::ExecuteTest(solver);*/
+	//
+	//	
+	//}
+	std::string dataset = "RAND100"; 
 
-			delta = 0.6; 
-				if (PRINT_EX_METHOD)
-					std::cout << "SIM_ANNEALIN SEARCH -- max temperature: " << temperature << " delta: " << delta << std::endl;
-			solver = SimAnnealingSolver((double)temperature, delta);
-			TestExecution::ExecuteTest(solver);
+	std::string problemDir = "data\\" + dataset + "dataset\\";
+	std::string modelFile = "model.txt";
+	int fixedSize = 100;
+	string filename = problemDir + std::to_string(fixedSize) + dataset + modelFile;
 
-		
-	}*/
-	double delta = 0.05;
+	Solver& solver = GreedySolver(); 
 
-	std::vector<int> test = std::vector<int>(); 
-	test.push_back(5000); 
-	test.push_back(10000);
-	test.push_back(50000);
-	test.push_back(100000);
-	for (int j = 0; j< test.size(); j++)
-	{
+	
+	if (PRINT_IN_FILE) cout << dataset << "--> processing file: " + filename << endl;;
+	TSP tspInstance; // read Problem 
+    tspInstance.read(filename.c_str(), fixedSize);
 
-		if (PRINT_EX_METHOD)
-			std::cout << "SIM_ANNEALIN SEARCH -- max temperature: " << test[j]
-			<< " delta: " << delta << std::endl;
-		SimAnnealingSolver solver = SimAnnealingSolver((double)test[j], delta);
-		TestExecution::ExecuteTest(solver);
-
+	TSPSolution aSolution(tspInstance); // build initial solution 
+	solver.initRnd(aSolution); // init RANDOM soultion
+	TSPSolution bestSolution(tspInstance); // build obj for best solution 
+	if (true) {
+		solver.solve(tspInstance, aSolution, bestSolution);
+		aSolution = bestSolution; 
 	}
-	if (PRINT_EX_METHOD) std::cout << "end SIM_ANNEALIN SEARCH" << std::endl << std::endl;
+
+	std::vector<double> test = {5000000000000.0, 10000000000.0}; 
+	for (int j = 0; j < test.size(); j++) {
+		std::cout << "SimAnnealingSolver TEST: temperature " << test[j] << " delta: " << 0.005 << std::endl; 
+		solver =  SimAnnealingSolver(test[j], 0.000005);// cooling rate 
+		results.push_back(dataset + ";" + solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
+		if (VERBOSE) {
+
+			cout << "Solved problem --  size:  " << tspInstance.n << std::endl;
+			std::cout << "FROM solution: ";
+
+			std::cout << "(Lenght value : " << solver.solutionLengthValue(aSolution, tspInstance) << ")\n";
+			std::cout << "TO   solution: ";
+			std::cout << "(Lenght value : " << solver.solutionLengthValue(bestSolution, tspInstance) << ")\n";
+			cout << "------------------------------------------" << std::endl;
+
+		}
+	}
+				
+//	writeResults("data\\results\\out\\SIMANNEALING"+ std::string(".txt"));
+	
 }
 
 void TestExecution::ExecuteTestOnStrightGREEDYLine_SEARCH() {

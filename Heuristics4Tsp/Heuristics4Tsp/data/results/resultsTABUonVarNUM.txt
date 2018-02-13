@@ -1,0 +1,8 @@
+RAND100;Solution;4558.003007;Problem size; 100;Time; 0.000037;GREEDY
+RAND100;Solution;4558.003007;Problem size; 100;Time; 0.000033;GREEDY
+RAND100;Solution;1136.599521;Problem size; 100;Time; 0.002517;TSEARCH; ListLenght; 10000; MaxIter;100000;
+RAND100;Solution;1136.599521;Problem size; 100;Time; 0.003982;TSEARCH; ListLenght; 10000; MaxIter;5100000;
+RAND100;Solution;1136.599521;Problem size; 100;Time; 0.006123;TSEARCH; ListLenght; 10000; MaxIter;10100000;
+RAND100;Solution;1136.599521;Problem size; 100;Time; 0.003665;TSEARCH; ListLenght; 10000000; MaxIter;100000;
+RAND100;Solution;1136.599521;Problem size; 100;Time; 0.004135;TSEARCH; ListLenght; 10000000; MaxIter;5100000;
+RAND100;Solution;1136.599521;Problem size; 100;Time; 0.005659;TSEARCH; ListLenght; 10000000; MaxIter;10100000;

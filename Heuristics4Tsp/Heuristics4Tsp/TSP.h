@@ -56,7 +56,7 @@ public:
 	{
 		Point a = nodes.at(i);
 		Point b = nodes.at(j);
-		return (((a.x - b.x)*(a.x - b.x)) + ((a.y - b.y)*(a.y - b.y)));
+		return std::sqrt(std::pow((a.x - b.x), 2) + std::pow((a.y - b.y), 2));
 	}
 
 	double angle(int i, int j) const

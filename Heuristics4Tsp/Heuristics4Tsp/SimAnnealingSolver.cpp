@@ -20,30 +20,38 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 		// Get a random positions in the tour
 		int tourPos1, tourPos2; 
 
-		tourPos1 = tourPos2 = randomINT(0, tsp.n);
-		while(tourPos1== tourPos2) tourPos2 = randomINT(0, tsp.n);
+		//tourPos1 = randomINT(0, tsp.n);
+		//
+		//tourPos2 = randomINT(0, tsp.n);
 
+		tourPos1 = position % tsp.n;
+		
+		tourPos2 = (position+ rand()) & tsp.n;
+		position+= 10 ; 
+		
 		TSPMove m(tourPos1, tourPos2); 
 		if(verbose) std::cout << "move : " << m.from << " -> " << m.to << std::endl; 
 		// Swap them
 		this->swap(newSol, m); 
 
 		// Get energy of solutions
-		double currPathLenght = solutionLengthValue(currSol, tsp);
+		double bestPathLenght = solutionLengthValue(bestSol, tsp);
 		double neighPathLenght = solutionLengthValue(newSol, tsp);
 
 
 		// Decide if we should accept the neighbour
-		double prob = acceptanceProbability(currPathLenght, neighPathLenght, T); 
-		if (prob > randomDOUBLE(0.0, 1.0)) {
+		double prob = acceptanceProbability(bestPathLenght, neighPathLenght, T);
+		if (prob > randProb()) {
 			currSol = newSol; 
-			if(verbose) std::cout << " new solution accepted: prob = " << prob << std::endl; 
+			//if(verbose) std::cout << " new accepted: prob = " << prob <<" L ="<< solutionLengthValue(currSol, tsp)<<std::endl;
 		}
 
 		// Keep track of the best solution found
-		if (solutionLengthValue(currSol, tsp) < solutionLengthValue(bestSol, tsp)) {
+		if (std::fabs(solutionLengthValue(currSol, tsp) - solutionLengthValue(bestSol, tsp))<1e-2) {
 			bestSol = currSol;
-			solValues.push_back(std::to_string(solutionLengthValue(bestSol, tsp))+"; "); 
+			double newBestValue = solutionLengthValue(bestSol, tsp); 
+			 std::cout << " ------------------------- improved L = " << newBestValue << std::endl;
+			solValues.push_back(std::to_string(solutionLengthValue(bestSol, tsp))+"; ");
 		}
 
 		// Cool system
@@ -51,7 +59,6 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 		if (verbose) std::cout << " temperature = " << temperature << std::endl;
 	}
 	
-	if (verbose) std::cout << "END EXECUTION" << std::endl; 
 	double endTime = getWallTime();
 	std::string problemSize = std::to_string(tsp.n);
 	std::string time = std::to_string(endTime - startTime);
@@ -62,9 +69,9 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 }
 
 
-double SimAnnealingSolver::acceptanceProbability(double currPathLenght, double neighPathLenght, double temperature) {
-	if (neighPathLenght < currPathLenght) 
+double SimAnnealingSolver::acceptanceProbability(double bestPathLenght, double neighPathLenght, double temperature) {
+	if ((neighPathLenght- bestPathLenght) < 0.01)
 		return 1.5;
 	// If the new solution is worse, calculate an acceptance probability
-	return std::exp((currPathLenght - neighPathLenght) / temperature);
+	return std::exp(-1*(neighPathLenght - bestPathLenght) / (temperature));
 }

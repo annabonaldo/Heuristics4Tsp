@@ -56,15 +56,20 @@ bool Solver::initRnd(TSPSolution& sol) {
 
 int Solver::randomINT(int min, int max) //range : [min, max)
 {
-	srand(time(NULL)); //seeding for the first time only!
-	return min + rand() % ((max + 1) - min);
+	//srand(time()); //seeding for the first time only!
+	return min + (rand() % ((max + 1) - min));
 }
 
 double Solver::randomDOUBLE(double min, double max) //range : [min, max)
 {
-	srand(time(NULL)); //seeding for the first time only
+	
+	srand(rand()); //seeding for the first time only
 	float r = (float)rand() / (float)RAND_MAX;
 	return min + r * (max - min);
 }
 
+double Solver::randProb() //range : [0, 1)
+{
+	return (double)rand() / (RAND_MAX + 1.0);
+}
 
