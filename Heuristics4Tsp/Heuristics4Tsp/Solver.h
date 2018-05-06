@@ -55,8 +55,10 @@ public:
 	}
 
 	virtual std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) = 0; 
+	void optimize2opt(const TSP& tsp, TSPSolution& bestSol); 
 	virtual std::string filename() = 0;
 	virtual bool isLowPerformance() { return false;}
+
 	std::vector<std::string> solValues;
 
 protected:

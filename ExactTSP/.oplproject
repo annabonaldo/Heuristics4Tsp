@@ -7,6 +7,12 @@
 			<ref name="ESAME.dat" type="data">
 			</ref>
 		</config>
+		<config default="false" name="TSP" category="opl">
+			<ref name="Solver.mod" type="model">
+			</ref>
+			<ref name="problem.dat" type="data">
+			</ref>
+		</config>
 	</configs>
 	
 </project>

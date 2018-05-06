@@ -22,7 +22,7 @@ public:
 
 protected:
 	
-	double       findBestNeighbor(const TSP& tsp, const TSPSolution& currSol, int currIter, TSPMove& move);
+	double findBestNeighbor(const TSP& tsp, const TSPSolution& currSol, int currIter, double aspiration, TSPMove& move); 
 	int maxIter;
 	int tabuLength;
 	std::vector<int>  tabuList;

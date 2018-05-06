@@ -45,6 +45,12 @@
     <ClInclude Include="SimAnnealingSolver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="TSPViewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DataFileParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -75,6 +81,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="SimAnnealingSolver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TSPViewer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataFileParser.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

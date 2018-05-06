@@ -18,21 +18,15 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 		TSPSolution newSol = currSol; 
 		srand(time(NULL));
 		// Get a random positions in the tour
-		int tourPos1, tourPos2; 
-
-		//tourPos1 = randomINT(0, tsp.n);
-		//
-		//tourPos2 = randomINT(0, tsp.n);
-
-		tourPos1 = position % tsp.n;
-		
+		int tourPos1, tourPos2;
+		tourPos1 = position % tsp.n;	
 		tourPos2 = (position+ rand()) & tsp.n;
-		position+= 10 ; 
-		
+		position+= rand() ; 
 		TSPMove m(tourPos1, tourPos2); 
 		if(verbose) std::cout << "move : " << m.from << " -> " << m.to << std::endl; 
 		// Swap them
 		this->swap(newSol, m); 
+		
 
 		// Get energy of solutions
 		double bestPathLenght = solutionLengthValue(bestSol, tsp);

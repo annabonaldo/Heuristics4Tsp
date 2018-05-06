@@ -1,0 +1,2 @@
+GRID;Solution;467.610269;Problem size; 100;Time; 0.000022;GREEDY
+RAND100;Solution;4558.003007;Problem size; 100;Time; 0.000016;GREEDY

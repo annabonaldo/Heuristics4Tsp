@@ -10,6 +10,7 @@
 
 class TSP
 {
+public:
 	struct Point {
 		double x;
 		double y;
@@ -17,7 +18,7 @@ class TSP
 		Point(double a, double b) : x(a), y(b) {}
 	 };
 
-public:
+
 	TSP() : n(0), infinite(1e10) { }
 	int n; //number of nodes
 	std::vector< std::vector<double> > cost;
@@ -49,6 +50,25 @@ public:
 		}
 
 	} 
+
+	void read(const char* filename)
+	{
+		std::ifstream in(filename);
+		// read size
+		in >> n;
+		std::cout << "number of nodes n = " << n << std::endl;
+		// read costs
+		cost.resize(n);
+		for (int i = 0; i < n; i++) {
+			cost[i].reserve(n);
+			for (int j = 0; j < n; j++) {
+				double c;
+				in >> c;
+				cost[i].push_back(c);
+			}
+		}
+		in.close();
+	}
 
 	double infinite; // infinite value (an upper bound on the value of any feasible solution
 	

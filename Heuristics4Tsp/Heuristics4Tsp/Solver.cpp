@@ -2,6 +2,7 @@
 #include "Solver.h"
 #include <iostream>
 #include <string>
+#include <set>
 using namespace std;
 
 double Solver::getWallTime()
@@ -18,7 +19,27 @@ double Solver::getWallTime()
 	return (double)time.QuadPart / freq.QuadPart;
 }
 
+void optimize2opt(const TSP& tsp, TSPSolution& bestSol)
+{
+	//double minchange = 0;
 
+	TSPSolution tspSol(bestSol);
+
+	//for (int i = 0; i < bestSol.sequence.size()-1; i++) {
+	//	for (int j = i + 1; j < bestSol.sequence.size(); j ++) {
+	//		TSPMove m1 = TSPMove(bestSol.sequence[i], bestSol.sequence[i+1]);
+	//		TSPMove m2 = TSPMove(bestSol.sequence[j], bestSol.sequence[j + 1]);
+
+	//		double change; 
+	//		change = tsp.distance(m1.from, m1.to) + tsp.distance(m2.from, m2.to)
+	//			- tsp.distance(m1.from, m2.from) - tsp.distance(m1.to, m2.to); 
+	//		if (change > 0.01)	//		{
+	//			tspSol.sequence[m1.from] = m2.to; 
+
+	//		for (int k = m1.from+1;  <= move.to; ++k) {
+	//				tspSol.sequence[k] = tmpSol.sequence[move.to - (k - move.from)];
+	//			}	//		}	//			 	//	}	//}
+}
 
 TSPSolution& Solver::swap(TSPSolution& tspSol, const TSPMove& move)
 {
@@ -31,8 +52,13 @@ TSPSolution& Solver::swap(TSPSolution& tspSol, const TSPMove& move)
 
 double Solver::solutionLengthValue(const TSPSolution& sol, const TSP& tsp) const {
 	double total = 0.0;
+	std::set<int> repeat = std::set<int>(); 
 	for (int i = 0; i < sol.sequence.size() - 1; ++i) {
 		int from = sol.sequence[i];
+		if (repeat.find(from) == repeat.end())
+			repeat.insert(from);
+		else
+			cerr << "ERROR repeated node!! Node repeated: " << from <<std::endl;
 		int to = sol.sequence[i + 1];
 		total += tsp.cost[from][to];
 	}

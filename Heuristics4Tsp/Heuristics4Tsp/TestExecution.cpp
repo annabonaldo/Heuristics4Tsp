@@ -4,6 +4,7 @@
 #include "GreedySolver.h"
 #include "SimAnnealingSolver.h"
 #include "StrightGreedyLineSolver.h"
+#include "TSPViewer.h"
 #include <string>
 #include <iostream>
 #include <filesystem>
@@ -107,20 +108,20 @@ void TestExecution::ExecuteTestFIXED_PROBLEM_SIZE(Solver& solver)
 	{
 		std::string problemDir = "data\\" + *dataset + "dataset\\";
 		std::string modelFile = "model.txt";
-		//for (int i = 5; i <= 200; i = i + 5)
-		int i = 100; 
+		int problem_size = 100; 
 		{
 
-			string filename = problemDir + std::to_string(i) + *dataset + modelFile;
+			string filename = problemDir + std::to_string(problem_size) + *dataset + modelFile;
 			if (PRINT_IN_FILE) cout << *dataset << "--> processing file: " + filename << endl;;
 			TSP tspInstance; // read Problem 
-			tspInstance.read(filename.c_str(), i);
+			tspInstance.read(filename.c_str(), problem_size);
 
 			TSPSolution aSolution(tspInstance); // build initial solution 
 			solver.initRnd(aSolution); // init RANDOM soultion
 			TSPSolution bestSolution(tspInstance); // build obj for best solution 
 			results.push_back(*dataset + ";" + solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
-
+			TSPViewer::visualizeTSP(aSolution, tspInstance, solver.name()+" before computing TSP", getViewerScaleFactor(*dataset));
+			TSPViewer::visualizeTSP(bestSolution, tspInstance, solver.name()+" TSP solution", getViewerScaleFactor(*dataset));
 			if (VERBOSE) {
 
 				cout << "Solved problem --  size:  " << tspInstance.n << std::endl;
@@ -133,6 +134,7 @@ void TestExecution::ExecuteTestFIXED_PROBLEM_SIZE(Solver& solver)
 
 			}
 		}
+		
 	}
 
 }
@@ -197,17 +199,9 @@ void TestExecution::ExecuteTestLowPerformamcesFIXED_PROBLEM_SIZE(Solver& solver)
 {
 	PRINT_IN_FILE = true;
 	std::vector < std::string> datasets;
-	if (GRIDactive)     datasets.push_back("GRID");
-	if (RANDactive) {
-		//datasets.push_back("RAND50");
-		datasets.push_back("RAND100");
-		//datasets.push_back("RAND500");
-	}
-
-	if (SEMIGRIDactive) {
-		datasets.push_back("SEMIGRID");
-	}
-
+	if (GRIDactive)     { datasets.push_back("GRID"); }
+	if (RANDactive)     {datasets.push_back("RAND100");}
+	if (SEMIGRIDactive) {datasets.push_back("SEMIGRID");}
 
 
 	std::vector<std::string>::iterator dataset = datasets.begin();
@@ -217,7 +211,7 @@ void TestExecution::ExecuteTestLowPerformamcesFIXED_PROBLEM_SIZE(Solver& solver)
 		std::string problemDir = "data\\" + *dataset + "dataset\\";
 		std::string modelFile = "model.txt";
 		if (PRINT_DATASET) std::cout << "Working on dataset: " << *dataset << std::endl;
-		//for (int i = 5; i <= 200; i = i + 5)
+
 		int i = 100; 
 		{
 
@@ -230,7 +224,7 @@ void TestExecution::ExecuteTestLowPerformamcesFIXED_PROBLEM_SIZE(Solver& solver)
 			solver.initRnd(aSolution); // init RANDOM soultion
 			TSPSolution bestSolution(tspInstance); // build obj for best solution 
 			results.push_back(*dataset + ";" + solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
-
+			
 			if (VERBOSE) {
 
 				cout << "Solved problem --  size:  " << tspInstance.n << std::endl;
@@ -319,7 +313,68 @@ void TestExecution::ExecuteTestOnGREEDY_SEARCH()
 
 void TestExecution::ExecuteTestOnSIM_ANNEALING() {
 	if (PRINT_EX_METHOD) std::cout << "SIM_ANNEALIN SEARCH ----------------------------------------------"<< std::endl;
+	if (ExecuteTestALL_PROBLEM_SIZE)
+	{
+		std::vector<double> test = { 500000.0, 100000.0 };
+		for (int j = 0; j < test.size(); j++) {
+			double delta = 0.0005;
+			if (PRINT_EX_METHOD)
+				std::cout << "SIM_ANNEALIN SEARCH -- max temperature: " << test[j]
+				<< " delta: " << delta << std::endl;
+			SimAnnealingSolver solver = SimAnnealingSolver(test[j], delta);
+			TestExecution::ExecuteTest(solver);
+
+		    delta = 0.05;
+			if (PRINT_EX_METHOD)
+				std::cout << "SIM_ANNEALIN SEARCH -- max temperature: " << test[j]
+				<< " delta: " << delta << std::endl;
+			solver = SimAnnealingSolver(test[j], delta);
+			TestExecution::ExecuteTest(solver);
+
+		}
+	}
+	else
+	{
+		std::string dataset = "RAND100";
+		std::string problemDir = "data\\" + dataset + "dataset\\";
+		std::string modelFile = "model.txt";
+		int fixedSize = 100;
+		string filename = problemDir + std::to_string(fixedSize) + dataset + modelFile;
+
+		Solver& solver = GreedySolver();
+
+
+		if (PRINT_IN_FILE) cout << dataset << "--> processing file: " + filename << endl;;
+		TSP tspInstance; // read Problem 
+		tspInstance.read(filename.c_str(), fixedSize);
+		TSPSolution aSolution(tspInstance); // build initial solution 
+		solver.initRnd(aSolution); // init RANDOM soultion
+		TSPSolution bestSolution(tspInstance); // build obj for best solution 
+
+		std::vector<double> test = { 5000000000000.0, 10000000000.0 };
+		for (int j = 0; j < test.size(); j++) {
+			std::cout << "SimAnnealingSolver TEST: temperature " << test[j] << " delta: " << 0.005 << std::endl;
+			solver = SimAnnealingSolver(test[j], 0.000005);// cooling rate 
+			results.push_back(dataset + ";" + solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
+			if (VERBOSE) {
+
+				cout << "Solved problem --  size:  " << tspInstance.n << std::endl;
+				std::cout << "FROM solution: ";
+
+				std::cout << "(Lenght value : " << solver.solutionLengthValue(aSolution, tspInstance) << ")\n";
+				std::cout << "TO   solution: ";
+				std::cout << "(Lenght value : " << solver.solutionLengthValue(bestSolution, tspInstance) << ")\n";
+				cout << "------------------------------------------" << std::endl;
+
+			}
+		}
+	}
 	
+}
+
+void TestExecution::ExecuteTestOnSIM_ANNEALINGGreedyOPT() {
+	if (PRINT_EX_METHOD) std::cout << "SIM_ANNEALIN SEARCH ----------------------------------------------" << std::endl;
+
 	//std::vector<double> test = {500000.0, 100000.0}; 
 	//for (int j = 0; j < test.size(); j++) {
 	//
@@ -340,32 +395,32 @@ void TestExecution::ExecuteTestOnSIM_ANNEALING() {
 	//
 	//	
 	//}
-	std::string dataset = "RAND100"; 
+	std::string dataset = "RAND100";
 
 	std::string problemDir = "data\\" + dataset + "dataset\\";
 	std::string modelFile = "model.txt";
 	int fixedSize = 100;
 	string filename = problemDir + std::to_string(fixedSize) + dataset + modelFile;
 
-	Solver& solver = GreedySolver(); 
+	Solver& solver = GreedySolver();
 
-	
+
 	if (PRINT_IN_FILE) cout << dataset << "--> processing file: " + filename << endl;;
 	TSP tspInstance; // read Problem 
-    tspInstance.read(filename.c_str(), fixedSize);
+	tspInstance.read(filename.c_str(), fixedSize);
 
 	TSPSolution aSolution(tspInstance); // build initial solution 
 	solver.initRnd(aSolution); // init RANDOM soultion
 	TSPSolution bestSolution(tspInstance); // build obj for best solution 
 	if (true) {
 		solver.solve(tspInstance, aSolution, bestSolution);
-		aSolution = bestSolution; 
+		aSolution = bestSolution;
 	}
 
-	std::vector<double> test = {5000000000000.0, 10000000000.0}; 
+	std::vector<double> test = { 5000000000000.0, 10000000000.0 };
 	for (int j = 0; j < test.size(); j++) {
-		std::cout << "SimAnnealingSolver TEST: temperature " << test[j] << " delta: " << 0.005 << std::endl; 
-		solver =  SimAnnealingSolver(test[j], 0.000005);// cooling rate 
+		std::cout << "SimAnnealingSolver TEST: temperature " << test[j] << " delta: " << 0.005 << std::endl;
+		solver = SimAnnealingSolver(test[j], 0.000005);// cooling rate 
 		results.push_back(dataset + ";" + solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
 		if (VERBOSE) {
 
@@ -379,9 +434,8 @@ void TestExecution::ExecuteTestOnSIM_ANNEALING() {
 
 		}
 	}
-				
-//	writeResults("data\\results\\out\\SIMANNEALING"+ std::string(".txt"));
-	
+
+
 }
 
 void TestExecution::ExecuteTestOnStrightGREEDYLine_SEARCH() {
@@ -412,4 +466,14 @@ void TestExecution::ExecuteTestOnStrightGREEDYLine_SEARCH() {
 			}
 		}
 	if (PRINT_EX_METHOD) std::cout << "end GREADY  STRIGHT LINE SEARCH" << std::endl << std::endl;
+}
+
+
+int TestExecution::getViewerScaleFactor(std::string  dataset) {
+	if (dataset == "RAND50")  return 10; 
+	if (dataset == "RAND100") return 5; 
+	if (dataset == "RAND500") return 1; 
+	if (dataset == "GRID")    return 5 ;
+	if (dataset == "SEMIGRID") return 1;
+
 }

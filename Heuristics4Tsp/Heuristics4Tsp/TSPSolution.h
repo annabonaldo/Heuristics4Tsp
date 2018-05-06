@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include <iostream>
-
+#include <map>
 #include "TSP.h"
 
 class TSPSolution
@@ -9,7 +9,8 @@ class TSPSolution
 public:
 	std::vector<int>		sequence;
 	std::string             filename;
-public:
+
+	TSPSolution(){}
 	/** Constructor
 	* build a standard solution as the sequence <0, 1, 2, 3 ... n-1, 0>
 	* @param tsp TSP instance
@@ -30,9 +31,20 @@ public:
 			sequence.push_back(tspSol.sequence[i]);
 		}
 	}
-public:
+
+	TSPSolution(std::string filename, std::vector<int> & path) {
+		this->filename = filename;
+		sequence.clear();
+		for (int j = 0; j < path.size(); j++) {
+			std::cout << path.at(j) << " ";
+			sequence.push_back(path.at(j));
+		}
+		print(); 
+		
+	}
 
 	void print(void) const{
+		std::cout << "Prining solution data"; 
 		for (int i = 0; i < sequence.size(); i++) {
 			std::cout << sequence[i] << " ";
 		}
