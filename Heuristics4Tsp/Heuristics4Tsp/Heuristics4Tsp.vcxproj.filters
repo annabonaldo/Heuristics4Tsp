@@ -48,7 +48,7 @@
     <ClInclude Include="TSPViewer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DataFileParser.h">
+    <ClInclude Include="DatasetGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -86,7 +86,7 @@
     <ClCompile Include="TSPViewer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DataFileParser.cpp">
+    <ClCompile Include="DatasetGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

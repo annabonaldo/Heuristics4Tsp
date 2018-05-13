@@ -154,7 +154,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="DataFileParser.h" />
+    <ClInclude Include="DatasetGenerator.h" />
     <ClInclude Include="GreedySolver.h" />
     <ClInclude Include="SimAnnealingSolver.h" />
     <ClInclude Include="Solver.h" />
@@ -168,7 +168,7 @@
     <ClInclude Include="TSPViewer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="DataFileParser.cpp" />
+    <ClCompile Include="DatasetGenerator.cpp" />
     <ClCompile Include="GreedySolver.cpp" />
     <ClCompile Include="Heuristics4Tsp.cpp" />
     <ClCompile Include="SimAnnealingSolver.cpp" />
