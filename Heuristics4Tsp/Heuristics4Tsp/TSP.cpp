@@ -38,8 +38,8 @@ void TSP::read(const char* filename)
 
 void TSP::save(std::string filename)
 {
-	saveCosts((filename+"Costs.txt").c_str());
-	saveNodes((filename+"Nodes.txt").c_str());
+	saveCosts((filename+"Costs.dat").c_str());
+	saveNodes((filename+"Nodes.csv").c_str());
 }
 
 void  TSP::saveCosts(const char* filename)
@@ -48,7 +48,7 @@ void  TSP::saveCosts(const char* filename)
 	int rows = cost.size();
 	if (rows > 0) {
 		int size = rows*rows;
-		out << "n = " << size << ";" << std::endl;
+		out << "n = " << rows << ";" << std::endl;
 		out << "A = " << "[" << std::endl;
 		for (int i = 0; i < rows; i++)
 		{
@@ -57,8 +57,8 @@ void  TSP::saveCosts(const char* filename)
 			int j = 0;
 			for (j = 0; j < cols; j++)
 			{
-				out << cost[i][j];
-				if (i == j) out << "( == )";
+				out << (int)cost[i][j];
+				if (i == j) out; 
 				if (j < cols - 1) out << ", ";
 			}
 			if (i < j)
@@ -78,9 +78,9 @@ void  TSP::saveNodes(const char* filename)
 	std::ofstream out(filename);
 	out << size << std::endl;
 
-	char* separator = ",";
+	char* separator = ";";
 	for (int i = 0; i< size; i++)
-		out << nodes[i].x << *separator << nodes[i].y << std::endl;
+		out << nodes[i].x << *separator << nodes[i].y << *separator<<std::endl;
 
 }
 
