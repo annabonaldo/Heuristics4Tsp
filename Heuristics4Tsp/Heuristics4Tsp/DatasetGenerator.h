@@ -2,6 +2,7 @@
 #include <vector>
 #include "TSP.h"
 #include <map>
+#include "Dataset.h"
 class DatasetGenerator
 {
 public:
@@ -11,5 +12,6 @@ public:
 	static void generateGrid(int n, double distanceH, double distanceW, int pointsH, int pointsW, std::string name, TSP & tsp);
 
 	static void readDataset(std::string filename, TSP & tsp);
+	static std::vector<Dataset> datasets; 
 };
 

@@ -5,8 +5,8 @@ class Dataset
 {
 public:
 	enum dataset {
-		randomN, 
-		constGrid
+		dataset_randomN, 
+		dataset_constGrid
 	};
 
 	std::map<std::string, std::string> input_files; 

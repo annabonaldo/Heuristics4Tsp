@@ -6,29 +6,14 @@
 #include <string>
 
 std::map<std::string, TSP> DatasetGenerator::DatasetPool = std::map<std::string, TSP>();
+std::vector<Dataset> DatasetGenerator::datasets = std::vector<Dataset>(); 
 
 void DatasetGenerator::generate()
 {
-	int samplePool = 10; 
-
-	TSP tsp1; 
-	std::string key = "RANDOM10-sample" + std::to_string(0);
-	generateRandom(10, 10, key,  tsp1);
-	/*
-	for (int i = 0; i < samplePool; i++) {
-		std::vector<TSP::Point> set1;
-		generateRandom(10, 10, set1);
-		DatasetPool.insert(std::pair<std::string, std::vector<TSP::Point>>("RANDOM10-sample" + std::to_string(i), set1));
-
-		std::vector<TSP::Point> set2;
-		generateRandom(100, 100, set2);
-		DatasetPool.insert(std::pair<std::string, std::vector<TSP::Point>>("RANDOM100-sample" + std::to_string(i), set2));
-
-		std::vector<TSP::Point> set3;
-		generateRandom(1000, 1000, set3);
-		DatasetPool.insert(std::pair<std::string, std::vector<TSP::Point>>("RANDOM1000-sample"+std::to_string(i), set2);
-	}*/
+	datasets.push_back(Dataset::randomNDataset()); 
+	datasets.push_back(Dataset::constGridDataset());
 }
+
 
 void DatasetGenerator::generateRandom(int n, int radius, std::string name, TSP & tsp)
 {

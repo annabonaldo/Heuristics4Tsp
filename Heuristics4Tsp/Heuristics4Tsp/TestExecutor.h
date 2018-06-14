@@ -9,6 +9,6 @@ public:
 	~TestExecutor();
 
 	void ExecuteTest(Solver & solver, Dataset dataset, std::string  key, int problem_size); 
-	void onNewSolutionResult(std::string outfile, std::string line);
+	void writeResult(std::string outfile, std::string line);
 	static const std::string TestExecutor::currentDateTime(); 
 }; 

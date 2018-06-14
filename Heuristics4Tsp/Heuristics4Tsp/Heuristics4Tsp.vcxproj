@@ -154,20 +154,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Dataset.h" />
     <ClInclude Include="DatasetGenerator.h" />
     <ClInclude Include="GreedySolver.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="SimAnnealingSolver.h" />
     <ClInclude Include="Solver.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="StrightGreedyLineSolver.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TestExecution.h" />
+    <ClInclude Include="TestExecutor.h" />
     <ClInclude Include="TSearchSolver.h" />
     <ClInclude Include="TSP.h" />
     <ClInclude Include="TSPSolution.h" />
     <ClInclude Include="TSPViewer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Dataset.cpp" />
     <ClCompile Include="DatasetGenerator.cpp" />
     <ClCompile Include="GreedySolver.cpp" />
     <ClCompile Include="Heuristics4Tsp.cpp" />
@@ -181,10 +185,14 @@
     </ClCompile>
     <ClCompile Include="StrightGreedyLineSolver.cpp" />
     <ClCompile Include="TestExecution.cpp" />
+    <ClCompile Include="TestExecutor.cpp" />
     <ClCompile Include="TSearchSolver.cpp" />
     <ClCompile Include="TSP.cpp" />
     <ClCompile Include="TSPSolution.cpp" />
     <ClCompile Include="TSPViewer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Heuristics4Tsp.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
