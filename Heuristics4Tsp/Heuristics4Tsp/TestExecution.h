@@ -19,8 +19,10 @@ public:
 	static void ExecuteTestOnTABU_SEARCH(); 
 	static void ExecuteTestOnGREEDY_SEARCH(); 
 	static void ExecuteTestOnSIM_ANNEALING(); 
+
 	static void ExecuteTestOnSIM_ANNEALINGGreedyOPT(); 
 	static void ExecuteTestOnStrightGREEDYLine_SEARCH(); 
+
 	static void ExecuteTestALL_PROBLEM_SIZE(Solver& solver);
 	static void ExecuteTestFIXED_PROBLEM_SIZE(Solver& solver);
 
@@ -38,7 +40,6 @@ public:
 private: 
 	static std::vector < std::string> datasets;
 	static std::vector<std::string> results;
-
 	static int getViewerScaleFactor(std::string  dataset); 
 	
 	
