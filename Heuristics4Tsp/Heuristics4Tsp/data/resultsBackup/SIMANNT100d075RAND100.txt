@@ -1,1 +1,0 @@
-RAND100;Solution;395888.000000;Problem size; 75;Time; 5.988973;SIMANNEALING; Temperature;100;Delta;0;
