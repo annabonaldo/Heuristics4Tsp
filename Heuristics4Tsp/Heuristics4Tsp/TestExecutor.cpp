@@ -14,7 +14,6 @@ TestExecutor::TestExecutor()
 {
 }
 
-
 TestExecutor::~TestExecutor()
 {
 }
@@ -71,16 +70,14 @@ void TestExecutor::ExecuteTest(Solver & solver, Dataset & dataset, std::string  
 	//TSPViewer::visualizeTSP(aSolution, tspInstance, solver.name() + " before computing TSP", 1);
     TSPViewer::drawTSP(bestSolution, tspInstance, "dataReports\\paths\\"+solver.name() + dataset.name +key,200/problem_size, 20);
 	
-	if (VERBOSE) {
-
+	if (VERBOSE) 
+	{
 		std::cout << "Solved problem --  size:  " << tspInstance.n << std::endl;
 		std::cout << "FROM solution: ";
-
 		std::cout << "(Lenght value : " << solver.solutionLengthValue(aSolution, tspInstance) << ")\n";
 		std::cout << "TO   solution: ";
 		std::cout << "(Lenght value : " << solver.solutionLengthValue(bestSolution, tspInstance) << ")\n";
 		std::cout << "------------------------------------------" << std::endl;
-
 	}
 }
 
