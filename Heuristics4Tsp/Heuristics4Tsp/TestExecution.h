@@ -33,7 +33,7 @@ public:
 
 	static void writeResults(std::string outFile);
 	static void writeData(std::vector<std::string>& data, std::string outFile); 
-
+	
 	
 
 	
@@ -42,11 +42,7 @@ private:
 	static std::vector<std::string> results;
 	static int getViewerScaleFactor(std::string  dataset); 
 	
-	
-	/*
-	clock_t t1, t2;
-	t1 = clock();
-	*/
+
 		
 };
 

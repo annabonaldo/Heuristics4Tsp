@@ -38,11 +38,13 @@ void TSPViewer::visualizeTSP(const TSPSolution&  solution, const TSP& tsp , std:
 
 		
 			int pathsize = points.size();
-			Point pt0 = points[0];
+			
 
 			// draw path lines 
 			for (int i = 1; i < pathsize; i++)
 			{
+				
+				Point pt0 = points[0];
 				Point pt = points[i];
 				line(img, pt0, pt, Scalar(0, 255, 0), 1, LINE_AA);
 				pt0 = pt;

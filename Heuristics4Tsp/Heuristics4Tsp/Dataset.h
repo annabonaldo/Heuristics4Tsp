@@ -8,7 +8,7 @@ public:
 		dataset_randomN, 
 		dataset_constGrid
 	};
-
+	std::map<std::string, int> input_sizes;
 	std::map<std::string, std::string> input_files; 
 	std::string output_stats; 
 

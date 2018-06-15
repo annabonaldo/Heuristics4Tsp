@@ -51,6 +51,7 @@ std::string GreedySolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPS
 		double endTime = getWallTime();
 		string problemSize = to_string(tsp.n);
 		string time = to_string(endTime - startTime);
+	 
 		string solSize = to_string(solutionLengthValue(bestSol, tsp));
 		
 		return getLine(solSize, problemSize, time);

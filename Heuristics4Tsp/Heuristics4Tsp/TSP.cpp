@@ -4,17 +4,21 @@
 void TSP::read(const char* filename, int size)
 {
 	std::ifstream in(filename);
+	std::cout << filename << std::endl;
+	in.open(filename);
 	cost.resize(size);
+	std::vector <Point> points;
 	for (int i = 0; i < size; i++) {
 		cost[i].reserve(size);
-		double x; in >> x;
-		double y; in >> y;
-		nodes.push_back(Point(x, y));
-		//std::cout << "[" << x << " , " << y << "] ";
+		int x; in >> x;
+		int y; in >> y;
+		points.push_back(Point(x, y));
+		//	std::cout << "[" << x << " , " << y << "] ";
 	}
 	in.close();
+	init(points);
 	n = nodes.size();
-	setCosts();
+	//setCosts();
 }
 
 void TSP::read(const char* filename)
@@ -38,8 +42,8 @@ void TSP::read(const char* filename)
 
 void TSP::save(std::string filename)
 {
-	saveCosts((filename+"Costs.dat").c_str());
-	saveNodes((filename+"Nodes.csv").c_str());
+	saveCosts((filename + "Costs.dat").c_str());
+	saveNodes((filename + "Nodes.csv").c_str());
 }
 
 void  TSP::saveCosts(const char* filename)
@@ -58,7 +62,7 @@ void  TSP::saveCosts(const char* filename)
 			for (j = 0; j < cols; j++)
 			{
 				out << (int)cost[i][j];
-				if (i == j) out; 
+				if (i == j) out;
 				if (j < cols - 1) out << ", ";
 			}
 			if (i < j)
@@ -79,8 +83,8 @@ void  TSP::saveNodes(const char* filename)
 	out << size << std::endl;
 
 	char* separator = ";";
-	for (int i = 0; i< size; i++)
-		out << nodes[i].x << *separator << nodes[i].y << *separator<<std::endl;
+	for (int i = 0; i < size; i++)
+		out << nodes[i].x << *separator << nodes[i].y << *separator << std::endl;
 
 }
 
@@ -94,17 +98,24 @@ void  TSP::init(std::vector<Point> & points) {
 void  TSP::setCosts()
 {
 	int size = nodes.size();
-	cost.resize(size);
+	cost.clear(); 
+//	cost.resize(size);
 	for (int i = 0; i < size; i++) {
-		cost[i].resize(size);
+		cost.push_back(std::vector<double>()); 		
 		for (int j = 0; j < size; j++)
 		{
-			if (j != i)
-				cost[i][j] = distance(i, j);
 
-			else
-				cost[i][j] = 0.0;
+		//	if (j != i)
+			{
+			
+			//	std::cout << distance(i, j) << " ";
+				cost[i].push_back(distance(i, j));
+				
+			}
+		//	else
+			//	cost[i][j] = 0.0;
 		}
+		std::cout << std::endl;
 	}
 }
 
@@ -112,7 +123,10 @@ double TSP::distance(int i, int j) const
 {
 	Point a = nodes.at(i);
 	Point b = nodes.at(j);
-	return std::sqrt(std::pow((a.x - b.x), 2) + std::pow((a.y - b.y), 2));
+
+	double distance =  std::sqrt(std::pow((a.x - b.x), 2) + std::pow((a.y - b.y), 2));
+	std::cout <<"["<<i<< ", "<< j << "]-- [" << a.x << ", " << a.y << "]-[" << b.x << ", " << b.y << "]  distance: " << distance <<std::endl;
+	return distance; 
 }
 
 double TSP::angle(int i, int j) const
