@@ -53,6 +53,8 @@ TSPSolution& Solver::swap(TSPSolution& tspSol, const TSPMove& move)
 double Solver::solutionLengthValue(const TSPSolution& sol, const TSP& tsp) const {
 	double total = 0.0;
 	std::set<int> repeat = std::set<int>(); 
+//	std::cout << "sequence size " << sol.sequence.size() << std::endl; 
+
 	for (int i = 0; i < sol.sequence.size() - 1; ++i) {
 		int from = sol.sequence[i];
 		if (repeat.find(from) == repeat.end())
@@ -60,6 +62,7 @@ double Solver::solutionLengthValue(const TSPSolution& sol, const TSP& tsp) const
 		else
 			cerr << "ERROR repeated node!! Node repeated: " << from <<std::endl;
 		int to = sol.sequence[i + 1];
+	//	std::cout << "step " << from << " - " <<to << " : " << tsp.cost[from][to] << std::endl; 
 		total += tsp.cost[from][to];
 	}
 

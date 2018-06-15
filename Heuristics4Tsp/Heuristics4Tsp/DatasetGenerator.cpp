@@ -71,13 +71,12 @@ void DatasetGenerator::readDataset(std::string filename, TSP & tsp, int size )
 	std::vector<TSP::Point> out;
 	std::ifstream fileStream(filename, std::ios::in);
 
-	char* separator = " ";
-	std::cout << "Read Dataset of size " << size << std::endl; 
+	//std::cout << "Read Dataset of size " << size << std::endl; 
 
 	while (!fileStream.eof() && size > 0) {
 		int x, y;
 		fileStream >> x >> y; 
-		std::cout << x << ", " << y << std::endl;
+		//std::cout << x << ", " << y << std::endl;
 		out.push_back(TSP::Point(x, y));
 		size--; 
 	}

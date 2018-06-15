@@ -35,6 +35,8 @@ public:
 	double distance(int i, int j) const; 
 	double angle(int i, int j) const; 
 	void printCosts(); 
+	void print(bool nodes, bool costs);
+	void printNodes();
 	
 	
 };

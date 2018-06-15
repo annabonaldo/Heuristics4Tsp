@@ -92,6 +92,7 @@ void  TSP::init(std::vector<Point> & points) {
 	nodes.clear();
 	for (int i = 0; i < points.size(); i++)
 		nodes.push_back(points[i]);
+	n = nodes.size(); 
 	setCosts();
 }
 
@@ -99,7 +100,6 @@ void  TSP::setCosts()
 {
 	int size = nodes.size();
 	cost.clear(); 
-//	cost.resize(size);
 	for (int i = 0; i < size; i++) {
 		cost.push_back(std::vector<double>()); 		
 		for (int j = 0; j < size; j++)
@@ -115,17 +115,24 @@ void  TSP::setCosts()
 		//	else
 			//	cost[i][j] = 0.0;
 		}
-		std::cout << std::endl;
 	}
 }
 
 double TSP::distance(int i, int j) const
 {
-	Point a = nodes.at(i);
-	Point b = nodes.at(j);
+	double distance = 0; 
+	
+	if (nodes.size() > i && nodes.size() > j) {
+		Point a = nodes.at(i);
+		Point b = nodes.at(j);
+		distance = std::sqrt(std::pow((a.x - b.x), 2) + std::pow((a.y - b.y), 2));
+		//std::cout <<"["<<i<< ", "<< j << "]-- [" << a.x << ", " << a.y << "]-[" << b.x << ", " << b.y << "]  distance: " << distance <<std::endl;
+	}
 
-	double distance =  std::sqrt(std::pow((a.x - b.x), 2) + std::pow((a.y - b.y), 2));
-	std::cout <<"["<<i<< ", "<< j << "]-- [" << a.x << ", " << a.y << "]-[" << b.x << ", " << b.y << "]  distance: " << distance <<std::endl;
+	else
+	{
+		std::cout << "ERROR WITH DISTANCES OF [" << i << ", " << j << "] "<< std::endl; 
+	}
 	return distance; 
 }
 
@@ -152,4 +159,22 @@ void  TSP::printCosts()
 
 		std::cout << std::endl;
 	}
+}
+
+void  TSP::printNodes()
+{
+	for (int i = 0; i < nodes.size(); i++)
+	{
+		TSP::Point point = nodes.at(i); 
+		std::cout << i << " -- [" <<point.x << ", " <<point.y <<"]"<< std::endl;
+	}
+}
+
+void  TSP::print(bool nodes, bool costs)
+{
+	std::cout << "TSP N size " <<this->n << std::endl; 
+	if (nodes)
+		printNodes(); 
+	if (costs)
+		printCosts(); 
 }

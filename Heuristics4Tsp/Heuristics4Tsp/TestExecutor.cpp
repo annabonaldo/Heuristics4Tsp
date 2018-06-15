@@ -23,7 +23,6 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 {
 	DatasetGenerator::generate(activeDatasets);
 
-
 	for (std::vector<ActiveTSPSolver>::iterator algIt = activeAlgorithms.begin(); algIt != activeAlgorithms.end(); algIt++)
 	{
 		ActiveTSPSolver activeSolver = *algIt; 
@@ -54,27 +53,23 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 	}
 }
 
-void TestExecutor::ExecuteTest(Solver & solver, Dataset dataset, std::string  key, int problem_size)
+void TestExecutor::ExecuteTest(Solver & solver, Dataset & dataset, std::string  key, int problem_size)
 {
-
-	
+	std::cout << "Execute Test  with solver: " << solver.name() << " -- dataset: " << dataset.name << " -- in: " << key << std::endl;
 	std::string input_filename = dataset.input_files.at(key); 
 
 	TSP tspInstance; // read Problem 
 	DatasetGenerator::readDataset(input_filename, tspInstance, problem_size); 
-	tspInstance.printCosts(); 
-//	tspInstance.read(input_filename.c_str(), problem_size);
+	
 
 	TSPSolution aSolution(tspInstance); // build initial solution 
 	solver.initRnd(aSolution); // init RANDOM soultion
 	TSPSolution bestSolution(tspInstance); // build obj for best solution 
+	std::string resultline = solver.solve(tspInstance, aSolution, bestSolution); 
+	writeResult(dataset.output_stats , dataset.name+ ";" + resultline);
 
-	writeResult(dataset.output_stats , dataset.name+ ";" + solver.solve(tspInstance, aSolution, bestSolution));
-
-	//results.push_back(*dataset + ";" + solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
-
-	TSPViewer::visualizeTSP(aSolution, tspInstance, solver.name() + " before computing TSP", 1);
-    //TSPViewer::visualizeTSP(bestSolution, tspInstance, solver.name() + " TSP solution", getViewerScaleFactor(*dataset));
+	//TSPViewer::visualizeTSP(aSolution, tspInstance, solver.name() + " before computing TSP", 1);
+    TSPViewer::drawTSP(bestSolution, tspInstance, "dataReports\\paths\\"+solver.name() + dataset.name +key,200/problem_size, 20);
 	
 	if (VERBOSE) {
 
@@ -121,6 +116,6 @@ void TestExecutor::writeResult(std::string outfile, std ::string line)
 const std::string TestExecutor::currentDateTime() {
 	
 
-	return "ven 14 06" ;
+	return "ven 15 06" ;
 }
 

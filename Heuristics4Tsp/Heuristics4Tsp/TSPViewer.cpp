@@ -16,11 +16,9 @@ TSPViewer::~TSPViewer()
 {
 }
 
-void TSPViewer::visualizeTSP(const TSPSolution&  solution, const TSP& tsp , std::string window_name, int scale ) {
+void TSPViewer::drawTSP(const TSPSolution&  solution, const TSP& tsp , std::string window_name, int scale, int offset, bool filedraw, bool show) {
 
-
-
-		Mat img(500, 500, CV_8UC3);
+		Mat img(250, 250, CV_8UC3);
 		RNG& rng = theRNG();
 	
 			char key;
@@ -28,7 +26,7 @@ void TSPViewer::visualizeTSP(const TSPSolution&  solution, const TSP& tsp , std:
 			for (int i = 0; i < tsp.n; i++)
 			{
 				TSP::Point point = tsp.nodes.at(solution.sequence.at(i)); 
-				points.push_back(Point(point.x*scale, point.y*scale)); 
+				points.push_back(Point(point.x*scale+offset, point.y*scale+offset)); 
 			}
 
 			img = Scalar::all(0);
@@ -38,19 +36,20 @@ void TSPViewer::visualizeTSP(const TSPSolution&  solution, const TSP& tsp , std:
 
 		
 			int pathsize = points.size();
-			
-
+			Point pt0 = points[0];
+			Point ptn = points[pathsize-1];
 			// draw path lines 
 			for (int i = 1; i < pathsize; i++)
-			{
-				
-				Point pt0 = points[0];
+			{	
 				Point pt = points[i];
 				line(img, pt0, pt, Scalar(0, 255, 0), 1, LINE_AA);
 				pt0 = pt;
 			}
-
-			imshow(window_name, img);
-			key = (char)waitKey();
-
+			line(img, points[pathsize-1], points[0], Scalar(0, 255, 0), 1, LINE_AA);
+			if (filedraw) imwrite(window_name + ".png", img);
+			if (show)
+			{
+				imshow(window_name, img);
+				key = (char)waitKey();
+			}
 	}

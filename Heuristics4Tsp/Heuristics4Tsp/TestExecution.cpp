@@ -120,8 +120,8 @@ void TestExecution::ExecuteTestFIXED_PROBLEM_SIZE(Solver& solver)
 			solver.initRnd(aSolution); // init RANDOM soultion
 			TSPSolution bestSolution(tspInstance); // build obj for best solution 
 			results.push_back(*dataset + ";" + solver.solve(tspInstance, aSolution, bestSolution)); /// new parameters for TS
-			TSPViewer::visualizeTSP(aSolution, tspInstance, solver.name()+" before computing TSP", getViewerScaleFactor(*dataset));
-			TSPViewer::visualizeTSP(bestSolution, tspInstance, solver.name()+" TSP solution", getViewerScaleFactor(*dataset));
+			TSPViewer::drawTSP(aSolution, tspInstance, solver.name()+" before computing TSP", getViewerScaleFactor(*dataset));
+			TSPViewer::drawTSP(bestSolution, tspInstance, solver.name()+" TSP solution", getViewerScaleFactor(*dataset));
 			if (VERBOSE) {
 
 				cout << "Solved problem --  size:  " << tspInstance.n << std::endl;

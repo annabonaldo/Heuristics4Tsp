@@ -9,38 +9,44 @@ std::string GreedySolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPS
 	    std::string line = "";
 		double startTime = getWallTime();
 		std::set<int> freeNodes; 
+
 		for (int i = 0; i < tsp.n; i++)
 			freeNodes.insert(i);  // no node in the path at the beginning
 	
 		int step = 0; 
 		int curNode = *freeNodes.begin();
-		
-		while((!freeNodes.empty()) && (step >=tsp.n))
-		{
-			if (freeNodes.find(curNode) != freeNodes.end())
+	
+		while((!freeNodes.empty()) && (step <=tsp.n))
+		{		
+			if (freeNodes.find(curNode) != freeNodes.end() )
 			{
+				
 				freeNodes.erase(curNode);  // remove current node from nextNodesList
 			   // iterate over all possibile newx step 
 		  	   std::set<int>::iterator next = freeNodes.begin(); // first step 
-			   double mindistance = tsp.distance(step, *next); 
-			   int nextIndex = *next;
-			   //choose node at mininum distance
-			   for (; next != freeNodes.end(); next++)
-			   {
-			   	   double distance = tsp.distance(step, *next);
-			   	   
-			   	   if (distance < mindistance - 0.01)
-			   	   {
-			   	   	mindistance = distance;
-			   	   	nextIndex = *next;
-			   	   }
-			   }
+			  //   std::cout << "curNode " <<curNode; 
+			   if (next != freeNodes.end()) {
+				   int nextIndex = *next;
+				
+				
+				   double mindistance = tsp.distance(curNode, nextIndex);
+				   //choose node at mininum distance
 
-			  // save step 
-		      step++;
-		      if (step < tsp.n) 
-			   bestSol.sequence.at(step) = nextIndex;
-		      curNode = nextIndex; 
+				   for (; next != freeNodes.end(); next++)
+				   {					   
+					   double distance = tsp.distance(curNode, (*next));					 
+					   if (distance < mindistance - 1e-6)
+					   {
+						   mindistance = distance;
+						   nextIndex = *next;
+					   }
+				   }
+				   // save step 
+				   step++;
+				   if (step < tsp.n)
+					   bestSol.sequence.at(step) = nextIndex;
+				   curNode = nextIndex;
+			   }
 		 }
 			else	
 				bestSol.sequence[tsp.n] = curNode; 
