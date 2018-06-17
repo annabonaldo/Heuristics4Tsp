@@ -4,23 +4,22 @@
  * Creation Date: 06/feb/2018 at 13:41:21
  *********************************************/
 // problem size 
-int n = 12;
+int n =...;
+int iter =...;
+int seed =...;
+int gridLineSize= ...; 
 range cities = 1..n; 
-float A[cities][cities] = [
-[ 0.0,	 5.5,	 4.3,	 6.5,	12.0,	15.3,	17.5,	11.5,	10.8,	18.0,	19.0,	18.0],
-[ 5.5,	 0.0,	 2.3,	 5.0,	10.8,	13.4,	15.0,	 6.5,	 5.5,	12.8,	17.5,	13.0],
-[ 4.3,	 2.3,	 0.0,	 3.2,	 9.8,	12.0,	14.0,	 7.3,	 7.0,	13.5,	14.7,	15.0],
-[ 6.5,	 5.0,	 3.2,	 0.0,	 6.0,	 9.0,	11.2,	 7.0,	 8.3,	13.0,	14.5,	16.8],
-[12.0,	10.8,	 9.8,	 6.0,	 0.0,	 3.2,	 5.8,	 9.5,	12.0,	13.0,	15.0,	20.3],
-[15.3,	13.4,	12.0,	 9.0,	 3.2,	 0.0,	 2.7,	10.7,	13.7,	12.6,	15.0,	21.3],
-[17.5,	15.0,	14.0,	11.2,	 5.8,	 2.7,	 0.0,	11.2,	14.5,	11.6,	14.0,	21.3],
-[11.5,	 6.5,	 7.3,	 7.0,	 9.5,	10.7,	11.2,	 0.0,	 3.3,	 6.5,	 7.5,	11.0],
-[10.8,	 5.5,	 7.0,	 8.3,	12.0,	13.7,	14.5,	 3.3,	 0.0,	 8.0,	 8.5,	 8.5],
-[18.0,	12.8,	13.5,	13.0,	13.0,	12.6,	11.6,	 6.5,	 8.0,	 0.0,	 2.3,	11.0],
-[19.0,	17.5,	14.7,	14.5,	15.0,	15.0,	14.0,	 7.5,	 8.5,	 2.3,	 0.0,	 9.3],
-[18.0,	13.0,	15.0,	16.8,	20.3,	21.3,	21.3,	11.0,	 8.5,	11.0,	 9.3,	 0.0]
+string filename ="model.txt"; 
+string dataMode = ...; 
+int sample[1..4] = [10, 50, 100, 200]; 
+int seedarray[0..9] = [111, 5, 2500, 184, 21, 47, 66, 71, 32, 84]; 
 
-];
+tuple position{
+ 	float x; 
+	float y; 
+}
+
+position  holePositions[cities];  // holes coordinates
 
 tuple edge {
 	int i; 
@@ -31,17 +30,87 @@ setof(edge) edges = {<i, j> |i, j in cities: i!=j };
 
 float c[edges];
 
-
-
 // decision variables 
 dvar boolean x[edges]; // arches in path
 dvar float+  u[2..n];
 
 execute {
-	
+
+
+	function getTimeOfMomement(city1, city2){
+		return 	Opl.sqrt(
+		Opl.pow(city1.x-city2.x, 2)+ 
+		Opl.pow(city1.y-city2.y, 2)); 		
+	}
+			
+		if(dataMode == "RAND") // random 
+		{
+			var ofile = new IloOplOutputFile(n+"RANDsample"+iter+filename); 				
+			Opl.srand(seed); 
+			for (var i in cities)
+			{		
+				holePositions[i].x= Opl.rand(n); // cloud of the same size of problem
+				holePositions[i].y= Opl.rand(n); // cloud of the same size of problem
+				ofile.writeln(holePositions[i].x, " ", holePositions[i].y); 
+			}
+			ofile.close();
+		}	
+		else 
+		if(dataMode == "CONSTGRID")// grid constant
+		{
+			var ofile = new IloOplOutputFile(n+"CONSTGRIDsample"+iter+filename); 				
+			var offset = 0.0; 
+			for (var i in cities)
+			{
+			  	var m = (i % gridLineSize); 		
+		 		if(m == 0)	{offset = offset+1.0; }	
+				holePositions[i].x= m; 
+				holePositions[i].y= offset; 
+				ofile.writeln(holePositions[i].x, " ", holePositions[i].y); 
+			}	
+		}	
+		else if(dataMode == "SEMIGRID")// grid constant
+		{
+			var ofile = new IloOplOutputFile(n+"SEMIGRIDsample"+iter+filename); 				
+			var offset = 0.0; 
+			for (var i in cities)
+			{
+			  	var m = (i % gridLineSize); 		
+		 		if(m == 0)	{offset = offset+1.0; }	
+				holePositions[i].x= m + Opl.rand(sqrt(n));  
+				holePositions[i].y= offset+ Opl.rand(sqrt(n)); 
+				ofile.writeln(holePositions[i].x, " ", holePositions[i].y); 
+			}	
+		}	
+		else 
+		if(dataMode == "CONSTRAND50")// grid constant
+		{
+			var ofile = new IloOplOutputFile(n+"CONSTRAND50sample"+iter+filename); 				
+			Opl.srand(seed); 
+			for (var i in cities)
+			{		
+				holePositions[i].x= Opl.rand(50); // cloud of size 50
+				holePositions[i].y= Opl.rand(50); // cloud of size 50
+				ofile.writeln(holePositions[i].x, " ", holePositions[i].y); 
+			}
+		}	
+		else 
+		if(dataMode == "CONSTRAND5000")// grid constant
+		{
+			var ofile = new IloOplOutputFile(n+"CONSTRAND5000sample"+iter+filename); 				
+			Opl.srand(seed); 
+			for (var i in cities)
+			{		
+				holePositions[i].x= Opl.rand(5000); // cloud of size 5000
+				holePositions[i].y= Opl.rand(5000); // cloud of size 5000
+				ofile.writeln(holePositions[i].x, " ", holePositions[i].y); 
+			}
+		}	
+		
+		
 	for (var e in edges)
 	{	
-		c[e] = A[e.i][e.j]; 
+		c[e] = getTimeOfMomement(holePositions[e.i], holePositions[e.j]); 
 	}
 }
 
@@ -66,31 +135,89 @@ subject to
 
 main {
 	var mod = thisOplModel.modelDefinition; 
-
-		var size = 12; 
+	var dat = thisOplModel.dataElements;
+	var  mode = "CONSTRAND50";  	
+	var file =  mode+"exactStats.txt";
+	var ofile = new IloOplOutputFile(file); 
+  
+   for (var actualMode = 0; actualMode<2; actualMode++)
+   if(actualMode == 0)
+   mode = "CONSTRAND50"; 
+   if (actualMode == 1)
+   mode = "CONSTRAND5000"; 
+     for (var s = 1; s<5; s++) // sizes  
+    {      
+        writeln("Iteration sample ", i);          
 		var MyCplex = new IloCplex(); 
 		var opl = new IloOplModel(mod, MyCplex); 
-	
-		//opl.addDataSource(dat); 
+
+		var size = thisOplModel.sample[s]; 
+		dat.n = thisOplModel.sample[s]; 
+		dat.iter =i ; 
+		dat.gridLineSize = Opl.sqrt(size); 
+		dat.dataMode = mode; 
+		dat.seed = thisOplModel.seedarray[i]
+		opl.addDataSource(dat); 
+		// generate every time dat has been changed
+		opl.generate(); // model generation with new data
+		
+		if(dat.n <101) {	
+		if(MyCplex.solve()) {		
+		     writeln("Mode "+ mode+ ": Solved problem -- size:  " +size+ " in time = "+ MyCplex.getCplexTime()+ 
+		     		" Solution value: "+ MyCplex.getObjValue()); 
+		     		
+			 ofile.writeln("Solution;", MyCplex.getObjValue(),
+			";Problem size; ", size, 
+			 ";Time; ", MyCplex.getCplexTime(),
+			 "; Sample iter; ",i,";"+
+			 " EXACT; "+ "dataset; "+mode+";"); 			 		 		 		
+	    } }	    
+
+		opl.end(); 
+		MyCplex.end(); 
+				   	    		  	
+  } 	
+//  ofile.close(); 
+  
+  mode = "SEMIGRID"; 
+    for (var s = 1; s<5; s++) // sizes 
+    {
+   for (var i = 0; i< 10; i++) //samples
+   {     
+        writeln("Iteration sample ", i);        
+		var MyCplex = new IloCplex(); 
+		var opl = new IloOplModel(mod, MyCplex); 
+
+		var size = thisOplModel.sample[s]; 
+		dat.n = thisOplModel.sample[s]; 
+		dat.iter =i ; 
+		dat.gridLineSize = Opl.sqrt(size); 
+		dat.dataMode = mode; 
+		dat.seed = thisOplModel.seedarray[i]
+		opl.addDataSource(dat); 
 		// generate every time dat has been changed
 		opl.generate(); // model generation with new data
 			
-		// solving + check it has been solved
+		if(dat.n <101) {	
 		if(MyCplex.solve()) {		
-		     writeln(" --Solution: " +MyCplex.getBestObjValue()+" Problem size:  "+size+ " in time = "+ MyCplex.getCplexTime());	
-//			 ofile.writeln("Solution;", MyCplex.getBestObjValue(), 
-//			";Problem size; ", size,
-//			 ";Time; ", MyCplex.getCplexTime());  	
-			//ofile.writeln(opl.printSolution())
-					 }
-					 writeln(opl.printSolution()); 
+		     writeln(("Mode "+ mode+":Solved problem -- size:  " +size+ " in time = "+ MyCplex.getCplexTime()+ 
+		     		" Solution value: "+ MyCplex.getObjValue())+ " seed :"+dat.seed); 
+		     		
+			
+			 ofile.writeln("Solution;", MyCplex.getObjValue(),
+			 ";Problem size; ",  size,
+			 ";Time; ", MyCplex.getCplexTime(),
+			 "; Sample iter; ",i,";"+
+			 " EXACT; "+ "dataset; "+mode+"; seed; ",dat.seed,";");  				 		
+	    } }	    
+
 		opl.end(); 
 		MyCplex.end(); 
-
-
-	//ofile.close(); 
-	writeln("End execution");			
+				   	    		
+	}  // end 10 samples iteration    
+	
+  } // end sizes iteration 
+  	
+  ofile.close();   
+  writeln("End execution");		
 }
-
-
- 

@@ -1,10 +1,6 @@
 /*********************************************
  * OPL 12.7.1.0 Data
  * Author: Anna Bonaldo
- * Creation Date: 06/feb/2018 at 13:41:21
+ * Creation Date: 13/mag/2018 at 16:41:52
  *********************************************/
-  n = 3; 
-  iter = 1; 
-  seed = 542; 
- dataMode = "CONSTGRID"; 
- gridLineSize = 3; 
+n = 12;
