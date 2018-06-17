@@ -1,4 +1,0 @@
-ven 15 06 ;constGrid;Solution;12.576491;Problem size; 10;Time; 0.000009;GREEDY
-ven 15 06 ;constGrid;Solution;109.049876;Problem size; 100;Time; 0.000167;GREEDY
-ven 15 06 ;constGrid;Solution;213.317821;Problem size; 200;Time; 0.000342;GREEDY
-ven 15 06 ;constGrid;Solution;60.170087;Problem size; 50;Time; 0.000037;GREEDY

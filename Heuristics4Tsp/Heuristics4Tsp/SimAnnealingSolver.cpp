@@ -3,9 +3,11 @@
 #include <string>
 
 std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) {
-	bool stop = false;
-	int  iter = 0;
 	
+
+	int  iter = 0;
+	bool timer_stop = false; 
+	double max_time_in_seconds = 1800.0; 
 	double startTime = getWallTime();
 	TSPSolution currSol(initSol);
 	bestSol = initSol; 
@@ -13,21 +15,24 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 	nextValue = currValue = solutionLengthValue(currSol, tsp);
 	double temperature = T;
 	/*verbose = true; */
-	while (temperature > 1.0) {
+	while (temperature > 1.0 && !timer_stop) {
+		if (getWallTime() - startTime > max_time_in_seconds)
+			timer_stop = true; 
 		// Create new neighbour tour
 		TSPSolution newSol = currSol; 
 		srand(time(NULL));
 		// Get a random positions in the tour
 		int tourPos1, tourPos2;
 		tourPos1 = position % tsp.n;	
-		tourPos2 = (position+ rand()) & tsp.n;
-		position+= rand() ; 
+		tourPos2 = (position + rand()) % tsp.n;
+		if (tourPos1 < 0) tourPos1 = (-1 * tourPos1) % tsp.n; 
+		if (tourPos2 < 0) tourPos2 = (-1 * tourPos2) % tsp.n;
+		position+= rand(); 
 		TSPMove m(tourPos1, tourPos2); 
 		if(verbose) std::cout << "move : " << m.from << " -> " << m.to << std::endl; 
 		// Swap them
 		this->swap(newSol, m); 
 		
-
 		// Get energy of solutions
 		double bestPathLenght = solutionLengthValue(bestSol, tsp);
 		double neighPathLenght = solutionLengthValue(newSol, tsp);
@@ -41,16 +46,16 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 		}
 
 		// Keep track of the best solution found
-		if (std::fabs(solutionLengthValue(currSol, tsp) - solutionLengthValue(bestSol, tsp))<1e-2) {
+		if ((solutionLengthValue(currSol, tsp)- solutionLengthValue(bestSol, tsp))<1e-6) {
 			bestSol = currSol;
 			double newBestValue = solutionLengthValue(bestSol, tsp); 
-			 std::cout << " ------------------------- improved L = " << newBestValue << std::endl;
+			// std::cout << " ------------------------- improved L = " << newBestValue << std::endl;
 			solValues.push_back(std::to_string(solutionLengthValue(bestSol, tsp))+"; ");
 		}
 
 		// Cool system
 		temperature *= 1 - delta;
-		if (verbose) std::cout << " temperature = " << temperature << std::endl;
+	//	if (verbose) std::cout << " temperature = " << temperature << std::endl;
 	}
 	
 	double endTime = getWallTime();
@@ -58,7 +63,7 @@ std::string SimAnnealingSolver::solve(const TSP& tsp, const TSPSolution& initSol
 	std::string time = std::to_string(endTime - startTime);
 	std::string solSize = std::to_string(solutionLengthValue(bestSol, tsp));
 
-	return getLine(solSize, problemSize, time);
+	return getLine(solSize, problemSize, time, timer_stop);
 	
 }
 

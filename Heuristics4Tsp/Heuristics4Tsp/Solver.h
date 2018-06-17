@@ -69,13 +69,15 @@ protected:
 	int randomINT(int min, int max); 
 	double randomDOUBLE(double min, double max);
 	static double randProb(); 
-	std::string getLine(std::string solSize, std::string  problemSize, std::string  time)
+	std::string getLine(std::string solSize, std::string  problemSize, std::string  time, bool timer_stop = false)
 	{
 		std::string  line = std::string("Solution;") + solSize +
 			";Problem size; " + problemSize +
 			";Time; " + time;
 
 		line = line + ";" + name();
+		if(timer_stop)
+			line = line + "; STOP for expiring timer;";
 	//	line = line.replace(line.begin(), line.end(), ".", ","); 
 		return line;
 	}

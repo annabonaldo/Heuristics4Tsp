@@ -8,9 +8,12 @@ private:
 	double T; 
 	double delta; 
 	int position; 
+	bool drawIntermediateSolutions; 
 public:
 
-	SimAnnealingSolver(double t, double d) : Solver(), T(t), delta(d), position(0) {}
+	SimAnnealingSolver(double t, double d, bool drawSolutions = false) : 
+		Solver(), T(t), delta(d), position(0), drawIntermediateSolutions(drawSolutions){}
+
 	std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol); 
 	double acceptanceProbability(double currPathLenght, double neighPathLenght, double temperature); 
 	std::string name() override { return  "SIMANNEALING; Temperature;"+std::to_string((int)T)+";Delta;" + std::to_string(delta)+";"; }

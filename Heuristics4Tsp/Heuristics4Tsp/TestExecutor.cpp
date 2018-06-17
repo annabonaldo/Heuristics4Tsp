@@ -39,9 +39,31 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 			break;
 		}
 
-		case ActiveTSPSolver::SimAnnealing:
+		case ActiveTSPSolver::SimAnnealing_T1e3_delta1_e1:
 		{
-			SimAnnealingSolver solver = SimAnnealingSolver(1000, 1000);
+			srand(111); 
+			SimAnnealingSolver solver = SimAnnealingSolver(1e3, 1e-1);
+			ExecuteOnActiveDatasets(solver);
+			break;
+		}
+		case ActiveTSPSolver::SimAnnealing_T1e3_delta5_e3:
+		{
+			srand(27);
+			SimAnnealingSolver solver = SimAnnealingSolver(1e3, 5e-5);
+			ExecuteOnActiveDatasets(solver);
+			break;
+		}
+		case ActiveTSPSolver::SimAnnealing_T5e5_delta1_e1:
+		{
+			srand(4);
+			SimAnnealingSolver solver = SimAnnealingSolver(5e5, 1e-1);
+			ExecuteOnActiveDatasets(solver);
+			break;
+		}
+		case ActiveTSPSolver::SimAnnealing_T5e5_delta5_e3:
+		{
+			srand(320);
+			SimAnnealingSolver solver = SimAnnealingSolver(5e5, 5e-5);
 			ExecuteOnActiveDatasets(solver);
 			break;
 		}

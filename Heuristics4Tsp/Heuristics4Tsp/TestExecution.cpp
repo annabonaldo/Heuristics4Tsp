@@ -468,7 +468,6 @@ void TestExecution::ExecuteTestOnStrightGREEDYLine_SEARCH() {
 	if (PRINT_EX_METHOD) std::cout << "end GREADY  STRIGHT LINE SEARCH" << std::endl << std::endl;
 }
 
-
 int TestExecution::getViewerScaleFactor(std::string  dataset) {
 	if (dataset == "RAND50")  return 10; 
 	if (dataset == "RAND100") return 5; 

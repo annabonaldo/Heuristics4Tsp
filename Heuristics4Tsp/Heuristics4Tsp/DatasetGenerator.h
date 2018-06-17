@@ -7,8 +7,11 @@ class DatasetGenerator
 {
 public:
 	enum ActiveDataset {
-		randomNActive,
-		constGridActive
+		RandActive,
+		GridActive,
+		ConstRand50Active,
+		ConstRand5000Active,
+		SemigridActive
 	};
 
 	static std::map<std::string, TSP> DatasetPool;

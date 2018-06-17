@@ -32,5 +32,7 @@ public:
 
 	Dataset();
 	~Dataset();
+private: 
+	static Dataset loadDataset(const std::string & datasetName);
 };
 

@@ -8,8 +8,11 @@ public:
 	static bool VERBOSE; 
 
 	enum ActiveTSPSolver {
-		Greedy, 
-		SimAnnealing, 
+		Greedy,
+		SimAnnealing_T5e5_delta1_e1,
+	    SimAnnealing_T5e5_delta5_e3,
+		SimAnnealing_T1e3_delta1_e1,
+		SimAnnealing_T1e3_delta5_e3,
 		TabuSearch
 	};
 

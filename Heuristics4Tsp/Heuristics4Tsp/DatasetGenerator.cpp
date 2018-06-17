@@ -16,12 +16,22 @@ void DatasetGenerator::generate(std::vector<ActiveDataset> & activeDatasets)
 		ActiveDataset dataset = activeDatasets.at(i);
 		switch (dataset)
 		{
-		case ActiveDataset::constGridActive:
-			datasets.push_back(Dataset::constGridDataset());
+		case ActiveDataset::GridActive:
+			datasets.push_back(Dataset::GRID_Dataset());
 			break;
 
-		case ActiveDataset::randomNActive:
-			datasets.push_back(Dataset::randomNDataset());
+		case ActiveDataset::RandActive:
+			datasets.push_back(Dataset::RANDN_Dataset());
+			break;
+		case ActiveDataset::SemigridActive:
+			datasets.push_back(Dataset::SEMIGRID_Dataset());
+			break;
+
+		case ActiveDataset::ConstRand50Active:
+			datasets.push_back(Dataset::CONSTRAND50_Dataset());
+			break;
+		case ActiveDataset::ConstRand5000Active:
+			datasets.push_back(Dataset::CONSTRAND5000_Dataset());
 			break;
 		}
 	}

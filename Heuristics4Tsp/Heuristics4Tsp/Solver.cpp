@@ -44,8 +44,15 @@ void optimize2opt(const TSP& tsp, TSPSolution& bestSol)
 TSPSolution& Solver::swap(TSPSolution& tspSol, const TSPMove& move)
 {
 	TSPSolution tmpSol(tspSol);
-	for (int i = move.from; i <= move.to; ++i) {
-		tspSol.sequence[i] = tmpSol.sequence[move.to - (i - move.from)];
+	if (move.from < tmpSol.sequence.size() && move.to < tmpSol.sequence.size())
+	{
+		for (int i = move.from; i <= move.to; ++i) {
+			tspSol.sequence[i] = tmpSol.sequence[move.to - (i - move.from)];
+		}
+	}
+	else
+	{
+		std::cout << "from " << move.from << " to " << move.to << " totalsize " << tmpSol.sequence.size() << std::endl; 
 	}
 	return tspSol;
 }
@@ -59,7 +66,7 @@ double Solver::solutionLengthValue(const TSPSolution& sol, const TSP& tsp) const
 		int from = sol.sequence[i];
 		if (repeat.find(from) == repeat.end())
 			repeat.insert(from);
-		else
+		else 
 			cerr << "ERROR repeated node!! Node repeated: " << from <<std::endl;
 		int to = sol.sequence[i + 1];
 	//	std::cout << "step " << from << " - " <<to << " : " << tsp.cost[from][to] << std::endl; 

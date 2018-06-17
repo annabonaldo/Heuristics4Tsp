@@ -79,71 +79,23 @@ Dataset Dataset::GRID_Dataset()
 
 Dataset Dataset::SEMIGRID_Dataset()
 {
-	Dataset dataset;
-	dataset.name = RANDN;
-	dataset.output_stats = "dataReports\\"+SEMIGRID+"heuristicsStats.txt";
-	std::vector<int> sizes =
-	{
-		10, 50, 100, 200
-	};
-	
-	for (int s = 0; s < sizes.size(); s++)
-	{
-		int actual_dataset_size = sizes.at(s);
-		std::string N = std::to_string(actual_dataset_size);
-	
-		for (int i = 0; i < 10; i++)
-		{
-			std::string key = N + "sample" + std::to_string(i);
-
-			std::string input_file =
-				"dataset\\" + SEMIGRID + "\\" +
-				std::to_string(actual_dataset_size) +
-				SEMIGRID+ "sample" +
-				std::to_string(i).c_str() +
-				"model.txt";
-			dataset.input_files.insert(std::pair<std::string, std::string>(key, input_file));
-			dataset.input_sizes.insert(std::pair<std::string, int>(key, actual_dataset_size));
-		}
-	}
-	return dataset;
+	return loadDataset(SEMIGRID);
 }
 Dataset Dataset::CONSTRAND50_Dataset()
 {
-	Dataset dataset;
-	dataset.name = RANDN;
-	dataset.output_stats = "dataReports\\" + CONSTRAND50 + "heuristicsStats.txt";
-	std::vector<int> sizes =
-	{
-		10, 50, 100, 200
-	};
 
-	for (int s = 0; s < sizes.size(); s++)
-	{
-		int actual_dataset_size = sizes.at(s);
-		std::string N = std::to_string(actual_dataset_size);
-
-		for (int i = 0; i < 10; i++)
-		{
-			std::string key = N + "sample" + std::to_string(i);
-
-			std::string input_file =
-				"dataset\\" + CONSTRAND50 + "\\" +
-				std::to_string(actual_dataset_size) +
-				CONSTRAND50 + "sample" +
-				std::to_string(i).c_str() +
-				"model.txt";
-			dataset.input_files.insert(std::pair<std::string, std::string>(key, input_file));
-			dataset.input_sizes.insert(std::pair<std::string, int>(key, actual_dataset_size));
-		}
-	}
-	return dataset;
+	return loadDataset(CONSTRAND50);
 }
 Dataset Dataset::CONSTRAND5000_Dataset()
 {
+	return loadDataset(CONSTRAND5000); 
+}
+
+Dataset Dataset::loadDataset(const std::string & datasetName)
+{
 	Dataset dataset;
-	dataset.name = RANDN;
-	dataset.output_stats = "dataReports\\" + CONSTRAND5000 + "heuristicsStats.txt";
+	dataset.name = datasetName;
+	dataset.output_stats = "dataReports\\" + datasetName + "heuristicsStats.txt";
 	std::vector<int> sizes =
 	{
 		10, 50, 100, 200
@@ -159,9 +111,9 @@ Dataset Dataset::CONSTRAND5000_Dataset()
 			std::string key = N + "sample" + std::to_string(i);
 
 			std::string input_file =
-				"dataset\\" + CONSTRAND5000 + "\\" +
+				"dataset\\" + datasetName + "\\" +
 				std::to_string(actual_dataset_size) +
-				CONSTRAND5000 + "sample" +
+				datasetName + "sample" +
 				std::to_string(i).c_str() +
 				"model.txt";
 			dataset.input_files.insert(std::pair<std::string, std::string>(key, input_file));
