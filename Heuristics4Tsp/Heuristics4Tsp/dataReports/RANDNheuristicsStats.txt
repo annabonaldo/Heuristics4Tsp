@@ -986,3 +986,883 @@ ven 15 06 ;RANDN;Solution;1095.435292;Problem size; 50;Time; 10.482062;SIMANNEAL
 ven 15 06 ;RANDN;Solution;965.039188;Problem size; 50;Time; 10.669333;SIMANNEALING; Temperature;500000;Delta;0.000050;
 ven 15 06 ;RANDN;Solution;1018.261964;Problem size; 50;Time; 10.228064;SIMANNEALING; Temperature;500000;Delta;0.000050;
 ven 15 06 ;RANDN;Solution;976.908983;Problem size; 50;Time; 10.252955;SIMANNEALING; Temperature;500000;Delta;0.000050;
+ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.000232;GREEDY
+Solution;1562.491203;Problem size; 100;Time; 0.003281;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000194;GREEDY
+Solution;1674.638938;Problem size; 100;Time; 0.000466;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000128;GREEDY
+Solution;1571.094543;Problem size; 100;Time; 0.000293;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000194;GREEDY
+Solution;1240.097107;Problem size; 100;Time; 0.000358;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000129;GREEDY
+Solution;1383.977734;Problem size; 100;Time; 0.000242;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000185;GREEDY
+Solution;1276.451611;Problem size; 100;Time; 0.000356;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000127;GREEDY
+Solution;1600.936186;Problem size; 100;Time; 0.000315;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000128;GREEDY
+Solution;1914.632808;Problem size; 100;Time; 0.000340;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000130;GREEDY
+Solution;1668.522239;Problem size; 100;Time; 0.000327;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.001767;GREEDY
+Solution;1215.764298;Problem size; 100;Time; 0.001949;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000010;GREEDY
+Solution;36.248607;Problem size; 10;Time; 0.000078;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000010;GREEDY
+Solution;47.836231;Problem size; 10;Time; 0.000208;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000113;GREEDY
+Solution;33.964885;Problem size; 10;Time; 0.000182;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000010;GREEDY
+Solution;46.982207;Problem size; 10;Time; 0.000067;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000008;GREEDY
+Solution;49.770727;Problem size; 10;Time; 0.000188;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000010;GREEDY
+Solution;39.625649;Problem size; 10;Time; 0.000082;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000009;GREEDY
+Solution;50.537672;Problem size; 10;Time; 0.000068;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000010;GREEDY
+Solution;32.145790;Problem size; 10;Time; 0.000185;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000010;GREEDY
+Solution;33.721797;Problem size; 10;Time; 0.000072;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000009;GREEDY
+Solution;55.315254;Problem size; 10;Time; 0.000077;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000629;GREEDY
+Solution;3207.961225;Problem size; 200;Time; 0.000950;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.000608;GREEDY
+Solution;3598.366874;Problem size; 200;Time; 0.000936;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.000644;GREEDY
+Solution;3128.023057;Problem size; 200;Time; 0.000953;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000634;GREEDY
+Solution;3017.773807;Problem size; 200;Time; 0.000885;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000399;GREEDY
+Solution;3312.877810;Problem size; 200;Time; 0.000559;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000613;GREEDY
+Solution;2973.514760;Problem size; 200;Time; 0.000769;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000396;GREEDY
+Solution;3239.896663;Problem size; 200;Time; 0.000581;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000392;GREEDY
+Solution;3467.910290;Problem size; 200;Time; 0.000576;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000391;GREEDY
+Solution;3399.118591;Problem size; 200;Time; 0.000569;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.000393;GREEDY
+Solution;2844.472770;Problem size; 200;Time; 0.000538;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000045;GREEDY
+Solution;613.041373;Problem size; 50;Time; 0.000152;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000064;GREEDY
+Solution;707.328974;Problem size; 50;Time; 0.000325;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000046;GREEDY
+Solution;647.068454;Problem size; 50;Time; 0.000213;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000045;GREEDY
+Solution;566.613186;Problem size; 50;Time; 0.000131;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000045;GREEDY
+Solution;713.261918;Problem size; 50;Time; 0.000136;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000053;GREEDY
+Solution;560.829530;Problem size; 50;Time; 0.000153;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000070;GREEDY
+Solution;825.130357;Problem size; 50;Time; 0.000284;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000068;GREEDY
+Solution;649.137901;Problem size; 50;Time; 0.000310;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000045;GREEDY
+Solution;567.709193;Problem size; 50;Time; 0.000187;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000045;GREEDY
+Solution;543.336530;Problem size; 50;Time; 0.000151;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.000203;GREEDY
+Solution;1562.491203;Problem size; 100;Time; 0.000546;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000213;GREEDY
+Solution;1674.638938;Problem size; 100;Time; 0.000640;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000281;GREEDY
+Solution;1571.094543;Problem size; 100;Time; 0.000772;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000137;GREEDY
+Solution;1240.097107;Problem size; 100;Time; 0.000286;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000196;GREEDY
+Solution;1383.977734;Problem size; 100;Time; 0.000525;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000211;GREEDY
+Solution;1276.451611;Problem size; 100;Time; 0.000465;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000203;GREEDY
+Solution;1600.936186;Problem size; 100;Time; 0.001169;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000206;GREEDY
+Solution;1799.411298;Problem size; 100;Time; 0.002996;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000983;GREEDY
+Solution;1668.522239;Problem size; 100;Time; 0.001707;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.000301;GREEDY
+Solution;1215.764298;Problem size; 100;Time; 0.000570;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000013;GREEDY
+Solution;41.077140;Problem size; 10;Time; 0.000153;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000012;GREEDY
+Solution;47.836231;Problem size; 10;Time; 0.000109;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000011;GREEDY
+Solution;31.841779;Problem size; 10;Time; 0.000127;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000011;GREEDY
+Solution;46.982207;Problem size; 10;Time; 0.000229;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000014;GREEDY
+Solution;49.971076;Problem size; 10;Time; 0.000131;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000013;GREEDY
+Solution;42.314274;Problem size; 10;Time; 0.000128;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000013;GREEDY
+Solution;50.706720;Problem size; 10;Time; 0.000117;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000018;GREEDY
+Solution;32.145790;Problem size; 10;Time; 0.000133;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000013;GREEDY
+Solution;33.721797;Problem size; 10;Time; 0.000124;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000012;GREEDY
+Solution;55.315254;Problem size; 10;Time; 0.000114;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000644;GREEDY
+Solution;3207.961225;Problem size; 200;Time; 0.000960;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.000665;GREEDY
+Solution;3598.366874;Problem size; 200;Time; 0.001142;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.001406;GREEDY
+Solution;3128.023057;Problem size; 200;Time; 0.001888;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000667;GREEDY
+Solution;3017.773807;Problem size; 200;Time; 0.001035;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000654;GREEDY
+Solution;3312.877810;Problem size; 200;Time; 0.001000;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000643;GREEDY
+Solution;2973.514760;Problem size; 200;Time; 0.001110;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000718;GREEDY
+Solution;3239.896663;Problem size; 200;Time; 0.001132;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000676;GREEDY
+Solution;3467.910290;Problem size; 200;Time; 0.001123;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000652;GREEDY
+Solution;3399.118591;Problem size; 200;Time; 0.001106;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.000431;GREEDY
+Solution;2844.472770;Problem size; 200;Time; 0.000627;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000072;GREEDY
+Solution;613.041373;Problem size; 50;Time; 0.000377;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000051;GREEDY
+Solution;707.328974;Problem size; 50;Time; 0.000242;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000085;GREEDY
+Solution;647.068454;Problem size; 50;Time; 0.000381;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000073;GREEDY
+Solution;566.613186;Problem size; 50;Time; 0.000319;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000074;GREEDY
+Solution;713.261918;Problem size; 50;Time; 0.000336;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000075;GREEDY
+Solution;560.829530;Problem size; 50;Time; 0.000417;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000067;GREEDY
+Solution;825.130357;Problem size; 50;Time; 0.000549;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000066;GREEDY
+Solution;712.629828;Problem size; 50;Time; 0.000483;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000072;GREEDY
+Solution;567.709193;Problem size; 50;Time; 0.000520;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000071;GREEDY
+Solution;543.336530;Problem size; 50;Time; 0.000389;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.000190;GREEDY
+Solution;1562.491203;Problem size; 100;Time; 0.000564;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000129;GREEDY
+Solution;1674.638938;Problem size; 100;Time; 0.000377;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000143;GREEDY
+Solution;1571.094543;Problem size; 100;Time; 0.000441;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000129;GREEDY
+Solution;1240.097107;Problem size; 100;Time; 0.000270;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000234;GREEDY
+Solution;1383.977734;Problem size; 100;Time; 0.000530;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000193;GREEDY
+Solution;1276.451611;Problem size; 100;Time; 0.001009;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000186;GREEDY
+Solution;1507.748352;Problem size; 100;Time; 0.003831;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000198;GREEDY
+Solution;1914.632808;Problem size; 100;Time; 0.000836;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000195;GREEDY
+Solution;1668.522239;Problem size; 100;Time; 0.000759;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.000198;GREEDY
+Solution;1215.764298;Problem size; 100;Time; 0.000445;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000010;GREEDY
+Solution;36.248607;Problem size; 10;Time; 0.000112;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000009;GREEDY
+Solution;45.097264;Problem size; 10;Time; 0.000151;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000009;GREEDY
+Solution;31.841779;Problem size; 10;Time; 0.000142;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000009;GREEDY
+Solution;46.982207;Problem size; 10;Time; 0.000120;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000009;GREEDY
+Solution;49.971076;Problem size; 10;Time; 0.000129;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000010;GREEDY
+Solution;42.314274;Problem size; 10;Time; 0.000127;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000009;GREEDY
+Solution;50.537672;Problem size; 10;Time; 0.000206;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000012;GREEDY
+Solution;32.145790;Problem size; 10;Time; 0.000114;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000009;GREEDY
+Solution;40.802063;Problem size; 10;Time; 0.000152;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000010;GREEDY
+Solution;55.315254;Problem size; 10;Time; 0.000117;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000614;GREEDY
+Solution;3207.961225;Problem size; 200;Time; 0.000929;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.001361;GREEDY
+Solution;3598.366874;Problem size; 200;Time; 0.002079;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.000617;GREEDY
+Solution;3128.023057;Problem size; 200;Time; 0.001044;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000698;GREEDY
+Solution;3017.773807;Problem size; 200;Time; 0.000996;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000622;GREEDY
+Solution;3312.877810;Problem size; 200;Time; 0.000973;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000607;GREEDY
+Solution;2973.514760;Problem size; 200;Time; 0.000990;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000881;GREEDY
+Solution;3239.896663;Problem size; 200;Time; 0.001352;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000618;GREEDY
+Solution;3467.910290;Problem size; 200;Time; 0.001130;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000615;GREEDY
+Solution;3399.118591;Problem size; 200;Time; 0.001050;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.000617;GREEDY
+Solution;2844.472770;Problem size; 200;Time; 0.000915;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000065;GREEDY
+Solution;613.041373;Problem size; 50;Time; 0.000359;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000070;GREEDY
+Solution;707.328974;Problem size; 50;Time; 0.000408;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000067;GREEDY
+Solution;647.068454;Problem size; 50;Time; 0.000510;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000070;GREEDY
+Solution;566.613186;Problem size; 50;Time; 0.000366;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000067;GREEDY
+Solution;713.261918;Problem size; 50;Time; 0.000321;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000074;GREEDY
+Solution;560.829530;Problem size; 50;Time; 0.000394;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000068;GREEDY
+Solution;825.130357;Problem size; 50;Time; 0.000587;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000067;GREEDY
+Solution;649.137901;Problem size; 50;Time; 0.000645;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000071;GREEDY
+Solution;567.709193;Problem size; 50;Time; 0.000511;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000066;GREEDY
+Solution;543.336530;Problem size; 50;Time; 0.000369;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.000135;GREEDY
+Solution;1562.491203;Problem size; 100;Time; 0.006695;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000206;GREEDY
+Solution;1674.638938;Problem size; 100;Time; 0.007006;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000191;GREEDY
+Solution;1571.094543;Problem size; 100;Time; 0.007779;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000197;GREEDY
+Solution;1240.097107;Problem size; 100;Time; 0.014658;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000195;GREEDY
+Solution;1383.977734;Problem size; 100;Time; 0.008042;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000199;GREEDY
+Solution;1276.451611;Problem size; 100;Time; 0.009081;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000188;GREEDY
+Solution;1600.936186;Problem size; 100;Time; 0.007657;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000194;GREEDY
+Solution;1914.632808;Problem size; 100;Time; 0.013721;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000201;GREEDY
+Solution;1668.522239;Problem size; 100;Time; 0.007865;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.000197;GREEDY
+Solution;1215.764298;Problem size; 100;Time; 0.006366;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000009;GREEDY
+Solution;49.756319;Problem size; 10;Time; 0.004769;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000007;GREEDY
+Solution;45.097264;Problem size; 10;Time; 0.004349;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000009;GREEDY
+Solution;31.841779;Problem size; 10;Time; 0.003327;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000010;GREEDY
+Solution;46.982207;Problem size; 10;Time; 0.005173;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000010;GREEDY
+Solution;49.971076;Problem size; 10;Time; 0.006885;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000010;GREEDY
+Solution;42.314274;Problem size; 10;Time; 0.003370;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000009;GREEDY
+Solution;61.769584;Problem size; 10;Time; 0.003471;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000009;GREEDY
+Solution;32.145790;Problem size; 10;Time; 0.004213;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000009;GREEDY
+Solution;33.721797;Problem size; 10;Time; 0.005129;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000010;GREEDY
+Solution;55.315254;Problem size; 10;Time; 0.004973;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000629;GREEDY
+Solution;3207.961225;Problem size; 200;Time; 0.010031;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.000386;GREEDY
+Solution;3598.366874;Problem size; 200;Time; 0.008129;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.000607;GREEDY
+Solution;3128.023057;Problem size; 200;Time; 0.008266;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000613;GREEDY
+Solution;3017.773807;Problem size; 200;Time; 0.009518;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000616;GREEDY
+Solution;3312.877810;Problem size; 200;Time; 0.009087;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000604;GREEDY
+Solution;2973.514760;Problem size; 200;Time; 0.008578;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000473;GREEDY
+Solution;3239.896663;Problem size; 200;Time; 0.012383;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000384;GREEDY
+Solution;3467.910290;Problem size; 200;Time; 0.011331;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000655;GREEDY
+Solution;3399.118591;Problem size; 200;Time; 0.008570;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.000650;GREEDY
+Solution;2844.472770;Problem size; 200;Time; 0.008862;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000066;GREEDY
+Solution;613.041373;Problem size; 50;Time; 0.005680;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000071;GREEDY
+Solution;707.328974;Problem size; 50;Time; 0.007150;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000068;GREEDY
+Solution;647.068454;Problem size; 50;Time; 0.005760;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000065;GREEDY
+Solution;566.613186;Problem size; 50;Time; 0.005361;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000063;GREEDY
+Solution;713.261918;Problem size; 50;Time; 0.005026;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000071;GREEDY
+Solution;560.829530;Problem size; 50;Time; 0.006091;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000062;GREEDY
+Solution;825.130357;Problem size; 50;Time; 0.016353;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000046;GREEDY
+Solution;649.137901;Problem size; 50;Time; 0.004631;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000044;GREEDY
+Solution;567.709193;Problem size; 50;Time; 0.004562;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000045;GREEDY
+Solution;543.336530;Problem size; 50;Time; 0.003610;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.000146;GREEDY
+Solution;1562.491203;Problem size; 100;Time; 0.013325;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000203;GREEDY
+Solution;1674.638938;Problem size; 100;Time; 0.013576;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000124;GREEDY
+Solution;1571.094543;Problem size; 100;Time; 0.011342;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000196;GREEDY
+Solution;1240.097107;Problem size; 100;Time; 0.013813;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000129;GREEDY
+Solution;1383.977734;Problem size; 100;Time; 0.011758;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000127;GREEDY
+Solution;1276.451611;Problem size; 100;Time; 0.011259;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000164;GREEDY
+Solution;1600.936186;Problem size; 100;Time; 0.014038;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000127;GREEDY
+Solution;1914.632808;Problem size; 100;Time; 0.012137;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000195;GREEDY
+Solution;1668.522239;Problem size; 100;Time; 0.011809;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.000126;GREEDY
+Solution;1215.764298;Problem size; 100;Time; 0.011595;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000009;GREEDY
+Solution;36.248607;Problem size; 10;Time; 0.007213;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000010;GREEDY
+Solution;45.097264;Problem size; 10;Time; 0.009980;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000009;GREEDY
+Solution;26.192252;Problem size; 10;Time; 0.009436;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000009;GREEDY
+Solution;46.982207;Problem size; 10;Time; 0.019198;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000008;GREEDY
+Solution;49.971076;Problem size; 10;Time; 0.008714;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000010;GREEDY
+Solution;42.314274;Problem size; 10;Time; 0.011617;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000008;GREEDY
+Solution;50.537672;Problem size; 10;Time; 0.017317;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000009;GREEDY
+Solution;32.145790;Problem size; 10;Time; 0.012799;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000011;GREEDY
+Solution;33.721797;Problem size; 10;Time; 0.010310;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000010;GREEDY
+Solution;55.315254;Problem size; 10;Time; 0.012500;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000719;GREEDY
+Solution;3207.961225;Problem size; 200;Time; 0.020614;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.000754;GREEDY
+Solution;3598.366874;Problem size; 200;Time; 0.018787;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.000634;GREEDY
+Solution;3128.023057;Problem size; 200;Time; 0.012624;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000400;GREEDY
+Solution;3017.773807;Problem size; 200;Time; 0.020419;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000387;GREEDY
+Solution;3312.877810;Problem size; 200;Time; 0.012218;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000384;GREEDY
+Solution;2973.514760;Problem size; 200;Time; 0.015724;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000387;GREEDY
+Solution;3239.896663;Problem size; 200;Time; 0.016928;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000641;GREEDY
+Solution;3467.910290;Problem size; 200;Time; 0.017582;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000638;GREEDY
+Solution;3399.118591;Problem size; 200;Time; 0.016100;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.000399;GREEDY
+Solution;2844.472770;Problem size; 200;Time; 0.062171;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000050;GREEDY
+Solution;613.041373;Problem size; 50;Time; 0.018858;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000065;GREEDY
+Solution;707.328974;Problem size; 50;Time; 0.010234;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000083;GREEDY
+Solution;647.068454;Problem size; 50;Time; 0.010435;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000062;GREEDY
+Solution;566.613186;Problem size; 50;Time; 0.012381;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000045;GREEDY
+Solution;713.261918;Problem size; 50;Time; 0.008015;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000045;GREEDY
+Solution;560.829530;Problem size; 50;Time; 0.007114;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000069;GREEDY
+Solution;825.130357;Problem size; 50;Time; 0.008104;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000046;GREEDY
+Solution;649.137901;Problem size; 50;Time; 0.008239;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000046;GREEDY
+Solution;567.709193;Problem size; 50;Time; 0.007687;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000047;GREEDY
+Solution;543.336530;Problem size; 50;Time; 0.007245;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.000132;GREEDY
+Solution;1562.491203;Problem size; 100;Time; 0.014066;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000204;GREEDY
+Solution;1674.638938;Problem size; 100;Time; 0.012297;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000124;GREEDY
+Solution;1571.094543;Problem size; 100;Time; 0.012589;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000206;GREEDY
+Solution;1240.097107;Problem size; 100;Time; 0.014463;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000187;GREEDY
+Solution;1383.977734;Problem size; 100;Time; 0.015519;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000201;GREEDY
+Solution;1276.451611;Problem size; 100;Time; 0.013440;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000196;GREEDY
+Solution;1600.936186;Problem size; 100;Time; 0.017461;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000193;GREEDY
+Solution;1914.632808;Problem size; 100;Time; 0.014096;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000196;GREEDY
+Solution;1668.522239;Problem size; 100;Time; 0.022454;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.000195;GREEDY
+Solution;1215.764298;Problem size; 100;Time; 0.010651;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000010;GREEDY
+Solution;41.077140;Problem size; 10;Time; 0.008093;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000107;GREEDY
+Solution;45.097264;Problem size; 10;Time; 0.012091;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000009;GREEDY
+Solution;31.841779;Problem size; 10;Time; 0.012804;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000009;GREEDY
+Solution;40.610425;Problem size; 10;Time; 0.009510;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000009;GREEDY
+Solution;49.971076;Problem size; 10;Time; 0.008407;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000009;GREEDY
+Solution;42.314274;Problem size; 10;Time; 0.009582;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000008;GREEDY
+Solution;50.537672;Problem size; 10;Time; 0.014738;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000010;GREEDY
+Solution;32.145790;Problem size; 10;Time; 0.009012;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000010;GREEDY
+Solution;33.721797;Problem size; 10;Time; 0.010469;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000010;GREEDY
+Solution;55.315254;Problem size; 10;Time; 0.011110;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000660;GREEDY
+Solution;3207.961225;Problem size; 200;Time; 0.018275;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.000689;GREEDY
+Solution;3598.366874;Problem size; 200;Time; 0.020095;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.000386;GREEDY
+Solution;3128.023057;Problem size; 200;Time; 0.014220;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000636;GREEDY
+Solution;3017.773807;Problem size; 200;Time; 0.019141;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000635;GREEDY
+Solution;3312.877810;Problem size; 200;Time; 0.019876;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000695;GREEDY
+Solution;2973.514760;Problem size; 200;Time; 0.018842;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000612;GREEDY
+Solution;3239.896663;Problem size; 200;Time; 0.018743;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000652;GREEDY
+Solution;3467.910290;Problem size; 200;Time; 0.022054;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000715;GREEDY
+Solution;3399.118591;Problem size; 200;Time; 0.016684;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.001712;GREEDY
+Solution;2844.472770;Problem size; 200;Time; 0.018063;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000063;GREEDY
+Solution;613.041373;Problem size; 50;Time; 0.011506;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000068;GREEDY
+Solution;707.328974;Problem size; 50;Time; 0.010483;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000051;GREEDY
+Solution;647.068454;Problem size; 50;Time; 0.009385;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000066;GREEDY
+Solution;566.613186;Problem size; 50;Time; 0.009009;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000046;GREEDY
+Solution;713.261918;Problem size; 50;Time; 0.009008;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000069;GREEDY
+Solution;560.829530;Problem size; 50;Time; 0.008748;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000045;GREEDY
+Solution;825.130357;Problem size; 50;Time; 0.008458;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000053;GREEDY
+Solution;649.137901;Problem size; 50;Time; 0.007771;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000053;GREEDY
+Solution;567.709193;Problem size; 50;Time; 0.008020;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000045;GREEDY
+Solution;543.336530;Problem size; 50;Time; 0.009471;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.000200;GREEDY
+Solution;1562.491203;Problem size; 100;Time; 0.016120;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000133;GREEDY
+Solution;1674.638938;Problem size; 100;Time; 0.013294;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000148;GREEDY
+Solution;1571.094543;Problem size; 100;Time; 0.013562;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000191;GREEDY
+Solution;1240.097107;Problem size; 100;Time; 0.020902;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000129;GREEDY
+Solution;1383.977734;Problem size; 100;Time; 0.009423;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000128;GREEDY
+Solution;1276.451611;Problem size; 100;Time; 0.009376;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000203;GREEDY
+Solution;1600.936186;Problem size; 100;Time; 0.030556;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000136;GREEDY
+Solution;1914.632808;Problem size; 100;Time; 0.020134;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000203;GREEDY
+Solution;1577.588471;Problem size; 100;Time; 0.031435;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.000207;GREEDY
+Solution;1215.764298;Problem size; 100;Time; 0.014082;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000010;GREEDY
+Solution;36.248607;Problem size; 10;Time; 0.009209;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000010;GREEDY
+Solution;45.097264;Problem size; 10;Time; 0.038437;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000009;GREEDY
+Solution;33.964885;Problem size; 10;Time; 0.012363;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000009;GREEDY
+Solution;46.982207;Problem size; 10;Time; 0.009082;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000010;GREEDY
+Solution;49.971076;Problem size; 10;Time; 0.008193;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000022;GREEDY
+Solution;42.314274;Problem size; 10;Time; 0.007370;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000008;GREEDY
+Solution;61.769584;Problem size; 10;Time; 0.007642;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000009;GREEDY
+Solution;32.145790;Problem size; 10;Time; 0.013307;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000010;GREEDY
+Solution;33.721797;Problem size; 10;Time; 0.008619;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000010;GREEDY
+Solution;62.196011;Problem size; 10;Time; 0.012551;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000645;GREEDY
+Solution;3207.961225;Problem size; 200;Time; 0.020327;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.000390;GREEDY
+Solution;3598.366874;Problem size; 200;Time; 0.011828;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.000391;GREEDY
+Solution;3128.023057;Problem size; 200;Time; 0.011223;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000647;GREEDY
+Solution;3017.773807;Problem size; 200;Time; 0.015349;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000602;GREEDY
+Solution;3312.877810;Problem size; 200;Time; 0.017137;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000845;GREEDY
+Solution;2973.514760;Problem size; 200;Time; 0.021017;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000432;GREEDY
+Solution;3239.896663;Problem size; 200;Time; 0.011509;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000452;GREEDY
+Solution;3467.910290;Problem size; 200;Time; 0.010708;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000392;GREEDY
+Solution;3399.118591;Problem size; 200;Time; 0.010825;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.000392;GREEDY
+Solution;2844.472770;Problem size; 200;Time; 0.012316;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000068;GREEDY
+Solution;613.041373;Problem size; 50;Time; 0.014679;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000068;GREEDY
+Solution;707.328974;Problem size; 50;Time; 0.010112;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000059;GREEDY
+Solution;647.068454;Problem size; 50;Time; 0.009484;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000051;GREEDY
+Solution;566.613186;Problem size; 50;Time; 0.008715;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000050;GREEDY
+Solution;713.261918;Problem size; 50;Time; 0.010843;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000053;GREEDY
+Solution;560.829530;Problem size; 50;Time; 0.009060;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000064;GREEDY
+Solution;825.130357;Problem size; 50;Time; 0.011527;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000047;GREEDY
+Solution;649.137901;Problem size; 50;Time; 0.012305;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000046;GREEDY
+Solution;567.709193;Problem size; 50;Time; 0.010331;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000080;GREEDY
+Solution;543.336530;Problem size; 50;Time; 0.015701;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.000205;GREEDY
+Solution;1562.491203;Problem size; 100;Time; 0.034418;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000200;GREEDY
+Solution;1674.638938;Problem size; 100;Time; 0.058026;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000127;GREEDY
+Solution;1544.071581;Problem size; 100;Time; 0.118336;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000182;GREEDY
+Solution;1240.097107;Problem size; 100;Time; 0.035309;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000394;GREEDY
+Solution;1383.977734;Problem size; 100;Time; 0.053975;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000194;GREEDY
+Solution;1276.451611;Problem size; 100;Time; 0.064042;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000187;GREEDY
+Solution;1600.936186;Problem size; 100;Time; 0.054337;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000344;GREEDY
+Solution;1914.632808;Problem size; 100;Time; 0.043015;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000198;GREEDY
+Solution;1668.522239;Problem size; 100;Time; 0.057978;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.000194;GREEDY
+Solution;1215.764298;Problem size; 100;Time; 0.046676;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000009;GREEDY
+Solution;49.756319;Problem size; 10;Time; 0.239419;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000011;GREEDY
+Solution;47.836231;Problem size; 10;Time; 0.032650;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000009;GREEDY
+Solution;26.192252;Problem size; 10;Time; 0.031962;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000009;GREEDY
+Solution;46.982207;Problem size; 10;Time; 0.027465;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000007;GREEDY
+Solution;49.971076;Problem size; 10;Time; 0.018143;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000007;GREEDY
+Solution;42.314274;Problem size; 10;Time; 0.020933;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000009;GREEDY
+Solution;47.800684;Problem size; 10;Time; 0.027500;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000009;GREEDY
+Solution;32.145790;Problem size; 10;Time; 0.024635;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000011;GREEDY
+Solution;33.721797;Problem size; 10;Time; 0.027605;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000010;GREEDY
+Solution;62.196011;Problem size; 10;Time; 0.093809;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000433;GREEDY
+Solution;3207.961225;Problem size; 200;Time; 0.033012;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.000441;GREEDY
+Solution;3598.366874;Problem size; 200;Time; 0.029608;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.000385;GREEDY
+Solution;3128.023057;Problem size; 200;Time; 0.046273;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000393;GREEDY
+Solution;3017.773807;Problem size; 200;Time; 0.034639;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000616;GREEDY
+Solution;3312.877810;Problem size; 200;Time; 0.036561;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000658;GREEDY
+Solution;2973.514760;Problem size; 200;Time; 0.061820;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000629;GREEDY
+Solution;3239.896663;Problem size; 200;Time; 0.037233;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000394;GREEDY
+Solution;3467.910290;Problem size; 200;Time; 0.040001;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000616;GREEDY
+Solution;3399.118591;Problem size; 200;Time; 0.050705;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.000395;GREEDY
+Solution;2844.472770;Problem size; 200;Time; 0.036811;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000053;GREEDY
+Solution;613.041373;Problem size; 50;Time; 0.035330;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000048;GREEDY
+Solution;707.328974;Problem size; 50;Time; 0.027611;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000048;GREEDY
+Solution;647.068454;Problem size; 50;Time; 0.029473;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000051;GREEDY
+Solution;566.613186;Problem size; 50;Time; 0.027422;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000065;GREEDY
+Solution;713.261918;Problem size; 50;Time; 0.031467;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000047;GREEDY
+Solution;560.829530;Problem size; 50;Time; 0.031087;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000046;GREEDY
+Solution;825.130357;Problem size; 50;Time; 0.033880;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000048;GREEDY
+Solution;649.137901;Problem size; 50;Time; 0.039666;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000068;GREEDY
+Solution;567.709193;Problem size; 50;Time; 0.051860;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000066;GREEDY
+Solution;543.336530;Problem size; 50;Time; 0.047537;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.000129;GREEDY
+Solution;1562.491203;Problem size; 100;Time; 0.044416;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000130;GREEDY
+Solution;1674.638938;Problem size; 100;Time; 0.059732;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000205;GREEDY
+Solution;1571.094543;Problem size; 100;Time; 0.071566;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000203;GREEDY
+Solution;1240.097107;Problem size; 100;Time; 0.065531;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000199;GREEDY
+Solution;1383.977734;Problem size; 100;Time; 0.072575;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000129;GREEDY
+Solution;1276.451611;Problem size; 100;Time; 0.032685;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000188;GREEDY
+Solution;1600.936186;Problem size; 100;Time; 0.050177;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000129;GREEDY
+Solution;1914.632808;Problem size; 100;Time; 0.033109;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000223;GREEDY
+Solution;1668.522239;Problem size; 100;Time; 0.034855;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.000198;GREEDY
+Solution;1215.764298;Problem size; 100;Time; 0.053475;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000009;GREEDY
+Solution;42.047416;Problem size; 10;Time; 0.070098;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000010;GREEDY
+Solution;39.909551;Problem size; 10;Time; 0.104656;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000009;GREEDY
+Solution;20.233345;Problem size; 10;Time; 0.124614;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000010;GREEDY
+Solution;60.489987;Problem size; 10;Time; 0.284186;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000009;GREEDY
+Solution;57.408600;Problem size; 10;Time; 0.091036;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000011;GREEDY
+Solution;43.637933;Problem size; 10;Time; 0.165850;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000010;GREEDY
+Solution;46.990782;Problem size; 10;Time; 0.092754;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000010;GREEDY
+Solution;45.036475;Problem size; 10;Time; 0.072258;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000009;GREEDY
+Solution;48.329247;Problem size; 10;Time; 0.102584;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000008;GREEDY
+Solution;60.550502;Problem size; 10;Time; 0.054388;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000394;GREEDY
+Solution;3207.961225;Problem size; 200;Time; 0.037804;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.000389;GREEDY
+Solution;3598.366874;Problem size; 200;Time; 0.032649;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.000433;GREEDY
+Solution;3128.023057;Problem size; 200;Time; 0.029987;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000681;GREEDY
+Solution;3017.773807;Problem size; 200;Time; 0.046342;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000794;GREEDY
+Solution;3312.877810;Problem size; 200;Time; 0.043530;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000392;GREEDY
+Solution;2973.514760;Problem size; 200;Time; 0.044391;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000389;GREEDY
+Solution;3239.896663;Problem size; 200;Time; 0.040170;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000394;GREEDY
+Solution;3467.910290;Problem size; 200;Time; 0.029894;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000390;GREEDY
+Solution;3399.118591;Problem size; 200;Time; 0.031532;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.000394;GREEDY
+Solution;2844.472770;Problem size; 200;Time; 0.032431;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000064;GREEDY
+Solution;613.041373;Problem size; 50;Time; 0.038760;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000046;GREEDY
+Solution;707.328974;Problem size; 50;Time; 0.027876;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000046;GREEDY
+Solution;647.068454;Problem size; 50;Time; 0.029654;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000045;GREEDY
+Solution;566.613186;Problem size; 50;Time; 0.030737;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000067;GREEDY
+Solution;713.261918;Problem size; 50;Time; 0.033144;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000047;GREEDY
+Solution;560.829530;Problem size; 50;Time; 0.033685;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000068;GREEDY
+Solution;825.130357;Problem size; 50;Time; 0.036621;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000046;GREEDY
+Solution;649.137901;Problem size; 50;Time; 0.038420;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000053;GREEDY
+Solution;567.709193;Problem size; 50;Time; 0.036166;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000080;GREEDY
+Solution;543.336530;Problem size; 50;Time; 0.054352;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.000190;GREEDY
+Solution;943.036751;Problem size; 100;Time; 0.051251;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000199;GREEDY
+Solution;964.752676;Problem size; 100;Time; 0.095503;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000194;GREEDY
+Solution;980.145759;Problem size; 100;Time; 0.052156;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000197;GREEDY
+Solution;951.116234;Problem size; 100;Time; 0.085075;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000130;GREEDY
+Solution;989.938873;Problem size; 100;Time; 0.051496;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000250;GREEDY
+Solution;956.831888;Problem size; 100;Time; 0.059531;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000183;GREEDY
+Solution;975.751909;Problem size; 100;Time; 0.041042;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000198;GREEDY
+Solution;924.272400;Problem size; 100;Time; 0.046212;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000202;GREEDY
+Solution;953.526563;Problem size; 100;Time; 0.049282;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.000129;GREEDY
+Solution;935.044185;Problem size; 100;Time; 0.036719;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000009;GREEDY
+Solution;26.221374;Problem size; 10;Time; 0.072147;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000010;GREEDY
+Solution;33.170585;Problem size; 10;Time; 0.193392;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000010;GREEDY
+Solution;18.395623;Problem size; 10;Time; 0.103183;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000010;GREEDY
+Solution;25.201807;Problem size; 10;Time; 0.128208;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000009;GREEDY
+Solution;29.693261;Problem size; 10;Time; 0.118884;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000007;GREEDY
+Solution;35.330798;Problem size; 10;Time; 0.114745;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000007;GREEDY
+Solution;30.883627;Problem size; 10;Time; 0.073850;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000007;GREEDY
+Solution;26.601814;Problem size; 10;Time; 0.091912;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000007;GREEDY
+Solution;23.326714;Problem size; 10;Time; 0.090769;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000007;GREEDY
+Solution;21.850591;Problem size; 10;Time; 0.073295;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000388;GREEDY
+Solution;2638.571895;Problem size; 200;Time; 0.029936;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.000391;GREEDY
+Solution;2852.170561;Problem size; 200;Time; 0.031266;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.000444;GREEDY
+Solution;2509.472930;Problem size; 200;Time; 0.034235;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000394;GREEDY
+Solution;2656.936227;Problem size; 200;Time; 0.029523;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000389;GREEDY
+Solution;2679.278554;Problem size; 200;Time; 0.029166;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000389;GREEDY
+Solution;2564.778490;Problem size; 200;Time; 0.031383;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000401;GREEDY
+Solution;2605.594909;Problem size; 200;Time; 0.036170;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000391;GREEDY
+Solution;2701.445669;Problem size; 200;Time; 0.030444;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000390;GREEDY
+Solution;2801.345864;Problem size; 200;Time; 0.029981;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.000394;GREEDY
+Solution;2472.749068;Problem size; 200;Time; 0.028008;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000052;GREEDY
+Solution;389.088410;Problem size; 50;Time; 0.041392;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000068;GREEDY
+Solution;326.680212;Problem size; 50;Time; 0.031090;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000066;GREEDY
+Solution;317.866215;Problem size; 50;Time; 0.035970;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000060;GREEDY
+Solution;326.367325;Problem size; 50;Time; 0.033972;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000047;GREEDY
+Solution;298.315631;Problem size; 50;Time; 0.032756;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000047;GREEDY
+Solution;309.361613;Problem size; 50;Time; 0.031587;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000047;GREEDY
+Solution;318.964616;Problem size; 50;Time; 0.033823;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000065;GREEDY
+Solution;360.067048;Problem size; 50;Time; 0.032978;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000066;GREEDY
+Solution;320.019747;Problem size; 50;Time; 0.031200;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000045;GREEDY
+Solution;304.054046;Problem size; 50;Time; 0.026953;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.001076;GREEDY
+Solution;943.036751;Problem size; 100;Time; 0.003692;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000129;GREEDY
+Solution;964.752676;Problem size; 100;Time; 0.002136;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000194;GREEDY
+Solution;980.145759;Problem size; 100;Time; 0.002941;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000197;GREEDY
+Solution;951.116234;Problem size; 100;Time; 0.002757;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000194;GREEDY
+Solution;989.938873;Problem size; 100;Time; 0.004000;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000201;GREEDY
+Solution;956.831888;Problem size; 100;Time; 0.010048;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000191;GREEDY
+Solution;975.751909;Problem size; 100;Time; 0.003182;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000195;GREEDY
+Solution;924.272400;Problem size; 100;Time; 0.008406;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000203;GREEDY
+Solution;953.526563;Problem size; 100;Time; 0.003629;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.000213;GREEDY
+Solution;935.044185;Problem size; 100;Time; 0.004661;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000010;GREEDY
+Solution;26.221374;Problem size; 10;Time; 0.000797;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000010;GREEDY
+Solution;33.170585;Problem size; 10;Time; 0.105607;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000010;GREEDY
+Solution;18.395623;Problem size; 10;Time; 0.001178;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000009;GREEDY
+Solution;25.201807;Problem size; 10;Time; 0.001335;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000007;GREEDY
+Solution;29.693261;Problem size; 10;Time; 0.001991;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000010;GREEDY
+Solution;35.330798;Problem size; 10;Time; 0.001134;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000010;GREEDY
+Solution;30.883627;Problem size; 10;Time; 0.000962;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000010;GREEDY
+Solution;26.601814;Problem size; 10;Time; 0.001210;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000009;GREEDY
+Solution;23.326714;Problem size; 10;Time; 0.002119;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000010;GREEDY
+Solution;21.850591;Problem size; 10;Time; 0.013176;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000635;GREEDY
+Solution;2638.571895;Problem size; 200;Time; 0.004755;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.000609;GREEDY
+Solution;2852.170561;Problem size; 200;Time; 0.005620;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.000647;GREEDY
+Solution;2509.472930;Problem size; 200;Time; 0.005230;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000612;GREEDY
+Solution;2656.936227;Problem size; 200;Time; 0.005477;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000403;GREEDY
+Solution;2679.278554;Problem size; 200;Time; 0.005785;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000685;GREEDY
+Solution;2564.778490;Problem size; 200;Time; 0.004796;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000625;GREEDY
+Solution;2605.594909;Problem size; 200;Time; 0.005410;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000397;GREEDY
+Solution;2701.445669;Problem size; 200;Time; 0.003922;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000405;GREEDY
+Solution;2801.345864;Problem size; 200;Time; 0.004293;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.000635;GREEDY
+Solution;2472.749068;Problem size; 200;Time; 0.005370;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000071;GREEDY
+Solution;389.088410;Problem size; 50;Time; 0.003344;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000065;GREEDY
+Solution;326.680212;Problem size; 50;Time; 0.001916;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000068;GREEDY
+Solution;317.866215;Problem size; 50;Time; 0.002108;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000061;GREEDY
+Solution;326.367325;Problem size; 50;Time; 0.002324;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000052;GREEDY
+Solution;298.315631;Problem size; 50;Time; 0.001283;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000067;GREEDY
+Solution;309.361613;Problem size; 50;Time; 0.001539;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000081;GREEDY
+Solution;318.964616;Problem size; 50;Time; 0.001431;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000048;GREEDY
+Solution;360.067048;Problem size; 50;Time; 0.007645;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000045;GREEDY
+Solution;320.019747;Problem size; 50;Time; 0.002175;GREEDY_2OPT
+ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000069;GREEDY
+Solution;304.054046;Problem size; 50;Time; 0.001450;GREEDY_2OPT

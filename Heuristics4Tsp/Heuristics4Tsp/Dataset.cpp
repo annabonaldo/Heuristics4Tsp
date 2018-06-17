@@ -24,6 +24,7 @@ Dataset Dataset::RANDN_Dataset()
 {
 	Dataset dataset; 
 	dataset.name = RANDN;
+	dataset.type = ActiveDataset::RandActive; 
 	dataset.output_stats = "dataReports\\RANDNheuristicsStats.txt";
 	std::vector<int> sizes = 
 	{ 
@@ -56,6 +57,7 @@ Dataset Dataset::GRID_Dataset()
 
 	Dataset dataset;
 	dataset.name = GRID;
+	dataset.type = ActiveDataset::GridActive; 
 	dataset.output_stats = "dataReports\\GRIDheuristicsStats.txt";
 
 	std::string N10 = "dataset\\GRID\\10CONSTGRIDsample1model.txt";
@@ -79,22 +81,24 @@ Dataset Dataset::GRID_Dataset()
 
 Dataset Dataset::SEMIGRID_Dataset()
 {
-	return loadDataset(SEMIGRID);
+	return loadDataset(SEMIGRID, ActiveDataset::SemigridActive);
 }
 Dataset Dataset::CONSTRAND50_Dataset()
 {
 
-	return loadDataset(CONSTRAND50);
+	return loadDataset(CONSTRAND50, ActiveDataset::ConstRand50Active);
 }
 Dataset Dataset::CONSTRAND5000_Dataset()
 {
-	return loadDataset(CONSTRAND5000); 
+	return  loadDataset(CONSTRAND5000, ActiveDataset::ConstRand5000Active);
+	
 }
 
-Dataset Dataset::loadDataset(const std::string & datasetName)
+Dataset Dataset::loadDataset(const std::string & datasetName, ActiveDataset type)
 {
 	Dataset dataset;
 	dataset.name = datasetName;
+	dataset.type = type; 
 	dataset.output_stats = "dataReports\\" + datasetName + "heuristicsStats.txt";
 	std::vector<int> sizes =
 	{

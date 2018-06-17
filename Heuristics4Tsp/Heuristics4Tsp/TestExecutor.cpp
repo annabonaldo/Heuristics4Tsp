@@ -18,7 +18,7 @@ TestExecutor::~TestExecutor()
 {
 }
 
-void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std::vector<DatasetGenerator::ActiveDataset> & activeDatasets)
+void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std::vector<Dataset::ActiveDataset> & activeDatasets)
 {
 	DatasetGenerator::generate(activeDatasets);
 
@@ -31,6 +31,13 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 		{
 			GreedySolver solver = GreedySolver();
 			ExecuteOnActiveDatasets(solver); 
+			break;
+		}
+		case ActiveTSPSolver::GreedyOptimized2opt:
+		{
+			GreedySolver solver = GreedySolver();
+			solver.optimized = true; 
+			ExecuteOnActiveDatasets(solver, true);
 			break;
 		}
 		case ActiveTSPSolver::TabuSearch: {
@@ -90,7 +97,11 @@ void TestExecutor::ExecuteTest(Solver & solver, Dataset & dataset, std::string  
 	writeResult(dataset.output_stats , dataset.name+ ";" + resultline);
 
 	//TSPViewer::visualizeTSP(aSolution, tspInstance, solver.name() + " before computing TSP", 1);
-    TSPViewer::drawTSP(bestSolution, tspInstance, "dataReports\\paths\\"+solver.name() + dataset.name +key,200/problem_size, 20);
+    TSPViewer::drawTSP(bestSolution, 
+		               tspInstance, 
+		               "dataReports\\paths\\"+solver.name() + dataset.name +key,
+		               DatasetGenerator::datasetRadius(dataset.type, problem_size),
+		               10);
 	
 	if (VERBOSE) 
 	{
@@ -103,7 +114,7 @@ void TestExecutor::ExecuteTest(Solver & solver, Dataset & dataset, std::string  
 	}
 }
 
-void TestExecutor::ExecuteOnActiveDatasets(Solver & solver)
+void TestExecutor::ExecuteOnActiveDatasets(Solver & solver, bool optimize)
 {
 	std::cout << "Execution with Solver " << solver.name(); 
 	std::vector<Dataset>::iterator dit = DatasetGenerator::datasets.begin();
@@ -114,10 +125,10 @@ void TestExecutor::ExecuteOnActiveDatasets(Solver & solver)
 		for (; file_it != dit->input_files.end(); file_it++)
 		{
 			std::string key = file_it->first; 
-			std::cout << "dataset key " << key << std::endl;
-			std::cout << "dataset size "<<dit->input_sizes.at(key) << std::endl; 
-			std::cout << "dataset filepath " << dit->input_files.at(key) << std::endl;
-			ExecuteTest(solver, *dit, key, dit->input_sizes.at(key));
+			std::cout << "--- on Dataset: [key: " << key;
+			std::cout << "] [size:"<<dit->input_sizes.at(key); 
+			std::cout << "] [filepath: " << dit->input_files.at(key)<<"]" << std::endl;
+			ExecuteTest(solver, *dit, key, dit->input_sizes.at(key));		
 		}
 	}
 }

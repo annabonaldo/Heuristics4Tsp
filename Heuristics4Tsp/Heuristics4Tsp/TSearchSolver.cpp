@@ -10,6 +10,7 @@ std::string TSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol,  TS
 	std::string line = "";
 		bool stop = false;
 		int  iter = 0;
+		int notUpdatingIter = 0; 
 
 		///Tabu Search
 		tabuList.reserve(tsp.n);
@@ -21,41 +22,38 @@ std::string TSearchSolver::solve(const TSP& tsp, const TSPSolution& initSol,  TS
 		bestValue = currValue = solutionLengthValue(currSol, tsp);
 		TSPMove move;
 		while (!stop) {
-			++iter;                                                                                             /// TS: iter not only for displaying
-			if (tsp.n < 20) currSol.print();
-			//std::cout << " (" << iter << ") value " << currValue << "\t(" << solutionLengthValue(currSol, tsp) << ")";      /// TS: iter
-			double aspiration = bestValue - currValue;                                                            //**// TSAC: aspired IMPROVEMENT (to improve over bestValue)
-			double bestNeighValue = currValue + findBestNeighbor(tsp, currSol, iter, aspiration, move);             //**// TSAC: aspiration
-																													//if ( bestNeighValue < currValue ) {                                                               /// TS: replace stopping and moving criteria
-																													//  bestValue = currValue = bestNeighValue;                                                         ///
-																													//  currSol = swap(currSol,move);                                                                   ///
-																													//  stop = false;                                                                                   ///
-																													//} else {                                                                                          ///
-																													//  stop = true;                                                                                    ///
-																													//}                                                                                                 ///
+			++iter;  
+			increaseTSLenghtIfNecessary(notUpdatingIter); 
+			//if (tsp.n < 20) currSol.print();
+		
+			double aspiration = bestValue - currValue;                                                            
+			double bestNeighValue = currValue + findBestNeighbor(tsp, currSol, iter, aspiration, move);             
+																													                                                       																													                                                                                               
+			if (bestNeighValue >= tsp.infinite) {                                                             				
+				notUpdatingIter++;
+				continue;
+			}
+			else
+			{
+				tabuList[currSol.sequence[move.from]] = iter;
+				tabuList[currSol.sequence[move.to]] = iter;
+				currSol = swap(currSol, move);
+				currValue = bestNeighValue;
 
-			if (bestNeighValue >= tsp.infinite) {                                                             // TS: stop because all neighbours are tabu
-			//	std::cout << "\tmove: NO legal neighbour" << std::endl;                                           //
-				stop = true;                                                                                      //
-				continue;                                                                                         //
-			}                                                                                                            //
+				if (currValue < bestValue - 0.01) {
+					bestValue = currValue;
+					bestSol = currSol;
+				
+					restoreTSLenghtIfNecessary(notUpdatingIter); 
+				}
+				else
+					notUpdatingIter++; 
 
-			tabuList[currSol.sequence[move.from]] = iter;                                                       /// TS: update tabu list
-			tabuList[currSol.sequence[move.to]] = iter;                                                       ///
-			currSol = swap(currSol, move);                                                                       /// TS: always the best move
-			currValue = bestNeighValue;                                                                         /// 
-			if (currValue < bestValue - 0.01) {                                                                /// TS: update incumbent (not always)
-				bestValue = currValue;                                                                            ///
-				bestSol = currSol;                                                                                ///
-                                                                          ///
-			}                                                                                                   ///
+				if (iter > maxIter) { stop = true;}
+			}																										     
+		}		
 
-			if (iter > maxIter) {                                                                             /// TS: new stopping criteria
-				stop = true;                                                                                      ///
-			}                                                                                                   ///
-	
-		}
-		bestSol = currSol;                                                                                  /// TS: not always improves
+		bestSol = currSol;                                                                                   
   
 		double endTime = getWallTime();
 		string problemSize = to_string(tsp.n);
@@ -101,7 +99,22 @@ double TSearchSolver::findBestNeighbor(const TSP& tsp, const TSPSolution& currSo
 	return bestCostVariation;
 }
 
+void TSearchSolver::increaseTSLenghtIfNecessary(int notUpdatingIter)
+{
+	if (isDynamicTabuLenght() &&
+	   (notUpdatingIter >= this->nIterChangeTabuLenght))
+			tabuLength = maxTabuLenght; 
+}
 
+void TSearchSolver::restoreTSLenghtIfNecessary(int & notUpdatingIter)
+{
+	if (isDynamicTabuLenght() &&		
+	   (notUpdatingIter >= this->nIterChangeTabuLenght))
+	{
+		tabuLength = minTabuLenght;
+		notUpdatingIter = 0; 
+	}
+}
 
 
 

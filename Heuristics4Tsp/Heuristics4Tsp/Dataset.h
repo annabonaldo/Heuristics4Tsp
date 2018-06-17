@@ -4,10 +4,14 @@
 class Dataset
 {
 public:
-	enum dataset {
-		dataset_randomN, 
-		dataset_constGrid
+	enum ActiveDataset {
+		RandActive,
+		GridActive,
+		ConstRand50Active,
+		ConstRand5000Active,
+		SemigridActive
 	};
+	
 	std::map<std::string, int> input_sizes;
 	std::map<std::string, std::string> input_files; 
 	std::string output_stats; 
@@ -29,10 +33,12 @@ public:
 	static std::string Dataset::SEMIGRID;
 
 	std::string name; 
+	ActiveDataset type;
 
 	Dataset();
 	~Dataset();
+	
 private: 
-	static Dataset loadDataset(const std::string & datasetName);
+	static Dataset loadDataset(const std::string & datasetName, ActiveDataset type);
 };
 

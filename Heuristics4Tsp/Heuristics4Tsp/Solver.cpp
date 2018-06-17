@@ -3,6 +3,9 @@
 #include <iostream>
 #include <string>
 #include <set>
+#include <opencv2\opencv.hpp>
+#include "opencv2/imgproc/imgproc.hpp"
+#include "opencv2/highgui/highgui.hpp"
 using namespace std;
 
 double Solver::getWallTime()
@@ -19,26 +22,23 @@ double Solver::getWallTime()
 	return (double)time.QuadPart / freq.QuadPart;
 }
 
-void optimize2opt(const TSP& tsp, TSPSolution& bestSol)
+void Solver::optimize2opt(const TSP& tsp, TSPSolution& bestSol, int maxSwap, int iterationLimit )
 {
-	//double minchange = 0;
-
-	TSPSolution tspSol(bestSol);
-
-	//for (int i = 0; i < bestSol.sequence.size()-1; i++) {
-	//	for (int j = i + 1; j < bestSol.sequence.size(); j ++) {
-	//		TSPMove m1 = TSPMove(bestSol.sequence[i], bestSol.sequence[i+1]);
-	//		TSPMove m2 = TSPMove(bestSol.sequence[j], bestSol.sequence[j + 1]);
-
-	//		double change; 
-	//		change = tsp.distance(m1.from, m1.to) + tsp.distance(m2.from, m2.to)
-	//			- tsp.distance(m1.from, m2.from) - tsp.distance(m1.to, m2.to); 
-	//		if (change > 0.01)	//		{
-	//			tspSol.sequence[m1.from] = m2.to; 
-
-	//		for (int k = m1.from+1;  <= move.to; ++k) {
-	//				tspSol.sequence[k] = tmpSol.sequence[move.to - (k - move.from)];
-	//			}	//		}	//			 	//	}	//}
+	if (iterationLimit == 0)
+		iterationLimit = tsp.n *tsp.n *2; 
+	TSPSolution tmpSol(bestSol);
+	bool execute = maxSwap > 0 && iterationLimit > 0; 
+	while(execute)
+	
+	for (int i = 0; i < bestSol.sequence.size()-1 && execute; i++)
+	{
+		TSP::Point  segment_iStart = tsp.nodes[i]; 
+		TSP::Point  segment_iEnd = tsp.nodes[i+1];
+		for (int j = i + 2; j < bestSol.sequence.size() && execute; j++)
+		{		
+			TSP::Point  segment_jStart = tsp.nodes[j];
+			TSP::Point  segment_jEnd = tsp.nodes[j + 1];
+			if (segmentsIntersects(segment_iStart, segment_iEnd, segment_jStart, segment_jEnd))			{				TSPMove move(i, j + 1);				swap(tmpSol, move);				if (this->solutionLengthValue(tmpSol, tsp) < this->solutionLengthValue(bestSol, tsp))					bestSol = tmpSol;				else					tmpSol = bestSol; 				maxSwap--; 			}				iterationLimit--; 		}	}
 }
 
 TSPSolution& Solver::swap(TSPSolution& tspSol, const TSPMove& move)
@@ -107,5 +107,35 @@ double Solver::randomDOUBLE(double min, double max) //range : [min, max)
 double Solver::randProb() //range : [0, 1)
 {
 	return (double)rand() / (RAND_MAX + 1.0);
+}
+
+bool Solver::segmentsIntersects(const TSP::Point & o1_in, const TSP::Point& p1_in, const TSP::Point& o2_in,const TSP::Point &p2_in)
+{
+	cv::Point2f o1 = cv::Point2f(o1_in.x, o1_in.y);
+	cv::Point2f p1 = cv::Point2f(p1_in.x, p1_in.y);
+	cv::Point2f o2 = cv::Point2f(o2_in.x, o2_in.y);
+	cv::Point2f p2 = cv::Point2f(p2_in.x, p2_in.y);
+	
+	cv::Point2f x  = o2 - o1;
+	cv::Point2f d1 = p1 - o1;
+	cv::Point2f d2 = p2 - o2;
+	
+
+	float cross = d1.x*d2.y - d1.y*d2.x;
+	if (std::fabs(cross) < 1e-8)
+		return false;
+
+	std::vector<cv::Point2f> veritices; 
+	veritices.push_back(o1); 
+	veritices.push_back(o2); 
+	veritices.push_back(p1); 
+	veritices.push_back(p2); 
+	
+
+	double t1 = (x.x * d2.y - x.y * d2.x) / cross;
+	cv::Point2f r = o1 + d1 * t1;
+	double is_inside = cv::pointPolygonTest(veritices,r, false);
+
+	return (is_inside > 1e-6);
 }
 

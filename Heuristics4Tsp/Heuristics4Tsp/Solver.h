@@ -7,6 +7,7 @@
 #define _WIN32
 #endif
 #include <Windows.h>
+
 typedef struct move {
 	int			from;
 	int			to;
@@ -19,7 +20,8 @@ class Solver
 public:
 	
 	Solver() {
-		verbose = false; 
+		verbose = false;
+		optimized = false; 
 	}
 
 	bool verbose; 
@@ -55,12 +57,13 @@ public:
 	}
 
 	virtual std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) = 0; 
-	void optimize2opt(const TSP& tsp, TSPSolution& bestSol); 
+	void optimize2opt(const TSP& tsp, TSPSolution& bestSol, int maxSwap = 30, int iterationLimit = 0); 
 	virtual std::string filename() = 0;
 	virtual bool isLowPerformance() { return false;}
-
 	std::vector<std::string> solValues;
 
+	bool segmentsIntersects(const TSP::Point & o1_in, const TSP::Point& p1_in, const TSP::Point& o2_in, const TSP::Point &p2_in); 
+	bool optimized; 
 protected:
 	
 
@@ -69,13 +72,17 @@ protected:
 	int randomINT(int min, int max); 
 	double randomDOUBLE(double min, double max);
 	static double randProb(); 
-	std::string getLine(std::string solSize, std::string  problemSize, std::string  time, bool timer_stop = false)
+	virtual std::string moreFeatures() { if (optimized) return "OPT"; else return "";  }
+
+	std::string getLine(std::string solSize, std::string  problemSize, std::string  time, bool timer_stop = false, bool optimized = false)
 	{
 		std::string  line = std::string("Solution;") + solSize +
 			";Problem size; " + problemSize +
 			";Time; " + time;
 
-		line = line + ";" + name();
+		line = line + ";" + name(); 
+		if(optimized)
+				line = line+"_2OPT";
 		if(timer_stop)
 			line = line + "; STOP for expiring timer;";
 	//	line = line.replace(line.begin(), line.end(), ".", ","); 

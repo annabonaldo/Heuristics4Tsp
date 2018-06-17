@@ -8,37 +8,58 @@
 std::map<std::string, TSP> DatasetGenerator::DatasetPool = std::map<std::string, TSP>();
 std::vector<Dataset> DatasetGenerator::datasets = std::vector<Dataset>();
 
-void DatasetGenerator::generate(std::vector<ActiveDataset> & activeDatasets)
+void DatasetGenerator::generate(std::vector<Dataset::ActiveDataset> & activeDatasets)
 {
-	datasets.clear(); 
+	datasets.clear();
 	for (int i = 0; i < activeDatasets.size(); i++)
 	{
-		ActiveDataset dataset = activeDatasets.at(i);
+		Dataset::ActiveDataset dataset = activeDatasets.at(i);
 		switch (dataset)
 		{
-		case ActiveDataset::GridActive:
+		case Dataset::ActiveDataset::GridActive:
 			datasets.push_back(Dataset::GRID_Dataset());
 			break;
 
-		case ActiveDataset::RandActive:
+		case Dataset::ActiveDataset::RandActive:
 			datasets.push_back(Dataset::RANDN_Dataset());
 			break;
-		case ActiveDataset::SemigridActive:
+		case Dataset::ActiveDataset::SemigridActive:
 			datasets.push_back(Dataset::SEMIGRID_Dataset());
 			break;
 
-		case ActiveDataset::ConstRand50Active:
+		case Dataset::ActiveDataset::ConstRand50Active:
 			datasets.push_back(Dataset::CONSTRAND50_Dataset());
 			break;
-		case ActiveDataset::ConstRand5000Active:
+		case Dataset::ActiveDataset::ConstRand5000Active:
 			datasets.push_back(Dataset::CONSTRAND5000_Dataset());
 			break;
 		}
 	}
 
 }
+int DatasetGenerator::datasetRadius(Dataset::ActiveDataset d, int size)
+{
+	switch (d)
+	{
+	case Dataset::ActiveDataset::GridActive:
+		return std::sqrt(size) + 5;
+		break;
 
+	case Dataset::ActiveDataset::RandActive:
+		return size;
 
+		/*case ActiveDataset::SemigridActive:
+			datasets.push_back(Dataset::SEMIGRID_Dataset());
+			break;*/
+
+	case Dataset::ActiveDataset::ConstRand50Active:
+		return 50;
+	case Dataset::ActiveDataset::ConstRand5000Active:
+		return 5000;
+	}
+
+	return 1;
+}
 void DatasetGenerator::generateRandom(int n, int radius, std::string name, TSP & tsp)
 {
 	srand(time(NULL));
@@ -76,7 +97,7 @@ void DatasetGenerator::generateGrid(int n, double distanceH, double distanceW, i
 	DatasetPool.insert(std::pair<std::string, TSP>(name, tsp));
 }
 
-void DatasetGenerator::readDataset(std::string filename, TSP & tsp, int size )
+void DatasetGenerator::readDataset(std::string filename, TSP & tsp, int size)
 {
 	std::vector<TSP::Point> out;
 	std::ifstream fileStream(filename, std::ios::in);
@@ -85,13 +106,13 @@ void DatasetGenerator::readDataset(std::string filename, TSP & tsp, int size )
 
 	while (!fileStream.eof() && size > 0) {
 		int x, y;
-		fileStream >> x >> y; 
+		fileStream >> x >> y;
 		//std::cout << x << ", " << y << std::endl;
 		out.push_back(TSP::Point(x, y));
-		size--; 
+		size--;
 	}
 
 	//std::cout << "out.size() "<< out.size() << std::endl;
 	tsp.init(out);
-		
+
 }

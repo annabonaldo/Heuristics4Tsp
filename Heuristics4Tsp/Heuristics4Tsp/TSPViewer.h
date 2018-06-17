@@ -7,6 +7,6 @@ public:
 	~TSPViewer();
 
 
-	static void drawTSP(const TSPSolution & solution, const TSP& tsp, std::string window_name, int scale = 1, int offset = 0, bool filedraw = true, bool show = false);
+	static void drawTSP(const TSPSolution & solution, const TSP& tsp, std::string window_name, int radius, int problemsize , bool filedraw = true, bool show = false);
 };
 
