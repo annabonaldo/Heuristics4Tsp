@@ -12,14 +12,21 @@ public:
 	std::map<std::string, std::string> input_files; 
 	std::string output_stats; 
 
-	static Dataset randomNDataset(); 
-	static Dataset constGridDataset(); 
+	static Dataset RANDN_Dataset(); 
+	static Dataset GRID_Dataset(); 
+	static Dataset SEMIGRID_Dataset();
+	static Dataset CONSTRAND50_Dataset();
+	static Dataset CONSTRAND5000_Dataset();
 
 	
 	static std::string Dataset::baseInputFolder; 
 	static std::string Dataset::baseOutputFolder;
-	static std::string Dataset::constGrid;
-	static std::string Dataset::randomN;
+
+	static std::string Dataset::RANDN;
+	static std::string Dataset::CONSTRAND50;
+	static std::string Dataset::CONSTRAND5000;
+	static std::string Dataset::GRID;
+	static std::string Dataset::SEMIGRID;
 
 	std::string name; 
 
