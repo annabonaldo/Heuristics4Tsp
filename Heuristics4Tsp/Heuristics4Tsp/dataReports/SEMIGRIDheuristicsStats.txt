@@ -1,240 +1,360 @@
-ven 15 06 ;SEMIGRID;Solution;1823.499747;Problem size; 100;Time; 0.000201;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1602.905954;Problem size; 100;Time; 0.000213;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1797.763514;Problem size; 100;Time; 0.000201;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1599.746404;Problem size; 100;Time; 0.000205;GREEDY
-ven 15 06 ;SEMIGRID;Solution;2169.825277;Problem size; 100;Time; 0.000195;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1720.746074;Problem size; 100;Time; 0.000196;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1881.848461;Problem size; 100;Time; 0.000205;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1607.417371;Problem size; 100;Time; 0.000152;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1982.587246;Problem size; 100;Time; 0.000270;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1699.603406;Problem size; 100;Time; 0.000194;GREEDY
-ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 0.000013;GREEDY
-ven 15 06 ;SEMIGRID;Solution;22.010827;Problem size; 10;Time; 0.000013;GREEDY
-ven 15 06 ;SEMIGRID;Solution;13.656854;Problem size; 10;Time; 0.000010;GREEDY
-ven 15 06 ;SEMIGRID;Solution;20.007789;Problem size; 10;Time; 0.000011;GREEDY
-ven 15 06 ;SEMIGRID;Solution;22.242539;Problem size; 10;Time; 0.000011;GREEDY
-ven 15 06 ;SEMIGRID;Solution;23.697523;Problem size; 10;Time; 0.000011;GREEDY
-ven 15 06 ;SEMIGRID;Solution;16.275850;Problem size; 10;Time; 0.000007;GREEDY
-ven 15 06 ;SEMIGRID;Solution;12.200793;Problem size; 10;Time; 0.000007;GREEDY
-ven 15 06 ;SEMIGRID;Solution;15.625249;Problem size; 10;Time; 0.000007;GREEDY
-ven 15 06 ;SEMIGRID;Solution;22.006530;Problem size; 10;Time; 0.000008;GREEDY
-ven 15 06 ;SEMIGRID;Solution;5918.279601;Problem size; 200;Time; 0.000478;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6183.224194;Problem size; 200;Time; 0.000398;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6629.792800;Problem size; 200;Time; 0.000427;GREEDY
-ven 15 06 ;SEMIGRID;Solution;5280.941764;Problem size; 200;Time; 0.000392;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6116.728072;Problem size; 200;Time; 0.000405;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6309.552751;Problem size; 200;Time; 0.000395;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6399.433777;Problem size; 200;Time; 0.000399;GREEDY
-ven 15 06 ;SEMIGRID;Solution;5216.261094;Problem size; 200;Time; 0.000400;GREEDY
-ven 15 06 ;SEMIGRID;Solution;5410.590862;Problem size; 200;Time; 0.000397;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6138.347448;Problem size; 200;Time; 0.000398;GREEDY
-ven 15 06 ;SEMIGRID;Solution;136.732862;Problem size; 50;Time; 0.000064;GREEDY
-ven 15 06 ;SEMIGRID;Solution;120.322944;Problem size; 50;Time; 0.000042;GREEDY
-ven 15 06 ;SEMIGRID;Solution;123.309935;Problem size; 50;Time; 0.000037;GREEDY
-ven 15 06 ;SEMIGRID;Solution;148.349131;Problem size; 50;Time; 0.000060;GREEDY
-ven 15 06 ;SEMIGRID;Solution;124.985160;Problem size; 50;Time; 0.000040;GREEDY
-ven 15 06 ;SEMIGRID;Solution;182.457593;Problem size; 50;Time; 0.000038;GREEDY
-ven 15 06 ;SEMIGRID;Solution;147.330469;Problem size; 50;Time; 0.000049;GREEDY
-ven 15 06 ;SEMIGRID;Solution;135.569425;Problem size; 50;Time; 0.000051;GREEDY
-ven 15 06 ;SEMIGRID;Solution;118.655143;Problem size; 50;Time; 0.000038;GREEDY
-ven 15 06 ;SEMIGRID;Solution;121.032180;Problem size; 50;Time; 0.000039;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1823.499747;Problem size; 100;Time; 0.000190;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1602.905954;Problem size; 100;Time; 0.000236;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1797.763514;Problem size; 100;Time; 0.000192;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1599.746404;Problem size; 100;Time; 0.000127;GREEDY
-ven 15 06 ;SEMIGRID;Solution;2169.825277;Problem size; 100;Time; 0.000195;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1720.746074;Problem size; 100;Time; 0.000139;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1881.848461;Problem size; 100;Time; 0.000191;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1607.417371;Problem size; 100;Time; 0.000187;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1982.587246;Problem size; 100;Time; 0.000150;GREEDY
-ven 15 06 ;SEMIGRID;Solution;1699.603406;Problem size; 100;Time; 0.000130;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1823.499747;Problem size; 100;Time; 0.000129;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1602.905954;Problem size; 100;Time; 0.000195;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1797.763514;Problem size; 100;Time; 0.000124;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1599.746404;Problem size; 100;Time; 0.000196;GREEDY
+ven 15 06 ;SEMIGRID;Solution;2169.825277;Problem size; 100;Time; 0.000123;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1720.746074;Problem size; 100;Time; 0.000125;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1881.848461;Problem size; 100;Time; 0.000121;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1607.417371;Problem size; 100;Time; 0.000304;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1982.587246;Problem size; 100;Time; 0.000191;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1699.603406;Problem size; 100;Time; 0.000187;GREEDY
 ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 0.000008;GREEDY
-ven 15 06 ;SEMIGRID;Solution;22.010827;Problem size; 10;Time; 0.000006;GREEDY
-ven 15 06 ;SEMIGRID;Solution;13.656854;Problem size; 10;Time; 0.000007;GREEDY
-ven 15 06 ;SEMIGRID;Solution;20.007789;Problem size; 10;Time; 0.000007;GREEDY
-ven 15 06 ;SEMIGRID;Solution;22.242539;Problem size; 10;Time; 0.000010;GREEDY
+ven 15 06 ;SEMIGRID;Solution;22.010827;Problem size; 10;Time; 0.000009;GREEDY
+ven 15 06 ;SEMIGRID;Solution;13.656854;Problem size; 10;Time; 0.000008;GREEDY
+ven 15 06 ;SEMIGRID;Solution;20.007789;Problem size; 10;Time; 0.000009;GREEDY
+ven 15 06 ;SEMIGRID;Solution;22.242539;Problem size; 10;Time; 0.000009;GREEDY
+ven 15 06 ;SEMIGRID;Solution;23.697523;Problem size; 10;Time; 0.000009;GREEDY
+ven 15 06 ;SEMIGRID;Solution;16.275850;Problem size; 10;Time; 0.000010;GREEDY
+ven 15 06 ;SEMIGRID;Solution;12.200793;Problem size; 10;Time; 0.000008;GREEDY
+ven 15 06 ;SEMIGRID;Solution;15.625249;Problem size; 10;Time; 0.000008;GREEDY
+ven 15 06 ;SEMIGRID;Solution;22.006530;Problem size; 10;Time; 0.000007;GREEDY
+ven 15 06 ;SEMIGRID;Solution;5918.279601;Problem size; 200;Time; 0.000386;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6183.224194;Problem size; 200;Time; 0.000613;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6629.792800;Problem size; 200;Time; 0.000598;GREEDY
+ven 15 06 ;SEMIGRID;Solution;5280.941764;Problem size; 200;Time; 0.000606;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6116.728072;Problem size; 200;Time; 0.000473;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6309.552751;Problem size; 200;Time; 0.000411;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6399.433777;Problem size; 200;Time; 0.000379;GREEDY
+ven 15 06 ;SEMIGRID;Solution;5216.261094;Problem size; 200;Time; 0.001003;GREEDY
+ven 15 06 ;SEMIGRID;Solution;5410.590862;Problem size; 200;Time; 0.000571;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6138.347448;Problem size; 200;Time; 0.000382;GREEDY
+ven 15 06 ;SEMIGRID;Solution;136.732862;Problem size; 50;Time; 0.000040;GREEDY
+ven 15 06 ;SEMIGRID;Solution;120.322944;Problem size; 50;Time; 0.000036;GREEDY
+ven 15 06 ;SEMIGRID;Solution;123.309935;Problem size; 50;Time; 0.000034;GREEDY
+ven 15 06 ;SEMIGRID;Solution;148.349131;Problem size; 50;Time; 0.000052;GREEDY
+ven 15 06 ;SEMIGRID;Solution;124.985160;Problem size; 50;Time; 0.000046;GREEDY
+ven 15 06 ;SEMIGRID;Solution;182.457593;Problem size; 50;Time; 0.000036;GREEDY
+ven 15 06 ;SEMIGRID;Solution;147.330469;Problem size; 50;Time; 0.000034;GREEDY
+ven 15 06 ;SEMIGRID;Solution;135.569425;Problem size; 50;Time; 0.000035;GREEDY
+ven 15 06 ;SEMIGRID;Solution;118.655143;Problem size; 50;Time; 0.000034;GREEDY
+ven 15 06 ;SEMIGRID;Solution;121.032180;Problem size; 50;Time; 0.000036;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1823.499747;Problem size; 100;Time; 0.000196;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1602.905954;Problem size; 100;Time; 0.000201;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1797.763514;Problem size; 100;Time; 0.000196;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1599.746404;Problem size; 100;Time; 0.000219;GREEDY
+ven 15 06 ;SEMIGRID;Solution;2169.825277;Problem size; 100;Time; 0.000133;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1720.746074;Problem size; 100;Time; 0.000168;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1881.848461;Problem size; 100;Time; 0.000193;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1607.417371;Problem size; 100;Time; 0.000205;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1982.587246;Problem size; 100;Time; 0.000206;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1699.603406;Problem size; 100;Time; 0.000142;GREEDY
+ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 0.000008;GREEDY
+ven 15 06 ;SEMIGRID;Solution;22.010827;Problem size; 10;Time; 0.000044;GREEDY
+ven 15 06 ;SEMIGRID;Solution;13.656854;Problem size; 10;Time; 0.000009;GREEDY
+ven 15 06 ;SEMIGRID;Solution;20.007789;Problem size; 10;Time; 0.000008;GREEDY
+ven 15 06 ;SEMIGRID;Solution;22.242539;Problem size; 10;Time; 0.000009;GREEDY
 ven 15 06 ;SEMIGRID;Solution;23.697523;Problem size; 10;Time; 0.000008;GREEDY
 ven 15 06 ;SEMIGRID;Solution;16.275850;Problem size; 10;Time; 0.000008;GREEDY
 ven 15 06 ;SEMIGRID;Solution;12.200793;Problem size; 10;Time; 0.000008;GREEDY
-ven 15 06 ;SEMIGRID;Solution;15.625249;Problem size; 10;Time; 0.000005;GREEDY
-ven 15 06 ;SEMIGRID;Solution;22.006530;Problem size; 10;Time; 0.000007;GREEDY
-ven 15 06 ;SEMIGRID;Solution;5918.279601;Problem size; 200;Time; 0.000391;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6183.224194;Problem size; 200;Time; 0.000641;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6629.792800;Problem size; 200;Time; 0.000388;GREEDY
-ven 15 06 ;SEMIGRID;Solution;5280.941764;Problem size; 200;Time; 0.000403;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6116.728072;Problem size; 200;Time; 0.000563;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6309.552751;Problem size; 200;Time; 0.000668;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6399.433777;Problem size; 200;Time; 0.000382;GREEDY
-ven 15 06 ;SEMIGRID;Solution;5216.261094;Problem size; 200;Time; 0.000616;GREEDY
-ven 15 06 ;SEMIGRID;Solution;5410.590862;Problem size; 200;Time; 0.000638;GREEDY
-ven 15 06 ;SEMIGRID;Solution;6138.347448;Problem size; 200;Time; 0.000452;GREEDY
-ven 15 06 ;SEMIGRID;Solution;136.732862;Problem size; 50;Time; 0.000054;GREEDY
-ven 15 06 ;SEMIGRID;Solution;120.322944;Problem size; 50;Time; 0.000074;GREEDY
-ven 15 06 ;SEMIGRID;Solution;123.309935;Problem size; 50;Time; 0.000052;GREEDY
-ven 15 06 ;SEMIGRID;Solution;148.349131;Problem size; 50;Time; 0.000037;GREEDY
-ven 15 06 ;SEMIGRID;Solution;124.985160;Problem size; 50;Time; 0.000045;GREEDY
-ven 15 06 ;SEMIGRID;Solution;182.457593;Problem size; 50;Time; 0.000045;GREEDY
-ven 15 06 ;SEMIGRID;Solution;147.330469;Problem size; 50;Time; 0.000036;GREEDY
-ven 15 06 ;SEMIGRID;Solution;135.569425;Problem size; 50;Time; 0.000035;GREEDY
-ven 15 06 ;SEMIGRID;Solution;118.655143;Problem size; 50;Time; 0.000035;GREEDY
-ven 15 06 ;SEMIGRID;Solution;121.032180;Problem size; 50;Time; 0.000044;GREEDY
-ven 15 06 ;SEMIGRID;Solution;10262.726604;Problem size; 100;Time; 0.005234;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;10189.198789;Problem size; 100;Time; 0.005702;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;10240.548863;Problem size; 100;Time; 0.006006;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;10154.922177;Problem size; 100;Time; 0.005218;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9875.477070;Problem size; 100;Time; 0.005497;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;10606.980788;Problem size; 100;Time; 0.005094;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;10204.074724;Problem size; 100;Time; 0.005538;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9847.622756;Problem size; 100;Time; 0.005309;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9519.281224;Problem size; 100;Time; 0.005005;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;10670.595145;Problem size; 100;Time; 0.006457;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 0.000496;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;17.887722;Problem size; 10;Time; 0.000544;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;8.000000;Problem size; 10;Time; 0.000519;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;13.604665;Problem size; 10;Time; 0.000498;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;14.626766;Problem size; 10;Time; 0.000528;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;18.876357;Problem size; 10;Time; 0.000526;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;10.890685;Problem size; 10;Time; 0.000488;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;8.595242;Problem size; 10;Time; 0.000514;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9.222125;Problem size; 10;Time; 0.000654;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;13.062258;Problem size; 10;Time; 0.001097;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;53697.246459;Problem size; 200;Time; 0.012551;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;54733.473354;Problem size; 200;Time; 0.011415;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;55074.397319;Problem size; 200;Time; 0.012413;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;55126.067806;Problem size; 200;Time; 0.013537;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;55693.430928;Problem size; 200;Time; 0.013912;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;54436.975970;Problem size; 200;Time; 0.014151;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;56835.776546;Problem size; 200;Time; 0.011726;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;55779.064563;Problem size; 200;Time; 0.013401;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;50929.387891;Problem size; 200;Time; 0.013939;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;50367.264085;Problem size; 200;Time; 0.012630;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;394.605844;Problem size; 50;Time; 0.004763;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;210.181561;Problem size; 50;Time; 0.002926;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;344.023655;Problem size; 50;Time; 0.002897;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;523.917447;Problem size; 50;Time; 0.002938;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;276.863167;Problem size; 50;Time; 0.003685;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;282.639672;Problem size; 50;Time; 0.002962;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;464.972549;Problem size; 50;Time; 0.003141;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;402.405399;Problem size; 50;Time; 0.003304;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;408.983929;Problem size; 50;Time; 0.003193;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;282.060966;Problem size; 50;Time; 0.003421;SIMANNEALING; Temperature;1000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;7533.887546;Problem size; 100;Time; 11.588850;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;7293.586108;Problem size; 100;Time; 11.807024;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;7324.641615;Problem size; 100;Time; 11.662023;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;6074.996919;Problem size; 100;Time; 11.627729;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;7215.884942;Problem size; 100;Time; 11.193908;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;6488.025656;Problem size; 100;Time; 11.389514;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8436.308735;Problem size; 100;Time; 11.679614;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8116.836532;Problem size; 100;Time; 11.769823;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;7432.015432;Problem size; 100;Time; 11.727110;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;7811.109531;Problem size; 100;Time; 11.624411;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 0.934787;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;22.010827;Problem size; 10;Time; 0.903315;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;16.000000;Problem size; 10;Time; 1.394088;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;20.007789;Problem size; 10;Time; 0.994959;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;22.242539;Problem size; 10;Time; 1.340650;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;23.697523;Problem size; 10;Time; 0.961778;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;10.890685;Problem size; 10;Time; 0.928706;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8.077687;Problem size; 10;Time; 0.943215;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;15.625249;Problem size; 10;Time; 1.063530;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;13.944272;Problem size; 10;Time; 1.077431;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;17412.847105;Problem size; 200;Time; 25.943936;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;16518.991823;Problem size; 200;Time; 26.725679;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;31245.670825;Problem size; 200;Time; 26.121264;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;19285.877659;Problem size; 200;Time; 26.422390;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;30711.738038;Problem size; 200;Time; 26.414574;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;30854.067477;Problem size; 200;Time; 26.065880;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;21140.036462;Problem size; 200;Time; 26.874096;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;27500.674588;Problem size; 200;Time; 26.119350;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;40736.902905;Problem size; 200;Time; 26.550018;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;33656.588219;Problem size; 200;Time; 26.156459;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;251.593738;Problem size; 50;Time; 5.223698;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;177.837134;Problem size; 50;Time; 5.690148;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;211.059850;Problem size; 50;Time; 5.919464;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;291.039669;Problem size; 50;Time; 5.344655;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;212.910963;Problem size; 50;Time; 5.707480;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;251.201774;Problem size; 50;Time; 5.612853;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;410.119188;Problem size; 50;Time; 5.355638;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;244.720228;Problem size; 50;Time; 5.584810;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;211.412306;Problem size; 50;Time; 5.285011;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;222.997793;Problem size; 50;Time; 5.535493;SIMANNEALING; Temperature;1000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8967.776319;Problem size; 100;Time; 0.013007;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9223.467841;Problem size; 100;Time; 0.012121;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9668.966278;Problem size; 100;Time; 0.013406;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9016.206260;Problem size; 100;Time; 0.011783;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;8730.917945;Problem size; 100;Time; 0.011863;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9824.010974;Problem size; 100;Time; 0.012088;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9626.544623;Problem size; 100;Time; 0.011654;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9035.724850;Problem size; 100;Time; 0.016940;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;8719.413334;Problem size; 100;Time; 0.013939;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9433.606585;Problem size; 100;Time; 0.011853;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;12.957417;Problem size; 10;Time; 0.001020;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;32.029857;Problem size; 10;Time; 0.001049;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;16.000000;Problem size; 10;Time; 0.001106;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;25.455359;Problem size; 10;Time; 0.001064;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;26.792291;Problem size; 10;Time; 0.001872;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;13.067378;Problem size; 10;Time; 0.001104;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;8.213592;Problem size; 10;Time; 0.001835;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;8.077687;Problem size; 10;Time; 0.001125;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;9.222125;Problem size; 10;Time; 0.001125;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;13.944272;Problem size; 10;Time; 0.001220;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;52976.810743;Problem size; 200;Time; 0.033289;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;53910.803036;Problem size; 200;Time; 0.031714;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;54176.902042;Problem size; 200;Time; 0.031284;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;53856.283224;Problem size; 200;Time; 0.029512;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;54128.591169;Problem size; 200;Time; 0.032495;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;56605.192501;Problem size; 200;Time; 0.028281;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;55767.316679;Problem size; 200;Time; 0.030075;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;55094.230274;Problem size; 200;Time; 0.027697;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;53040.406748;Problem size; 200;Time; 0.028825;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;54360.583197;Problem size; 200;Time; 0.025465;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;298.757100;Problem size; 50;Time; 0.005538;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;247.160053;Problem size; 50;Time; 0.005902;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;318.556704;Problem size; 50;Time; 0.005517;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;498.340921;Problem size; 50;Time; 0.006899;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;276.863167;Problem size; 50;Time; 0.005652;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;282.639672;Problem size; 50;Time; 0.008944;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;442.625027;Problem size; 50;Time; 0.008483;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;409.503822;Problem size; 50;Time; 0.006219;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;356.948569;Problem size; 50;Time; 0.005703;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;313.202751;Problem size; 50;Time; 0.007275;SIMANNEALING; Temperature;500000;Delta;0.100000;
-ven 15 06 ;SEMIGRID;Solution;8411.047534;Problem size; 100;Time; 23.077757;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;7823.199515;Problem size; 100;Time; 22.603856;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8281.618762;Problem size; 100;Time; 22.136802;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8636.418483;Problem size; 100;Time; 22.107959;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8625.427782;Problem size; 100;Time; 22.760760;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8008.480641;Problem size; 100;Time; 22.288210;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8800.414439;Problem size; 100;Time; 22.442008;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8297.073743;Problem size; 100;Time; 22.179438;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;7970.111766;Problem size; 100;Time; 22.690672;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8260.018552;Problem size; 100;Time; 22.911583;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 2.460473;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;14.939759;Problem size; 10;Time; 2.317219;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;12.000000;Problem size; 10;Time; 1.745328;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;12.727680;Problem size; 10;Time; 1.876247;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;23.170770;Problem size; 10;Time; 1.780653;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;23.697523;Problem size; 10;Time; 1.934894;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;16.275850;Problem size; 10;Time; 1.947084;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;12.200793;Problem size; 10;Time; 2.151273;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;14.649335;Problem size; 10;Time; 1.894641;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;13.944272;Problem size; 10;Time; 1.846671;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;46107.972604;Problem size; 200;Time; 52.186193;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;46213.017053;Problem size; 200;Time; 50.949962;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;48427.097878;Problem size; 200;Time; 50.001117;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;47353.743032;Problem size; 200;Time; 50.693532;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;48448.335325;Problem size; 200;Time; 50.746805;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;47912.935096;Problem size; 200;Time; 50.787739;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;47457.419305;Problem size; 200;Time; 49.910161;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;46648.876545;Problem size; 200;Time; 50.969004;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;46318.313573;Problem size; 200;Time; 50.984709;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;45723.798329;Problem size; 200;Time; 51.001673;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;251.778385;Problem size; 50;Time; 10.057632;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;163.597424;Problem size; 50;Time; 10.383777;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;266.442165;Problem size; 50;Time; 10.481928;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;279.428714;Problem size; 50;Time; 10.187229;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;197.887949;Problem size; 50;Time; 11.051462;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;234.373127;Problem size; 50;Time; 10.590110;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;275.181147;Problem size; 50;Time; 10.186207;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;279.230597;Problem size; 50;Time; 10.704802;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;281.545357;Problem size; 50;Time; 10.323823;SIMANNEALING; Temperature;500000;Delta;0.000050;
-ven 15 06 ;SEMIGRID;Solution;216.774162;Problem size; 50;Time; 10.150543;SIMANNEALING; Temperature;500000;Delta;0.000050;
+ven 15 06 ;SEMIGRID;Solution;15.625249;Problem size; 10;Time; 0.000009;GREEDY
+ven 15 06 ;SEMIGRID;Solution;22.006530;Problem size; 10;Time; 0.000009;GREEDY
+ven 15 06 ;SEMIGRID;Solution;5918.279601;Problem size; 200;Time; 0.000395;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6183.224194;Problem size; 200;Time; 0.000412;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6629.792800;Problem size; 200;Time; 0.000415;GREEDY
+ven 15 06 ;SEMIGRID;Solution;5280.941764;Problem size; 200;Time; 0.000960;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6116.728072;Problem size; 200;Time; 0.000386;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6309.552751;Problem size; 200;Time; 0.000631;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6399.433777;Problem size; 200;Time; 0.000651;GREEDY
+ven 15 06 ;SEMIGRID;Solution;5216.261094;Problem size; 200;Time; 0.000403;GREEDY
+ven 15 06 ;SEMIGRID;Solution;5410.590862;Problem size; 200;Time; 0.000394;GREEDY
+ven 15 06 ;SEMIGRID;Solution;6138.347448;Problem size; 200;Time; 0.000412;GREEDY
+ven 15 06 ;SEMIGRID;Solution;136.732862;Problem size; 50;Time; 0.000058;GREEDY
+ven 15 06 ;SEMIGRID;Solution;120.322944;Problem size; 50;Time; 0.000038;GREEDY
+ven 15 06 ;SEMIGRID;Solution;123.309935;Problem size; 50;Time; 0.000047;GREEDY
+ven 15 06 ;SEMIGRID;Solution;148.349131;Problem size; 50;Time; 0.000040;GREEDY
+ven 15 06 ;SEMIGRID;Solution;124.985160;Problem size; 50;Time; 0.000040;GREEDY
+ven 15 06 ;SEMIGRID;Solution;182.457593;Problem size; 50;Time; 0.000040;GREEDY
+ven 15 06 ;SEMIGRID;Solution;147.330469;Problem size; 50;Time; 0.000041;GREEDY
+ven 15 06 ;SEMIGRID;Solution;135.569425;Problem size; 50;Time; 0.000052;GREEDY
+ven 15 06 ;SEMIGRID;Solution;118.655143;Problem size; 50;Time; 0.000038;GREEDY
+ven 15 06 ;SEMIGRID;Solution;121.032180;Problem size; 50;Time; 0.000040;GREEDY
+ven 15 06 ;SEMIGRID;Solution;1823.499747;Problem size; 100;Time; 0.000135;GREEDYOPT
+Solution;1738.475018;Problem size; 100;Time; 0.021418;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;1602.905954;Problem size; 100;Time; 0.000131;GREEDYOPT
+Solution;1568.548424;Problem size; 100;Time; 0.019942;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;1797.763514;Problem size; 100;Time; 0.000131;GREEDYOPT
+Solution;1749.763929;Problem size; 100;Time; 0.023333;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;1599.746404;Problem size; 100;Time; 0.000131;GREEDYOPT
+Solution;1546.294348;Problem size; 100;Time; 0.019180;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;2169.825277;Problem size; 100;Time; 0.000137;GREEDYOPT
+Solution;1933.780942;Problem size; 100;Time; 0.022472;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;1720.746074;Problem size; 100;Time; 0.000129;GREEDYOPT
+Solution;1687.499546;Problem size; 100;Time; 0.032458;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;1881.848461;Problem size; 100;Time; 0.000126;GREEDYOPT
+Solution;1881.298845;Problem size; 100;Time; 0.020466;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;1607.417371;Problem size; 100;Time; 0.000138;GREEDYOPT
+Solution;1528.116055;Problem size; 100;Time; 0.022897;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;1982.587246;Problem size; 100;Time; 0.000134;GREEDYOPT
+Solution;1717.714178;Problem size; 100;Time; 0.020291;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;1699.603406;Problem size; 100;Time; 0.000126;GREEDYOPT
+Solution;1680.128668;Problem size; 100;Time; 0.020405;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 0.000006;GREEDYOPT
+Solution;8.714777;Problem size; 10;Time; 0.000461;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;22.010827;Problem size; 10;Time; 0.000006;GREEDYOPT
+Solution;22.010827;Problem size; 10;Time; 0.000466;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;13.656854;Problem size; 10;Time; 0.000007;GREEDYOPT
+Solution;13.656854;Problem size; 10;Time; 0.000459;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;20.007789;Problem size; 10;Time; 0.000007;GREEDYOPT
+Solution;20.007789;Problem size; 10;Time; 0.000662;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;22.242539;Problem size; 10;Time; 0.000010;GREEDYOPT
+Solution;22.242539;Problem size; 10;Time; 0.000529;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;23.697523;Problem size; 10;Time; 0.000005;GREEDYOPT
+Solution;23.697523;Problem size; 10;Time; 0.000459;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;16.275850;Problem size; 10;Time; 0.000009;GREEDYOPT
+Solution;16.275850;Problem size; 10;Time; 0.001019;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;12.200793;Problem size; 10;Time; 0.000010;GREEDYOPT
+Solution;12.200793;Problem size; 10;Time; 0.001040;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;15.625249;Problem size; 10;Time; 0.000006;GREEDYOPT
+Solution;15.625249;Problem size; 10;Time; 0.000480;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;22.006530;Problem size; 10;Time; 0.000009;GREEDYOPT
+Solution;22.006530;Problem size; 10;Time; 0.001093;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;5918.279601;Problem size; 200;Time; 0.000396;GREEDYOPT
+Solution;5897.405994;Problem size; 200;Time; 0.107948;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;6183.224194;Problem size; 200;Time; 0.000590;GREEDYOPT
+Solution;6035.145844;Problem size; 200;Time; 0.114752;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;6629.792800;Problem size; 200;Time; 0.000387;GREEDYOPT
+Solution;6470.059054;Problem size; 200;Time; 0.108580;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;5280.941764;Problem size; 200;Time; 0.000383;GREEDYOPT
+Solution;5147.380262;Problem size; 200;Time; 0.115415;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;6116.728072;Problem size; 200;Time; 0.000388;GREEDYOPT
+Solution;5801.755785;Problem size; 200;Time; 0.111385;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;6309.552751;Problem size; 200;Time; 0.000402;GREEDYOPT
+Solution;6213.034194;Problem size; 200;Time; 0.122818;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;6399.433777;Problem size; 200;Time; 0.000404;GREEDYOPT
+Solution;5888.161522;Problem size; 200;Time; 0.117520;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;5216.261094;Problem size; 200;Time; 0.000403;GREEDYOPT
+Solution;5069.256752;Problem size; 200;Time; 0.108182;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;5410.590862;Problem size; 200;Time; 0.000389;GREEDYOPT
+Solution;5151.719451;Problem size; 200;Time; 0.125467;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;6138.347448;Problem size; 200;Time; 0.000394;GREEDYOPT
+Solution;6041.529775;Problem size; 200;Time; 0.104553;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;136.732862;Problem size; 50;Time; 0.000040;GREEDYOPT
+Solution;136.732862;Problem size; 50;Time; 0.000994;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;120.322944;Problem size; 50;Time; 0.000039;GREEDYOPT
+Solution;120.322944;Problem size; 50;Time; 0.001317;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;123.309935;Problem size; 50;Time; 0.000038;GREEDYOPT
+Solution;118.297957;Problem size; 50;Time; 0.000822;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;148.349131;Problem size; 50;Time; 0.000044;GREEDYOPT
+Solution;148.349131;Problem size; 50;Time; 0.000970;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;124.985160;Problem size; 50;Time; 0.000039;GREEDYOPT
+Solution;124.985160;Problem size; 50;Time; 0.001616;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;182.457593;Problem size; 50;Time; 0.000043;GREEDYOPT
+Solution;182.457593;Problem size; 50;Time; 0.000929;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;147.330469;Problem size; 50;Time; 0.000038;GREEDYOPT
+Solution;147.330469;Problem size; 50;Time; 0.000811;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;135.569425;Problem size; 50;Time; 0.000051;GREEDYOPT
+Solution;121.812746;Problem size; 50;Time; 0.000830;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;118.655143;Problem size; 50;Time; 0.000047;GREEDYOPT
+Solution;96.814813;Problem size; 50;Time; 0.000950;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;121.032180;Problem size; 50;Time; 0.000055;GREEDYOPT
+Solution;84.018669;Problem size; 50;Time; 0.001386;GREEDYOPT_2OPT
+ven 15 06 ;SEMIGRID;Solution;1613.293666;Problem size; 100;Time; 0.016922;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1716.572368;Problem size; 100;Time; 0.013011;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1835.091814;Problem size; 100;Time; 0.012025;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1658.122526;Problem size; 100;Time; 0.013158;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1689.702171;Problem size; 100;Time; 0.013843;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1741.796036;Problem size; 100;Time; 0.014360;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1827.825013;Problem size; 100;Time; 0.026944;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1663.911443;Problem size; 100;Time; 0.017496;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1581.569618;Problem size; 100;Time; 0.012984;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1602.214964;Problem size; 100;Time; 0.012569;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 0.000159;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.010827;Problem size; 10;Time; 0.000400;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;13.656854;Problem size; 10;Time; 0.000177;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;20.007789;Problem size; 10;Time; 0.000170;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.242539;Problem size; 10;Time; 0.000350;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;23.697523;Problem size; 10;Time; 0.000169;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;16.275850;Problem size; 10;Time; 0.000258;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;12.200793;Problem size; 10;Time; 0.000356;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;15.625249;Problem size; 10;Time; 0.000285;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.006530;Problem size; 10;Time; 0.000256;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4842.225397;Problem size; 200;Time; 0.021662;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;5203.828336;Problem size; 200;Time; 0.030882;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;5171.550137;Problem size; 200;Time; 0.031920;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4661.488007;Problem size; 200;Time; 0.035192;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;5003.236678;Problem size; 200;Time; 0.040885;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;5281.097401;Problem size; 200;Time; 0.030126;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;5129.665957;Problem size; 200;Time; 0.040140;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4830.612457;Problem size; 200;Time; 0.023539;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4999.057197;Problem size; 200;Time; 0.026413;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4792.184919;Problem size; 200;Time; 0.034994;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;129.033792;Problem size; 50;Time; 0.005048;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;120.697560;Problem size; 50;Time; 0.004545;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;139.783356;Problem size; 50;Time; 0.007211;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;165.966383;Problem size; 50;Time; 0.004868;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;133.768067;Problem size; 50;Time; 0.004516;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;160.293893;Problem size; 50;Time; 0.004816;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;148.590206;Problem size; 50;Time; 0.004768;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;154.220386;Problem size; 50;Time; 0.004888;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;137.669550;Problem size; 50;Time; 0.004632;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;127.298156;Problem size; 50;Time; 0.006792;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1402.664211;Problem size; 100;Time; 0.015117;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1478.518367;Problem size; 100;Time; 0.013540;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1550.626960;Problem size; 100;Time; 0.014877;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1329.593105;Problem size; 100;Time; 0.013648;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1502.916814;Problem size; 100;Time; 0.013276;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1557.303447;Problem size; 100;Time; 0.013956;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1492.403677;Problem size; 100;Time; 0.014803;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1495.316830;Problem size; 100;Time; 0.012212;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1492.998135;Problem size; 100;Time; 0.013007;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1372.059468;Problem size; 100;Time; 0.013701;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 0.000265;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.010827;Problem size; 10;Time; 0.000192;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;13.656854;Problem size; 10;Time; 0.000183;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;20.007789;Problem size; 10;Time; 0.000162;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.242539;Problem size; 10;Time; 0.000280;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;23.697523;Problem size; 10;Time; 0.000261;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;16.275850;Problem size; 10;Time; 0.000296;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;12.200793;Problem size; 10;Time; 0.000251;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;15.625249;Problem size; 10;Time; 0.000328;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.006530;Problem size; 10;Time; 0.000161;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4791.514231;Problem size; 200;Time; 0.030700;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4993.410884;Problem size; 200;Time; 0.038566;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4951.810380;Problem size; 200;Time; 0.035353;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4497.409129;Problem size; 200;Time; 0.028103;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4919.641720;Problem size; 200;Time; 0.042041;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4869.084359;Problem size; 200;Time; 0.027578;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4815.449995;Problem size; 200;Time; 0.043672;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4387.658968;Problem size; 200;Time; 0.029878;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4528.177306;Problem size; 200;Time; 0.032278;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4746.179432;Problem size; 200;Time; 0.046312;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;123.756417;Problem size; 50;Time; 0.005645;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;120.322944;Problem size; 50;Time; 0.004503;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;127.215799;Problem size; 50;Time; 0.004675;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;146.002595;Problem size; 50;Time; 0.005075;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;118.929915;Problem size; 50;Time; 0.004236;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;151.040118;Problem size; 50;Time; 0.004229;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;146.167617;Problem size; 50;Time; 0.004494;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;135.569425;Problem size; 50;Time; 0.004338;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;118.655143;Problem size; 50;Time; 0.004272;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;115.163139;Problem size; 50;Time; 0.004699;TSEARCH; ListLenght; 1000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1492.901647;Problem size; 100;Time; 0.164565;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1444.582808;Problem size; 100;Time; 0.170984;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1617.503149;Problem size; 100;Time; 0.161628;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1366.587827;Problem size; 100;Time; 0.161706;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1516.308297;Problem size; 100;Time; 0.173623;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1591.184170;Problem size; 100;Time; 0.163016;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1515.663863;Problem size; 100;Time; 0.167430;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1410.313108;Problem size; 100;Time; 0.164665;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1445.150546;Problem size; 100;Time; 0.163699;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1437.609873;Problem size; 100;Time; 0.168613;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 0.001502;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.010827;Problem size; 10;Time; 0.001517;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;13.656854;Problem size; 10;Time; 0.001521;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;20.007789;Problem size; 10;Time; 0.001535;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.242539;Problem size; 10;Time; 0.001534;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;23.697523;Problem size; 10;Time; 0.001949;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;16.275850;Problem size; 10;Time; 0.002978;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;12.200793;Problem size; 10;Time; 0.003005;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;15.625249;Problem size; 10;Time; 0.002987;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.006530;Problem size; 10;Time; 0.003011;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4768.093263;Problem size; 200;Time; 0.670806;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;5114.300847;Problem size; 200;Time; 0.662178;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4967.163905;Problem size; 200;Time; 0.693805;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4657.821100;Problem size; 200;Time; 0.687702;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4798.836145;Problem size; 200;Time; 0.679614;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4954.374663;Problem size; 200;Time; 0.027641;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4729.926938;Problem size; 200;Time; 0.693061;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4458.257239;Problem size; 200;Time; 0.712450;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4596.264962;Problem size; 200;Time; 0.668760;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4668.998890;Problem size; 200;Time; 0.685498;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;123.756417;Problem size; 50;Time; 0.042678;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;120.322944;Problem size; 50;Time; 0.044456;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;127.215799;Problem size; 50;Time; 0.046130;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;139.411334;Problem size; 50;Time; 0.042133;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;118.929915;Problem size; 50;Time; 0.052440;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;151.040118;Problem size; 50;Time; 0.041624;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;146.167617;Problem size; 50;Time; 0.042319;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;135.569425;Problem size; 50;Time; 0.049649;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;118.655143;Problem size; 50;Time; 0.042464;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;115.163139;Problem size; 50;Time; 0.041175;TSEARCH; ListLenght; 10000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1393.850236;Problem size; 100;Time; 1.652623;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1571.990660;Problem size; 100;Time; 1.633415;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1612.151565;Problem size; 100;Time; 1.634099;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1366.021628;Problem size; 100;Time; 1.651475;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1517.070629;Problem size; 100;Time; 1.662795;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1584.854418;Problem size; 100;Time; 1.682202;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1505.131079;Problem size; 100;Time; 1.650745;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1453.969744;Problem size; 100;Time; 1.652766;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1430.098441;Problem size; 100;Time; 1.630255;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1412.012494;Problem size; 100;Time; 1.649245;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 0.014507;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.010827;Problem size; 10;Time; 0.014942;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;13.656854;Problem size; 10;Time; 0.014817;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;20.007789;Problem size; 10;Time; 0.014309;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.242539;Problem size; 10;Time; 0.015690;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;23.697523;Problem size; 10;Time; 0.014632;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;16.275850;Problem size; 10;Time; 0.019527;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;12.200793;Problem size; 10;Time; 0.014043;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;15.625249;Problem size; 10;Time; 0.014914;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.006530;Problem size; 10;Time; 0.015077;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4797.104182;Problem size; 200;Time; 6.983881;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;5172.389228;Problem size; 200;Time; 7.127658;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4882.126290;Problem size; 200;Time; 7.091190;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4606.453010;Problem size; 200;Time; 7.026712;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;6004.788136;Problem size; 200;Time; 0.026803;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4862.414677;Problem size; 200;Time; 7.094871;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4953.853145;Problem size; 200;Time; 7.931707;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4559.646831;Problem size; 200;Time; 0.031868;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;5497.146234;Problem size; 200;Time; 0.021876;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;4754.630907;Problem size; 200;Time; 7.006415;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;123.756417;Problem size; 50;Time; 0.423211;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;120.322944;Problem size; 50;Time; 0.414981;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;123.309935;Problem size; 50;Time; 0.454104;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;139.411334;Problem size; 50;Time; 0.423466;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;118.929915;Problem size; 50;Time; 0.424580;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;151.040118;Problem size; 50;Time; 0.444599;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;146.167617;Problem size; 50;Time; 0.425303;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;135.569425;Problem size; 50;Time; 0.426083;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;118.655143;Problem size; 50;Time; 0.423501;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;115.163139;Problem size; 50;Time; 0.433292;TSEARCH; ListLenght; 100000; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;1670.970792;Problem size; 100;Time; 16.322919;TSEARCH; ListLenght; 10000; MaxIter;1000000;
+ven 15 06 ;SEMIGRID;Solution;1699.151710;Problem size; 100;Time; 16.270523;TSEARCH; ListLenght; 10000; MaxIter;1000000;
+ven 15 06 ;SEMIGRID;Solution;1779.685509;Problem size; 100;Time; 16.361576;TSEARCH; ListLenght; 10000; MaxIter;1000000;
+ven 15 06 ;SEMIGRID;Solution;1682.173310;Problem size; 100;Time; 17.074619;TSEARCH; ListLenght; 10000; MaxIter;1000000;
+ven 15 06 ;SEMIGRID;Solution;1812.189388;Problem size; 100;Time; 16.331472;TSEARCH; ListLenght; 10000; MaxIter;1000000;
+ven 15 06 ;SEMIGRID;Solution;1780.808078;Problem size; 100;Time; 16.298890;TSEARCH; ListLenght; 10000; MaxIter;1000000;
+ven 15 06 ;SEMIGRID;Solution;1726.222435;Problem size; 100;Time; 16.292334;TSEARCH; ListLenght; 10000; MaxIter;1000000;
+ven 15 06 ;SEMIGRID;Solution;1680.530640;Problem size; 100;Time; 17.061200;TSEARCH; ListLenght; 10000; MaxIter;1000000;
+ven 15 06 ;SEMIGRID;Solution;1572.597947;Problem size; 100;Time; 16.210743;TSEARCH; ListLenght; 10000; MaxIter;1000000;
+ven 15 06 ;SEMIGRID;Solution;1622.640918;Problem size; 100;Time; 16.200098;TSEARCH; ListLenght; 10000; MaxIter;1000000;
+ven 15 06 ;SEMIGRID;Solution;8.714777;Problem size; 10;Time; 0.000272;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.010827;Problem size; 10;Time; 0.000197;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;13.656854;Problem size; 10;Time; 0.000202;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;20.007789;Problem size; 10;Time; 0.000216;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.242539;Problem size; 10;Time; 0.000209;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;23.697523;Problem size; 10;Time; 0.000194;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;16.275850;Problem size; 10;Time; 0.000203;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;12.200793;Problem size; 10;Time; 0.000203;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;15.625249;Problem size; 10;Time; 0.000223;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;22.006530;Problem size; 10;Time; 0.000221;TSEARCH; ListLenght; 100; MaxIter;1000;
+ven 15 06 ;SEMIGRID;Solution;5649.268870;Problem size; 200;Time; 566.353499;TSEARCH; ListLenght; 40000; MaxIter;8000000;
+ven 15 06 ;SEMIGRID;Solution;5931.959472;Problem size; 200;Time; 568.970585;TSEARCH; ListLenght; 40000; MaxIter;8000000;
+ven 15 06 ;SEMIGRID;Solution;5796.470898;Problem size; 200;Time; 566.598917;TSEARCH; ListLenght; 40000; MaxIter;8000000;
+ven 15 06 ;SEMIGRID;Solution;5382.818078;Problem size; 200;Time; 565.514383;TSEARCH; ListLenght; 40000; MaxIter;8000000;
+ven 15 06 ;SEMIGRID;Solution;5792.943762;Problem size; 200;Time; 567.902653;TSEARCH; ListLenght; 40000; MaxIter;8000000;
+ven 15 06 ;SEMIGRID;Solution;5609.019229;Problem size; 200;Time; 570.129129;TSEARCH; ListLenght; 40000; MaxIter;8000000;
+ven 15 06 ;SEMIGRID;Solution;5755.800411;Problem size; 200;Time; 571.617620;TSEARCH; ListLenght; 40000; MaxIter;8000000;
+ven 15 06 ;SEMIGRID;Solution;5300.057331;Problem size; 200;Time; 566.089891;TSEARCH; ListLenght; 40000; MaxIter;8000000;
+ven 15 06 ;SEMIGRID;Solution;5391.731160;Problem size; 200;Time; 564.152543;TSEARCH; ListLenght; 40000; MaxIter;8000000;
+ven 15 06 ;SEMIGRID;Solution;5636.548926;Problem size; 200;Time; 568.854368;TSEARCH; ListLenght; 40000; MaxIter;8000000;
+ven 15 06 ;SEMIGRID;Solution;132.684746;Problem size; 50;Time; 0.526807;TSEARCH; ListLenght; 2500; MaxIter;125000;
+ven 15 06 ;SEMIGRID;Solution;140.406095;Problem size; 50;Time; 0.552128;TSEARCH; ListLenght; 2500; MaxIter;125000;
+ven 15 06 ;SEMIGRID;Solution;133.729151;Problem size; 50;Time; 0.550481;TSEARCH; ListLenght; 2500; MaxIter;125000;
+ven 15 06 ;SEMIGRID;Solution;167.364198;Problem size; 50;Time; 0.543249;TSEARCH; ListLenght; 2500; MaxIter;125000;
+ven 15 06 ;SEMIGRID;Solution;127.980970;Problem size; 50;Time; 0.559904;TSEARCH; ListLenght; 2500; MaxIter;125000;
+ven 15 06 ;SEMIGRID;Solution;153.159237;Problem size; 50;Time; 0.539042;TSEARCH; ListLenght; 2500; MaxIter;125000;
+ven 15 06 ;SEMIGRID;Solution;147.330469;Problem size; 50;Time; 0.554039;TSEARCH; ListLenght; 2500; MaxIter;125000;
+ven 15 06 ;SEMIGRID;Solution;145.549605;Problem size; 50;Time; 0.539495;TSEARCH; ListLenght; 2500; MaxIter;125000;
+ven 15 06 ;SEMIGRID;Solution;137.669550;Problem size; 50;Time; 0.531491;TSEARCH; ListLenght; 2500; MaxIter;125000;
+ven 15 06 ;SEMIGRID;Solution;127.298156;Problem size; 50;Time; 0.554457;TSEARCH; ListLenght; 2500; MaxIter;125000;

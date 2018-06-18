@@ -1,0 +1,26 @@
+# directory empty at 17giu2019 h21:51
+next execution: 	
+std::vector<Dataset::ActiveDataset> activeDatasets = {
+		Dataset::ActiveDataset::RandActive,
+		Dataset::ActiveDataset::GridActive,
+		Dataset::ActiveDataset::SemigridActive,
+		Dataset::ActiveDataset::ConstRand5000Active,
+		Dataset::ActiveDataset::ConstRand50Active
+	};
+
+	std::vector<TestExecutor::ActiveTSPSolver> activeSolvers = {
+		 TestExecutor::ActiveTSPSolver::Greedy,
+		 TestExecutor::ActiveTSPSolver::GreedyOptimized2opt,
+
+		 TestExecutor::ActiveTSPSolver::TabuSearch_Static_maxIter1e3,
+		 TestExecutor::ActiveTSPSolver::TabuSearch_Static_maxIter1e5,
+		 TestExecutor::ActiveTSPSolver::TabuSearch_Static_SizeProportional,
+
+		 TestExecutor::ActiveTSPSolver::TabuSearch_Dynamic_SizeProportional,
+		 TestExecutor::ActiveTSPSolver::TabuSearch_Dynamic_x2_x10
+
+		//	TestExecutor::ActiveTSPSolver::SimAnnealing_T1e3_delta1_e1,
+		//	TestExecutor::ActiveTSPSolver::SimAnnealing_T1e3_delta5_e3, 
+		//	TestExecutor::ActiveTSPSolver::SimAnnealing_T5e5_delta1_e1, 
+		//	TestExecutor::ActiveTSPSolver::SimAnnealing_T5e5_delta5_e3
+}

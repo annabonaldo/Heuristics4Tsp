@@ -9,7 +9,7 @@ public:
 	/** Constructor */
 	TSearchSolver(): Solver() {} 
 	
-	TSearchSolver(int lenght, int iter, bool mixed = false): Solver() {
+	TSearchSolver(int lenght, int iter): Solver() {
 		tabuLength = lenght;
 		minTabuLenght = tabuLength; 
 		maxIter = iter; 

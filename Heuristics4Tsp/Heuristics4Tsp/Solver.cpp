@@ -25,20 +25,25 @@ double Solver::getWallTime()
 void Solver::optimize2opt(const TSP& tsp, TSPSolution& bestSol, int maxSwap, int iterationLimit )
 {
 	if (iterationLimit == 0)
-		iterationLimit = tsp.n *tsp.n *2; 
+		iterationLimit = tsp.n*tsp.n;
+
 	TSPSolution tmpSol(bestSol);
-	bool execute = maxSwap > 0 && iterationLimit > 0; 
-	while(execute)
 	
-	for (int i = 0; i < bestSol.sequence.size()-1 && execute; i++)
+	bool execute = (maxSwap > 0) && (iterationLimit > 0); 
+	
+	while (execute)
 	{
-		TSP::Point  segment_iStart = tsp.nodes[i]; 
-		TSP::Point  segment_iEnd = tsp.nodes[i+1];
-		for (int j = i + 2; j < bestSol.sequence.size() && execute; j++)
-		{		
-			TSP::Point  segment_jStart = tsp.nodes[j];
-			TSP::Point  segment_jEnd = tsp.nodes[j + 1];
-			if (segmentsIntersects(segment_iStart, segment_iEnd, segment_jStart, segment_jEnd))			{				TSPMove move(i, j + 1);				swap(tmpSol, move);				if (this->solutionLengthValue(tmpSol, tsp) < this->solutionLengthValue(bestSol, tsp))					bestSol = tmpSol;				else					tmpSol = bestSol; 				maxSwap--; 			}				iterationLimit--; 		}	}
+		execute = (maxSwap > 0) && (iterationLimit > 0);
+		for (int i = 0; i < bestSol.sequence.size() - 1 && execute; i++)
+		{
+			TSP::Point  segment_iStart = tsp.nodes[i];
+			TSP::Point  segment_iEnd = tsp.nodes[i + 1];
+			for (int j = i + 2; j < bestSol.sequence.size() && execute; j++)
+			{
+				TSP::Point  segment_jStart = tsp.nodes[j];
+				TSP::Point  segment_jEnd = tsp.nodes[j + 1];
+				if (segmentsIntersects(segment_iStart, segment_iEnd, segment_jStart, segment_jEnd))				{					TSPMove move(i, j + 1);					swap(tmpSol, move);					if (this->solutionLengthValue(tmpSol, tsp) < this->solutionLengthValue(bestSol, tsp))						bestSol = tmpSol;					else						tmpSol = bestSol;					maxSwap--;				}				iterationLimit--;			}		}
+	}
 }
 
 TSPSolution& Solver::swap(TSPSolution& tspSol, const TSPMove& move)
@@ -67,7 +72,8 @@ double Solver::solutionLengthValue(const TSPSolution& sol, const TSP& tsp) const
 		if (repeat.find(from) == repeat.end())
 			repeat.insert(from);
 		else 
-			cerr << "ERROR repeated node!! Node repeated: " << from <<std::endl;
+		 if(from != 0)
+			 cerr << "ERROR repeated node!! Node repeated: " << from <<std::endl;
 		int to = sol.sequence[i + 1];
 	//	std::cout << "step " << from << " - " <<to << " : " << tsp.cost[from][to] << std::endl; 
 		total += tsp.cost[from][to];

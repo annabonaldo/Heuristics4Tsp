@@ -1,3 +1,0 @@
-Solution;168.11877903;Problem size; 10;Time; 0.172; Sample iter; undefined; EXACT; dataset; CONSTRAND50;
-Solution;271.043094877;Problem size; 50;Time; 146.797; Sample iter; undefined; EXACT; dataset; CONSTRAND50;
-Solution;396.110954131;Problem size; 100;Time; 16182.844; Sample iter; undefined; EXACT; dataset; CONSTRAND50;

@@ -9,7 +9,7 @@
 #include "SimAnnealingSolver.h"
 #include "TSPViewer.h"
 
-bool TestExecutor::VERBOSE = false; 
+bool TestExecutor::VERBOSE = false;
 TestExecutor::TestExecutor()
 {
 }
@@ -24,31 +24,26 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 
 	for (std::vector<ActiveTSPSolver>::iterator algIt = activeAlgorithms.begin(); algIt != activeAlgorithms.end(); algIt++)
 	{
-		ActiveTSPSolver activeSolver = *algIt; 
+		ActiveTSPSolver activeSolver = *algIt;
 		switch (activeSolver)
 		{
 		case ActiveTSPSolver::Greedy:
 		{
 			GreedySolver solver = GreedySolver();
-			ExecuteOnActiveDatasets(solver); 
+			ExecuteOnActiveDatasets(solver);
 			break;
 		}
 		case ActiveTSPSolver::GreedyOptimized2opt:
 		{
 			GreedySolver solver = GreedySolver();
-			solver.optimized = true; 
+			solver.optimized = true;
 			ExecuteOnActiveDatasets(solver, true);
-			break;
-		}
-		case ActiveTSPSolver::TabuSearch: {
-			TSearchSolver solver = TSearchSolver(1000, 1000);
-			ExecuteOnActiveDatasets(solver);
 			break;
 		}
 
 		case ActiveTSPSolver::SimAnnealing_T1e3_delta1_e1:
 		{
-			srand(111); 
+			srand(111);
 			SimAnnealingSolver solver = SimAnnealingSolver(1e3, 1e-1);
 			ExecuteOnActiveDatasets(solver);
 			break;
@@ -74,36 +69,101 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 			ExecuteOnActiveDatasets(solver);
 			break;
 		}
-		deafult: 
-			break; 
+
+		case ActiveTSPSolver::TabuSearch_Static_maxIter1e5:
+		{
+
+			TSearchSolver solver;
+			solver = TSearchSolver(1e2, 1e5);
+			ExecuteOnActiveDatasets(solver);
+
+			solver = TSearchSolver(1e3, 1e5);
+			ExecuteOnActiveDatasets(solver);
+
+			solver = TSearchSolver(1e4, 1e5);
+			ExecuteOnActiveDatasets(solver);
+
+			solver = TSearchSolver(1e5, 1e5);
+			ExecuteOnActiveDatasets(solver);
+
 		}
-		
+		case ActiveTSPSolver::TabuSearch_Static_maxIter1e3:
+		{
+
+			TSearchSolver solver;
+			solver = TSearchSolver(1e2, 1e3);
+			ExecuteOnActiveDatasets(solver);
+
+			solver = TSearchSolver(1e3, 1e3);
+			ExecuteOnActiveDatasets(solver);
+
+			solver = TSearchSolver(1e4, 1e3);
+			ExecuteOnActiveDatasets(solver);
+
+			solver = TSearchSolver(1e5, 1e3);
+			ExecuteOnActiveDatasets(solver);
+		}
+
+		case ActiveTSPSolver::TabuSearch_Static_SizeProportional:
+		{
+			ExecuteTSearchWhithSizeBasedParameters(false, false, false);
+		}
+
+		case ActiveTSPSolver::TabuSearch_Dynamic_SizeProportional:
+		{
+			ExecuteTSearchWhithSizeBasedParameters(false, false, true);
+		}
+
+		case ActiveTSPSolver::TabuSearch_Dynamic_x2_x10:
+		{
+			TSearchSolver solver;
+
+			solver = TSearchSolver(1e3, 1e3 * 2, 50 , 1e5); ExecuteOnActiveDatasets(solver);
+			solver = TSearchSolver(1e3, 1e4    , 200, 1e5); ExecuteOnActiveDatasets(solver);	
+			solver = TSearchSolver(1e5, 1e5 * 2, 50 , 1e5); ExecuteOnActiveDatasets(solver);
+			solver = TSearchSolver(1e5, 1e6    , 200, 1e5); ExecuteOnActiveDatasets(solver);
+			break;
+		}
+
+
+	deafult:
+		break;
+		}
+
 	}
 }
 
-void TestExecutor::ExecuteTest(Solver & solver, Dataset & dataset, std::string  key, int problem_size)
+void TestExecutor::ExecuteTest(Solver & solver, Dataset & dataset, std::string  key, int problem_size, bool precompute)
 {
 	std::cout << "Execute Test  with solver: " << solver.name() << " -- dataset: " << dataset.name << " -- in: " << key << std::endl;
-	std::string input_filename = dataset.input_files.at(key); 
+	std::string input_filename = dataset.input_files.at(key);
 
 	TSP tspInstance; // read Problem 
-	DatasetGenerator::readDataset(input_filename, tspInstance, problem_size); 
-	
+	DatasetGenerator::readDataset(input_filename, tspInstance, problem_size);
+
 
 	TSPSolution aSolution(tspInstance); // build initial solution 
 	solver.initRnd(aSolution); // init RANDOM soultion
 	TSPSolution bestSolution(tspInstance); // build obj for best solution 
-	std::string resultline = solver.solve(tspInstance, aSolution, bestSolution); 
-	writeResult(dataset.output_stats , dataset.name+ ";" + resultline);
 
-	//TSPViewer::visualizeTSP(aSolution, tspInstance, solver.name() + " before computing TSP", 1);
-    TSPViewer::drawTSP(bestSolution, 
-		               tspInstance, 
-		               "dataReports\\paths\\"+solver.name() + dataset.name +key,
-		               DatasetGenerator::datasetRadius(dataset.type, problem_size),
-		               10);
-	
-	if (VERBOSE) 
+	if (precompute)
+	{
+		GreedySolver pre_solver = GreedySolver();
+		pre_solver.optimized = true;
+		pre_solver.solve(tspInstance, aSolution, bestSolution);
+		aSolution = bestSolution;
+	}
+	solver.precomputed = precompute; 
+	std::string resultline = solver.solve(tspInstance, aSolution, bestSolution);
+	writeResult(dataset.output_stats, dataset.name + ";" + resultline);
+
+	TSPViewer::drawTSP(bestSolution,
+		tspInstance,
+		"dataReports\\paths\\" + solver.name() + dataset.name + key,
+		DatasetGenerator::datasetRadius(dataset.type, problem_size),
+		10);
+
+	if (VERBOSE)
 	{
 		std::cout << "Solved problem --  size:  " << tspInstance.n << std::endl;
 		std::cout << "FROM solution: ";
@@ -114,9 +174,45 @@ void TestExecutor::ExecuteTest(Solver & solver, Dataset & dataset, std::string  
 	}
 }
 
-void TestExecutor::ExecuteOnActiveDatasets(Solver & solver, bool optimize)
+void TestExecutor::ExecuteTSearchWhithSizeBasedParameters(bool optimize, bool precompute, bool dynamicTSearch)
 {
-	std::cout << "Execution with Solver " << solver.name(); 
+
+	std::vector<Dataset>::iterator dit = DatasetGenerator::datasets.begin();
+	for (; dit != DatasetGenerator::datasets.end(); dit++)
+	{
+		TSP tspinstance;
+		std::map<std::string, std::string >::iterator file_it = dit->input_files.begin();
+
+		for (; file_it != dit->input_files.end(); file_it++)
+		{
+
+			std::string key = file_it->first;
+			std::cout << "--- on Dataset: [key: " << key;
+			std::cout << "] [size:" << dit->input_sizes.at(key);
+			std::cout << "] [filepath: " << dit->input_files.at(key) << "]" << std::endl;
+			if (dynamicTSearch)
+			{
+				int N = dit->input_sizes.at(key);
+				TSearchSolver solver1(N*N, N*N * 10, N, N*N*N);
+				ExecuteTest(solver1, *dit, key, dit->input_sizes.at(key), precompute);
+
+				TSearchSolver solver2(N*N, N*N * 100, N * 10, N*N*N);
+				ExecuteTest(solver2, *dit, key, dit->input_sizes.at(key), precompute);
+			}
+			else
+			{
+				int N = dit->input_sizes.at(key);
+				TSearchSolver solverStatic(N*N, N*N*N);
+				ExecuteTest(solverStatic, *dit, key, dit->input_sizes.at(key), precompute);
+
+			}
+		}
+	}
+}
+
+void TestExecutor::ExecuteOnActiveDatasets(Solver & solver, bool optimize, bool precompute)
+{
+	std::cout << "Execution with Solver " << solver.name();
 	std::vector<Dataset>::iterator dit = DatasetGenerator::datasets.begin();
 	for (; dit != DatasetGenerator::datasets.end(); dit++)
 	{
@@ -124,28 +220,28 @@ void TestExecutor::ExecuteOnActiveDatasets(Solver & solver, bool optimize)
 		std::map<std::string, std::string >::iterator file_it = dit->input_files.begin();
 		for (; file_it != dit->input_files.end(); file_it++)
 		{
-			std::string key = file_it->first; 
+			std::string key = file_it->first;
 			std::cout << "--- on Dataset: [key: " << key;
-			std::cout << "] [size:"<<dit->input_sizes.at(key); 
-			std::cout << "] [filepath: " << dit->input_files.at(key)<<"]" << std::endl;
-			ExecuteTest(solver, *dit, key, dit->input_sizes.at(key));		
+			std::cout << "] [size:" << dit->input_sizes.at(key);
+			std::cout << "] [filepath: " << dit->input_files.at(key) << "]" << std::endl;
+
+			ExecuteTest(solver, *dit, key, dit->input_sizes.at(key), precompute);
 		}
 	}
 }
 
-void TestExecutor::writeResult(std::string outfile, std ::string line)
+void TestExecutor::writeResult(std::string outfile, std::string line)
 {
 	std::ofstream out(outfile, std::ios::app);
-	out << currentDateTime().c_str() << " ;"; 
-	out << line.c_str() <<"\n";
+	out << currentDateTime().c_str() << " ;";
+	out << line.c_str() << "\n";
 
-	std::cout << "writeResult: "<<line << std::endl;
+	std::cout << "writeResult: " << line << std::endl;
 
 }
 
 const std::string TestExecutor::currentDateTime() {
-	
 
-	return "ven 15 06" ;
+	return "ven 15 06";
 }
 

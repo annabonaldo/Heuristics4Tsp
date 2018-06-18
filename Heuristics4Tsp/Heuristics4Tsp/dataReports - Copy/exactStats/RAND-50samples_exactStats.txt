@@ -1,0 +1,10 @@
+Solution;290.425536268;Problem size; 50;Time; 9.313; Sample iter; 0; EXACT; dataset; RAND; seed; 111;
+Solution;272.50866193;Problem size; 50;Time; 73.375; Sample iter; 1; EXACT; dataset; RAND; seed; 5;
+Solution;286.316711781;Problem size; 50;Time; 92.844; Sample iter; 2; EXACT; dataset; RAND; seed; 2500;
+Solution;292.877015259;Problem size; 50;Time; 331.36; Sample iter; 3; EXACT; dataset; RAND; seed; 184;
+Solution;295.655729683;Problem size; 50;Time; 410.328; Sample iter; 4; EXACT; dataset; RAND; seed; 21;
+Solution;300.984674066;Problem size; 50;Time; 611.375; Sample iter; 5; EXACT; dataset; RAND; seed; 47;
+Solution;273.187146224;Problem size; 50;Time; 683.266; Sample iter; 6; EXACT; dataset; RAND; seed; 66;
+Solution;274.77517999;Problem size; 50;Time; 779.657; Sample iter; 7; EXACT; dataset; RAND; seed; 71;
+Solution;277.30851685;Problem size; 50;Time; 836.438; Sample iter; 8; EXACT; dataset; RAND; seed; 32;
+Solution;270.188879467;Problem size; 50;Time; 1359.078; Sample iter; 9; EXACT; dataset; RAND; seed; 84;

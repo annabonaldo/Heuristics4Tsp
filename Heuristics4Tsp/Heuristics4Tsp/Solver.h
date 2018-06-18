@@ -22,6 +22,7 @@ public:
 	Solver() {
 		verbose = false;
 		optimized = false; 
+		precomputed = false; 
 	}
 
 	bool verbose; 
@@ -64,6 +65,7 @@ public:
 
 	bool segmentsIntersects(const TSP::Point & o1_in, const TSP::Point& p1_in, const TSP::Point& o2_in, const TSP::Point &p2_in); 
 	bool optimized; 
+	bool precomputed; 
 protected:
 	
 

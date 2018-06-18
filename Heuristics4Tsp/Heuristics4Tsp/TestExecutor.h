@@ -10,19 +10,26 @@ public:
 	enum ActiveTSPSolver {
 		Greedy,
 		GreedyOptimized2opt,
+
 		SimAnnealing_T5e5_delta1_e1,
-	    SimAnnealing_T5e5_delta5_e3,
+		SimAnnealing_T5e5_delta5_e3,
 		SimAnnealing_T1e3_delta1_e1,
 		SimAnnealing_T1e3_delta5_e3,
-		TabuSearch
+
+		TabuSearch_Static_maxIter1e5,
+		TabuSearch_Static_maxIter1e3, 
+		TabuSearch_Dynamic_x2_x10, 
+		TabuSearch_Dynamic_SizeProportional, 
+		TabuSearch_Static_SizeProportional
 	};
 
 	TestExecutor();
 	~TestExecutor();
 
-	static void ExecuteTest(Solver & solver, Dataset  & dataset, std::string  key, int problem_size); 
+	static void ExecuteTest(Solver & solver, Dataset  & dataset, std::string  key, int problem_size, bool precompute = false);
 	static void writeResult(std::string outfile, std::string line);
 	static const std::string TestExecutor::currentDateTime(); 
 	static void Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std::vector<Dataset::ActiveDataset> & activeDatasets);
-	static void ExecuteOnActiveDatasets(Solver & solver, bool optimize = false); 
+	static void ExecuteOnActiveDatasets(Solver & solver, bool optimize = false, bool precompute = false); 
+	static void TestExecutor::ExecuteTSearchWhithSizeBasedParameters(bool optimize, bool precompute, bool dynamicTSearch); 
 }; 

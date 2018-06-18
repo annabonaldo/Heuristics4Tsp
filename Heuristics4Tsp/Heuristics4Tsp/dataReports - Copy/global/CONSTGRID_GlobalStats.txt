@@ -1,0 +1,7 @@
+ven 15 06 ;constGrid;Solution;12,576491;Problem size; 10;Time; 0,000009;GREEDY;
+ven 15 06 ;constGrid;Solution;109,049876;Problem size; 100;Time; 0,000167;GREEDY;
+ven 15 06 ;constGrid;Solution;213,317821;Problem size; 200;Time; 0,000342;GREEDY;
+ven 15 06 ;constGrid;Solution;60,170087;Problem size; 50;Time; 0,000037;GREEDY;
+ven 15 06 ;constGrid;Solution;10;Problem size; 10;Time; 0,109; Sample iter; 1; EXACT; 
+ven 15 06 ;constGrid;Solution;50;Problem size; 50;Time; 5,687; Sample iter; 1; EXACT; 
+ven 15 06 ;constGrid;Solution;100,828427125;Problem size; 100;Time; 1768,312; Sample iter; 1; EXACT; 

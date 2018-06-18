@@ -1,0 +1,9 @@
+Solution;23.299392181;Problem size; 10;Time; 0.328; Sample iter; 7; seed; 71;
+Solution;274.77517999;Problem size; 50;Time; 107.703; Sample iter; 7; seed; 71;
+Solution;781.188804786;Problem size; 100;Time; 3226.735; Sample iter; 7; seed; 71;
+Solution;25.941549405;Problem size; 10;Time; 3229.406; Sample iter; 8; seed; 32;
+Solution;277.30851685;Problem size; 50;Time; 3278.281; Sample iter; 8; seed; 32;
+Solution;805.363872103;Problem size; 100;Time; 12475.453; Sample iter; 8; seed; 32;
+Solution;26.717176145;Problem size; 10;Time; 12478.578; Sample iter; 9; seed; 84;
+Solution;270.188879467;Problem size; 50;Time; 12978.938; Sample iter; 9; seed; 84;
+Solution;748.698052132;Problem size; 100;Time; 13643.453; Sample iter; 9; seed; 84;
