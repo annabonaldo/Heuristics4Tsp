@@ -24,3 +24,17 @@ std::vector<Dataset::ActiveDataset> activeDatasets = {
 		//	TestExecutor::ActiveTSPSolver::SimAnnealing_T5e5_delta1_e1, 
 		//	TestExecutor::ActiveTSPSolver::SimAnnealing_T5e5_delta5_e3
 }
+
+# directory empty at 18giu2019 h09:19
+next execution: 	
+std::vector<Dataset::ActiveDataset> activeDatasets = {
+		Dataset::ActiveDataset::RandActive,
+		Dataset::ActiveDataset::GridActive,
+		
+	};
+
+	std::vector<TestExecutor::ActiveTSPSolver> activeSolvers = {
+		
+		 TestExecutor::ActiveTSPSolver::TabuSearch_Dynamic_SizeProportional,
+		 TestExecutor::ActiveTSPSolver::TabuSearch_Dynamic_x2_x10 
+}

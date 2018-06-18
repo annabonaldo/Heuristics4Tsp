@@ -68,7 +68,7 @@ std::string GreedySolver::solve(const TSP& tsp, const TSPSolution& initSol, TSPS
 		solSize = to_string(solutionLengthValue(bestSol, tsp));
 
 		string solutionOptimized = getLine(solSize, problemSize, time, false/*timerstop*/, true/*optimized*/);
-		return solutionNotOptimized + "\n" + solutionOptimized;
+		return solutionNotOptimized  + solutionOptimized;
 	}
 	else
 		return solutionNotOptimized;

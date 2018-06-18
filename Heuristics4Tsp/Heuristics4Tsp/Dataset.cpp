@@ -35,7 +35,10 @@ Dataset Dataset::RANDN_Dataset()
 	{
 		int actual_dataset_size = sizes.at(s); 
 		std::string N = std::to_string(actual_dataset_size); 
-		for (int i = 0 ; i < 10; i++)
+		int max = 1; 
+		//if (actual_dataset_size < 100)
+		//	max = 5; 
+		for (int i = 0 ; i < max; i++)
 		{
 			std::string key = N+"sample"+std::to_string(i); 
 			
@@ -109,8 +112,10 @@ Dataset Dataset::loadDataset(const std::string & datasetName, ActiveDataset type
 	{
 		int actual_dataset_size = sizes.at(s);
 		std::string N = std::to_string(actual_dataset_size);
-
-		for (int i = 0; i < 10; i++)
+		int max = 1;
+		//if (actual_dataset_size < 100)
+		//	max = 5;
+		for (int i = 0; i < max; i++)
 		{
 			std::string key = N + "sample" + std::to_string(i);
 

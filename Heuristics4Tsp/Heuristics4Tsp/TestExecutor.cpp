@@ -72,6 +72,7 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 
 		case ActiveTSPSolver::TabuSearch_Static_maxIter1e5:
 		{
+			std::cout << "TabuSearch_Static_maxIter1e5" << std::endl;
 
 			TSearchSolver solver;
 			solver = TSearchSolver(1e2, 1e5);
@@ -90,38 +91,51 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 		case ActiveTSPSolver::TabuSearch_Static_maxIter1e3:
 		{
 
+			std::cout << "TabuSearch_Static_maxIter1e3" << std::endl;
 			TSearchSolver solver;
+			std::cout << "---------------------------  listLenght:1e2 maxiter: 1e3" << std::endl;
 			solver = TSearchSolver(1e2, 1e3);
 			ExecuteOnActiveDatasets(solver);
-
+			std::cout << "---------------------------  listLenght:1e3 maxiter: 1e3" << std::endl;
 			solver = TSearchSolver(1e3, 1e3);
 			ExecuteOnActiveDatasets(solver);
-
+			std::cout << "---------------------------  listLenght:1e4 maxiter: 1e3" << std::endl;
 			solver = TSearchSolver(1e4, 1e3);
 			ExecuteOnActiveDatasets(solver);
-
+			std::cout << "---------------------------  listLenght:1e5 maxiter: 1e3" << std::endl;
 			solver = TSearchSolver(1e5, 1e3);
 			ExecuteOnActiveDatasets(solver);
+			std::cout << "----------------------------------------------------- " << std::endl;
 		}
 
 		case ActiveTSPSolver::TabuSearch_Static_SizeProportional:
 		{
+			std::cout << "TabuSearch_Static_SizeProportional" << std::endl;
 			ExecuteTSearchWhithSizeBasedParameters(false, false, false);
+			std::cout << "----------------------------------------------------- " << std::endl;
 		}
 
 		case ActiveTSPSolver::TabuSearch_Dynamic_SizeProportional:
 		{
+			std::cout << "TabuSearch_Dynamic_SizeProportional" << std::endl;
 			ExecuteTSearchWhithSizeBasedParameters(false, false, true);
+			std::cout << "----------------------------------------------------- " << std::endl;
 		}
 
 		case ActiveTSPSolver::TabuSearch_Dynamic_x2_x10:
 		{
+			std::cout << "TabuSearch_Dynamic_x2_x10" << std::endl;
 			TSearchSolver solver;
-
+			std::cout << "---------------------------  listLenght:1e3 to 1e3 * 2 iterVarLenght: 50   maxiter: 1e5" << std::endl;
 			solver = TSearchSolver(1e3, 1e3 * 2, 50 , 1e5); ExecuteOnActiveDatasets(solver);
-			solver = TSearchSolver(1e3, 1e4    , 200, 1e5); ExecuteOnActiveDatasets(solver);	
+			std::cout << "---------------------------  listLenght:1e3 to 1e4 iterVarLenght: 200   maxiter: 1e5" << std::endl;
+			solver = TSearchSolver(1e3, 1e4    , 200, 1e5); ExecuteOnActiveDatasets(solver);
+			std::cout << "---------------------------  listLenght:1e5 to 1e5 * 2 iterVarLenght: 50   maxiter: 1e5" << std::endl;
 			solver = TSearchSolver(1e5, 1e5 * 2, 50 , 1e5); ExecuteOnActiveDatasets(solver);
+			std::cout << "---------------------------  listLenght:1e5 to 1e6 iterVarLenght: 200   maxiter: 1e5" << std::endl;
 			solver = TSearchSolver(1e5, 1e6    , 200, 1e5); ExecuteOnActiveDatasets(solver);
+
+			std::cout << "----------------------------------------------------- " << std::endl;
 			break;
 		}
 
@@ -161,7 +175,7 @@ void TestExecutor::ExecuteTest(Solver & solver, Dataset & dataset, std::string  
 		tspInstance,
 		"dataReports\\paths\\" + solver.name() + dataset.name + key,
 		DatasetGenerator::datasetRadius(dataset.type, problem_size),
-		10);
+		problem_size); 
 
 	if (VERBOSE)
 	{
@@ -193,15 +207,17 @@ void TestExecutor::ExecuteTSearchWhithSizeBasedParameters(bool optimize, bool pr
 			if (dynamicTSearch)
 			{
 				int N = dit->input_sizes.at(key);
+				std::cout << "--------------------------- Dynamic N*N, N*N * 10, N, N*N*N)" << std::endl;
 				TSearchSolver solver1(N*N, N*N * 10, N, N*N*N);
 				ExecuteTest(solver1, *dit, key, dit->input_sizes.at(key), precompute);
-
+				std::cout << "--------------------------- Dynamic N*N, N*N * 100, N * 10, N*N*N)" << std::endl;
 				TSearchSolver solver2(N*N, N*N * 100, N * 10, N*N*N);
 				ExecuteTest(solver2, *dit, key, dit->input_sizes.at(key), precompute);
 			}
 			else
 			{
 				int N = dit->input_sizes.at(key);
+				std::cout << "--------------------------- Static N*N, N*N*N)" << std::endl;
 				TSearchSolver solverStatic(N*N, N*N*N);
 				ExecuteTest(solverStatic, *dit, key, dit->input_sizes.at(key), precompute);
 
@@ -231,9 +247,9 @@ void TestExecutor::ExecuteOnActiveDatasets(Solver & solver, bool optimize, bool 
 }
 
 void TestExecutor::writeResult(std::string outfile, std::string line)
-{
+{	
 	std::ofstream out(outfile, std::ios::app);
-	out << currentDateTime().c_str() << " ;";
+
 	out << line.c_str() << "\n";
 
 	std::cout << "writeResult: " << line << std::endl;

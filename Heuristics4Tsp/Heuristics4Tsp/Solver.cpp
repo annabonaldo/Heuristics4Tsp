@@ -42,7 +42,20 @@ void Solver::optimize2opt(const TSP& tsp, TSPSolution& bestSol, int maxSwap, int
 			{
 				TSP::Point  segment_jStart = tsp.nodes[j];
 				TSP::Point  segment_jEnd = tsp.nodes[j + 1];
-				if (segmentsIntersects(segment_iStart, segment_iEnd, segment_jStart, segment_jEnd))				{					TSPMove move(i, j + 1);					swap(tmpSol, move);					if (this->solutionLengthValue(tmpSol, tsp) < this->solutionLengthValue(bestSol, tsp))						bestSol = tmpSol;					else						tmpSol = bestSol;					maxSwap--;				}				iterationLimit--;			}		}
+				if (segmentsIntersects(segment_iStart, segment_iEnd, segment_jStart, segment_jEnd))
+				{
+
+					TSPMove move(i, j + 1);
+					swap(tmpSol, move);
+					if (this->solutionLengthValue(tmpSol, tsp) < this->solutionLengthValue(bestSol, tsp))
+						bestSol = tmpSol;
+					else
+						tmpSol = bestSol;
+					maxSwap--;
+				}
+				iterationLimit--;
+			}
+		}
 	}
 }
 
