@@ -28,7 +28,7 @@ Dataset Dataset::RANDN_Dataset()
 	dataset.output_stats = "dataReports\\RANDNheuristicsStats.txt";
 	std::vector<int> sizes = 
 	{ 
-		10, 50, 100//, 200
+		/*10,*/ 50//, 100//, 200
 	}; 
 
 	for (int s = 0; s < sizes.size(); s++)
@@ -63,17 +63,17 @@ Dataset Dataset::GRID_Dataset()
 	dataset.type = ActiveDataset::GridActive; 
 	dataset.output_stats = "dataReports\\GRIDheuristicsStats.txt";
 
-	std::string N10 = "dataset\\GRID\\10CONSTGRIDsample1model.txt";
+/*	std::string N10 = "dataset\\GRID\\10CONSTGRIDsample1model.txt";
 	dataset.input_files.insert(std::pair<std::string, std::string>("10", N10));
-	dataset.input_sizes.insert(std::pair<std::string, int>("10", 10));
+	dataset.input_sizes.insert(std::pair<std::string, int>("10", 10));*/
 
 	std::string N50 = "dataset\\GRID\\50CONSTGRIDsample1model.txt";
 	dataset.input_files.insert(std::pair<std::string, std::string>("50", N50));
 	dataset.input_sizes.insert(std::pair<std::string, int>("50", 50));
 
-	std::string N100 ="dataset\\GRID\\100CONSTGRIDsample1model.txt";
+	/*std::string N100 ="dataset\\GRID\\100CONSTGRIDsample1model.txt";
 	dataset.input_files.insert(std::pair<std::string, std::string>("100", N100));
-	dataset.input_sizes.insert(std::pair<std::string, int>("100", 100));
+	dataset.input_sizes.insert(std::pair<std::string, int>("100", 100));*/
 
 	/*std::string N200 = "dataset\\GRID\\200CONSTGRIDsample1model.txt";
 	dataset.input_files.insert(std::pair<std::string, std::string>("200", N200));
@@ -105,7 +105,9 @@ Dataset Dataset::loadDataset(const std::string & datasetName, ActiveDataset type
 	dataset.output_stats = "dataReports\\" + datasetName + "heuristicsStats.txt";
 	std::vector<int> sizes =
 	{
-		10, 50, 100//, 200
+	//	10, 
+		50
+		//, 100//, 200
 	};
 
 	for (int s = 0; s < sizes.size(); s++)

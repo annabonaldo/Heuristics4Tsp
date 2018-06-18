@@ -48,7 +48,7 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 			ExecuteOnActiveDatasets(solver);
 			break;
 		}
-		case ActiveTSPSolver::SimAnnealing_T1e3_delta5_e3:
+		case ActiveTSPSolver::SimAnnealing_T1e3_delta5_e5:
 		{
 			srand(27);
 			SimAnnealingSolver solver = SimAnnealingSolver(1e3, 5e-5);
@@ -62,11 +62,27 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 			ExecuteOnActiveDatasets(solver);
 			break;
 		}
-		case ActiveTSPSolver::SimAnnealing_T5e5_delta5_e3:
+		case ActiveTSPSolver::SimAnnealing_T5e5_delta5_e5:
 		{
 			srand(320);
 			SimAnnealingSolver solver = SimAnnealingSolver(5e5, 5e-5);
 			ExecuteOnActiveDatasets(solver);
+			break;
+		}
+
+		case ActiveTSPSolver::SimAnnealing_T1e6_delta1_e1:
+		{
+			srand(110);
+			SimAnnealingSolver solver = SimAnnealingSolver(1e6, 1e-1);
+			ExecuteOnActiveDatasets(solver, true, true);
+			break;
+		}
+
+		case ActiveTSPSolver::SimAnnealing_T1e6_delta5_e5:
+		{
+			srand(256);
+			SimAnnealingSolver solver = SimAnnealingSolver(1e6, 5e-5);
+			ExecuteOnActiveDatasets(solver, true, true);
 			break;
 		}
 
@@ -86,6 +102,7 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 
 			solver = TSearchSolver(1e5, 1e5);
 			ExecuteOnActiveDatasets(solver);
+			break;
 
 		}
 		case ActiveTSPSolver::TabuSearch_Static_maxIter1e3:
@@ -106,20 +123,62 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 			solver = TSearchSolver(1e5, 1e3);
 			ExecuteOnActiveDatasets(solver);
 			std::cout << "----------------------------------------------------- " << std::endl;
+			break;
 		}
-
-		case ActiveTSPSolver::TabuSearch_Static_SizeProportional:
-		{
-			std::cout << "TabuSearch_Static_SizeProportional" << std::endl;
-			ExecuteTSearchWhithSizeBasedParameters(false, false, false);
-			std::cout << "----------------------------------------------------- " << std::endl;
-		}
-
 		case ActiveTSPSolver::TabuSearch_Dynamic_SizeProportional:
 		{
 			std::cout << "TabuSearch_Dynamic_SizeProportional" << std::endl;
-			ExecuteTSearchWhithSizeBasedParameters(false, false, true);
+			ExecuteTSearchWhithSizeBasedParameters(false, true, true);
 			std::cout << "----------------------------------------------------- " << std::endl;
+			break;
+		}
+
+		case ActiveTSPSolver::TabuSearch_DynamicProportionalOpt:
+		{
+			std::cout << "TabuSearch_DynamicProportionalOpt" << std::endl;
+			ExecuteTSearchWhithSizeBasedParameters(false, true, false);
+			std::cout << "----------------------------------------------------- " << std::endl;
+			break;
+		}
+
+		case ActiveTSPSolver::TabuSearch_Dynamic_ProportionalOptAndPrecomputeSol:
+		{
+			std::cout << "TabuSearch_Dynamic_ProportionalOptAndPrecomputeSol" << std::endl;
+			ExecuteTSearchWhithSizeBasedParameters(true, true, true);
+			std::cout << "----------------------------------------------------- " << std::endl;
+			break;
+		}
+		case ActiveTSPSolver::TabuSearch_DynamicBase:
+		{
+			std::cout << "TabuSearch_DynamicBase" << std::endl;
+
+			/*TSearchSolver solver;
+			std::cout << "---------------------------  listLenght:1e2 maxiter: 1e3" << std::endl;
+			solver = TSearchSolver(1e2,1e3, 1e2, 1e5);
+
+			ExecuteOnActiveDatasets(solver, true, true);
+			std::cout << "---------------------------  listLenght:1e3 maxiter: 1e3" << std::endl;
+			solver = TSearchSolver(1e3,1e4, 1e2, 1e5);
+
+			ExecuteOnActiveDatasets(solver, true, true);
+			std::cout << "---------------------------  listLenght:1e4 maxiter: 1e3" << std::endl;
+			solver = TSearchSolver(1e4,1e5, 1e2, 1e5);
+
+			ExecuteOnActiveDatasets(solver, true, true);
+			std::cout << "---------------------------  listLenght:1e5 maxiter: 1e3" << std::endl;
+			solver = TSearchSolver(1e5,1e6, 1e2, 1e5);
+
+			ExecuteOnActiveDatasets(solver, true, true);
+			std::cout << "----------------------------------------------------- " << std::endl;
+			break; */
+			TSearchSolver solver;
+			std::vector<double> lists = { 1e3, 1e6, 1e8, 1e10 };
+			for (int i = 0; i < lists.size(); i++)
+			{
+				solver = TSearchSolver(lists[i], lists[i] , (int)std::sqrt(lists[i]), 1e6);
+			}
+			break;
+
 		}
 
 		case ActiveTSPSolver::TabuSearch_Dynamic_x2_x10:
@@ -127,13 +186,13 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 			std::cout << "TabuSearch_Dynamic_x2_x10" << std::endl;
 			TSearchSolver solver;
 			std::cout << "---------------------------  listLenght:1e3 to 1e3 * 2 iterVarLenght: 50   maxiter: 1e5" << std::endl;
-			solver = TSearchSolver(1e3, 1e3 * 2, 50 , 1e5); ExecuteOnActiveDatasets(solver);
+			solver = TSearchSolver(1e3, 1e3 * 2, 50, 1e5); ExecuteOnActiveDatasets(solver);
 			std::cout << "---------------------------  listLenght:1e3 to 1e4 iterVarLenght: 200   maxiter: 1e5" << std::endl;
-			solver = TSearchSolver(1e3, 1e4    , 200, 1e5); ExecuteOnActiveDatasets(solver);
+			solver = TSearchSolver(1e3, 1e4, 200, 1e5); ExecuteOnActiveDatasets(solver);
 			std::cout << "---------------------------  listLenght:1e5 to 1e5 * 2 iterVarLenght: 50   maxiter: 1e5" << std::endl;
-			solver = TSearchSolver(1e5, 1e5 * 2, 50 , 1e5); ExecuteOnActiveDatasets(solver);
+			solver = TSearchSolver(1e5, 1e5 * 2, 50, 1e5); ExecuteOnActiveDatasets(solver);
 			std::cout << "---------------------------  listLenght:1e5 to 1e6 iterVarLenght: 200   maxiter: 1e5" << std::endl;
-			solver = TSearchSolver(1e5, 1e6    , 200, 1e5); ExecuteOnActiveDatasets(solver);
+			solver = TSearchSolver(1e5, 1e6, 200, 1e5); ExecuteOnActiveDatasets(solver);
 
 			std::cout << "----------------------------------------------------- " << std::endl;
 			break;
@@ -141,12 +200,12 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 
 
 	deafult:
-		break;
+		{
+			break;
 		}
-
+		}
 	}
 }
-
 void TestExecutor::ExecuteTest(Solver & solver, Dataset & dataset, std::string  key, int problem_size, bool precompute)
 {
 	std::cout << "Execute Test  with solver: " << solver.name() << " -- dataset: " << dataset.name << " -- in: " << key << std::endl;

@@ -12,15 +12,22 @@ public:
 		GreedyOptimized2opt,
 
 		SimAnnealing_T5e5_delta1_e1,
-		SimAnnealing_T5e5_delta5_e3,
+		SimAnnealing_T5e5_delta5_e5,
 		SimAnnealing_T1e3_delta1_e1,
-		SimAnnealing_T1e3_delta5_e3,
+		SimAnnealing_T1e3_delta5_e5,
+		SimAnnealing_T1e6_delta1_e1,
+		SimAnnealing_T1e6_delta5_e5, 
+		
 
 		TabuSearch_Static_maxIter1e5,
 		TabuSearch_Static_maxIter1e3, 
 		TabuSearch_Dynamic_x2_x10, 
 		TabuSearch_Dynamic_SizeProportional, 
-		TabuSearch_Static_SizeProportional
+		TabuSearch_Static_SizeProportional,
+		TabuSearch_DynamicBase,
+		TabuSearch_DynamicProportionalOpt,
+		TabuSearch_Dynamic_ProportionalOptAndPrecomputeSol
+		
 	};
 
 	TestExecutor();

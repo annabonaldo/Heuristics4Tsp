@@ -1,96 +1,46 @@
-ven 15 06 ;RANDN;Solution;984.036751;Problem size; 100;Time; 0.000148;GREEDYOPTSolution;915.860477;Problem size; 100;Time; 0.062812;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;964.752676;Problem size; 100;Time; 0.000197;GREEDYOPTSolution;945.175210;Problem size; 100;Time; 0.062128;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;980.145759;Problem size; 100;Time; 0.000185;GREEDYOPTSolution;949.643383;Problem size; 100;Time; 0.068571;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;958.186049;Problem size; 100;Time; 0.000199;GREEDYOPTSolution;918.508556;Problem size; 100;Time; 0.087859;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;989.938873;Problem size; 100;Time; 0.000196;GREEDYOPTSolution;939.287053;Problem size; 100;Time; 0.067699;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;956.831888;Problem size; 100;Time; 0.000197;GREEDYOPTSolution;836.477325;Problem size; 100;Time; 0.055129;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;980.080601;Problem size; 100;Time; 0.000129;GREEDYOPTSolution;948.093006;Problem size; 100;Time; 0.064309;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;987.378638;Problem size; 100;Time; 0.000191;GREEDYOPTSolution;856.011738;Problem size; 100;Time; 0.074255;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;969.733115;Problem size; 100;Time; 0.000127;GREEDYOPTSolution;927.452471;Problem size; 100;Time; 0.068315;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;935.044185;Problem size; 100;Time; 0.000126;GREEDYOPTSolution;817.979493;Problem size; 100;Time; 0.061602;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;26.221374;Problem size; 10;Time; 0.000010;GREEDYOPTSolution;26.221374;Problem size; 10;Time; 0.001095;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;39.909551;Problem size; 10;Time; 0.000010;GREEDYOPTSolution;39.909551;Problem size; 10;Time; 0.002007;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;20.233345;Problem size; 10;Time; 0.000010;GREEDYOPTSolution;18.395623;Problem size; 10;Time; 0.000982;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;27.526363;Problem size; 10;Time; 0.000010;GREEDYOPTSolution;25.201807;Problem size; 10;Time; 0.001772;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;29.693261;Problem size; 10;Time; 0.000008;GREEDYOPTSolution;25.560783;Problem size; 10;Time; 0.001018;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;35.330798;Problem size; 10;Time; 0.000012;GREEDYOPTSolution;35.330798;Problem size; 10;Time; 0.001207;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;30.883627;Problem size; 10;Time; 0.000009;GREEDYOPTSolution;30.883627;Problem size; 10;Time; 0.001029;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;26.601814;Problem size; 10;Time; 0.000009;GREEDYOPTSolution;26.601814;Problem size; 10;Time; 0.000809;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;28.326714;Problem size; 10;Time; 0.000010;GREEDYOPTSolution;23.326714;Problem size; 10;Time; 0.000838;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;27.933354;Problem size; 10;Time; 0.000010;GREEDYOPTSolution;21.850591;Problem size; 10;Time; 0.001527;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;2638.571895;Problem size; 200;Time; 0.000391;GREEDYOPTSolution;2534.755962;Problem size; 200;Time; 0.581122;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;2859.696024;Problem size; 200;Time; 0.000401;GREEDYOPTSolution;2635.178781;Problem size; 200;Time; 0.396081;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;2509.472930;Problem size; 200;Time; 0.000388;GREEDYOPTSolution;2419.169868;Problem size; 200;Time; 0.372574;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;2656.936227;Problem size; 200;Time; 0.000578;GREEDYOPTSolution;2560.647333;Problem size; 200;Time; 0.433981;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;2679.278554;Problem size; 200;Time; 0.000390;GREEDYOPTSolution;2531.802833;Problem size; 200;Time; 0.377721;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;2564.778490;Problem size; 200;Time; 0.000385;GREEDYOPTSolution;2463.218752;Problem size; 200;Time; 0.427247;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;2612.373965;Problem size; 200;Time; 0.000436;GREEDYOPTSolution;2508.128296;Problem size; 200;Time; 0.404022;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;2701.445669;Problem size; 200;Time; 0.000394;GREEDYOPTSolution;2598.462033;Problem size; 200;Time; 0.413814;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;2801.345864;Problem size; 200;Time; 0.000572;GREEDYOPTSolution;2579.980081;Problem size; 200;Time; 0.393818;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;2472.749068;Problem size; 200;Time; 0.000405;GREEDYOPTSolution;2388.503486;Problem size; 200;Time; 0.383005;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;389.503286;Problem size; 50;Time; 0.000046;GREEDYOPTSolution;366.825047;Problem size; 50;Time; 0.007734;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;328.915713;Problem size; 50;Time; 0.000046;GREEDYOPTSolution;321.124959;Problem size; 50;Time; 0.006751;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;323.472432;Problem size; 50;Time; 0.000046;GREEDYOPTSolution;303.086961;Problem size; 50;Time; 0.005997;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;340.422690;Problem size; 50;Time; 0.000045;GREEDYOPTSolution;321.597888;Problem size; 50;Time; 0.007287;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;329.620583;Problem size; 50;Time; 0.000045;GREEDYOPTSolution;298.315631;Problem size; 50;Time; 0.005808;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;309.361613;Problem size; 50;Time; 0.000047;GREEDYOPTSolution;307.190665;Problem size; 50;Time; 0.006597;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;364.333331;Problem size; 50;Time; 0.000068;GREEDYOPTSolution;318.173764;Problem size; 50;Time; 0.006711;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;360.067048;Problem size; 50;Time; 0.000047;GREEDYOPTSolution;309.542235;Problem size; 50;Time; 0.007105;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;320.019747;Problem size; 50;Time; 0.000067;GREEDYOPTSolution;295.038411;Problem size; 50;Time; 0.005986;GREEDYOPT_2OPT
-ven 15 06 ;RANDN;Solution;304.054046;Problem size; 50;Time; 0.000045;GREEDYOPTSolution;298.778199;Problem size; 50;Time; 0.006451;GREEDYOPT_2OPT
-RANDN;Solution;985.957484;Problem size; 100;Time; 18.637662;TSEARCHDynamicTL; ListLenght; 100; MaxIter;1000000;
-RANDN;Solution;982.528654;Problem size; 100;Time; 16.308404;TSEARCHDynamicTL; ListLenght; 1000; MaxIter;1000000;
-RANDN;Solution;29.634585;Problem size; 10;Time; 0.000262;TSEARCHDynamicTL; ListLenght; 10; MaxIter;1000;
-RANDN;Solution;30.958312;Problem size; 10;Time; 0.000161;TSEARCHDynamicTL; ListLenght; 100; MaxIter;1000;
-RANDN;Solution;2643.540300;Problem size; 200;Time; 534.647925;TSEARCHDynamicTL; ListLenght; 200; MaxIter;8000000;
-RANDN;Solution;956.951503;Problem size; 100;Time; 16.344530;TSEARCHDynamicTL; ListLenght; 100; MaxIter;1000000;
-RANDN;Solution;1002.237487;Problem size; 100;Time; 16.399923;TSEARCHDynamicTL; ListLenght; 1000; MaxIter;1000000;
-RANDN;Solution;29.634585;Problem size; 10;Time; 0.000237;TSEARCHDynamicTL; ListLenght; 10; MaxIter;1000;
-RANDN;Solution;28.324727;Problem size; 10;Time; 0.000174;TSEARCHDynamicTL; ListLenght; 100; MaxIter;1000;
-RANDN;Solution;342.733953;Problem size; 50;Time; 0.526850;TSEARCHDynamicTL; ListLenght; 50; MaxIter;125000;
-RANDN;Solution;333.012363;Problem size; 50;Time; 0.541728;TSEARCHDynamicTL; ListLenght; 500; MaxIter;125000;
-RANDN;Solution;907.339205;Problem size; 100;Time; 1.810587;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;28.324727;Problem size; 10;Time; 0.017062;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;364.572953;Problem size; 50;Time; 0.426338;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;980.592061;Problem size; 100;Time; 1.633675;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;28.324727;Problem size; 10;Time; 0.018473;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;359.376865;Problem size; 50;Time; 0.442164;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;873.010209;Problem size; 100;Time; 1.822940;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;28.324727;Problem size; 10;Time; 0.016253;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;351.189491;Problem size; 50;Time; 0.426664;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;1032.690269;Problem size; 100;Time; 1.625497;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;33.786051;Problem size; 10;Time; 0.015609;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;342.663478;Problem size; 50;Time; 0.443342;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;903.415335;Problem size; 100;Time; 1.804683;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;33.967747;Problem size; 10;Time; 0.016607;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;334.264647;Problem size; 50;Time; 0.420048;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;981.533622;Problem size; 100;Time; 1.671460;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;32.504964;Problem size; 10;Time; 0.017856;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;335.664974;Problem size; 50;Time; 0.431496;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;898.223948;Problem size; 100;Time; 1.805811;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;31.487004;Problem size; 10;Time; 0.017234;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;335.889803;Problem size; 50;Time; 0.442731;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;975.618229;Problem size; 100;Time; 1.639926;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;28.324727;Problem size; 10;Time; 0.014571;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;341.917172;Problem size; 50;Time; 0.420033;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;966.012712;Problem size; 100;Time; 16.866013;TSEARCH; ListLenght; 10000; MaxIter;1000000;
-RANDN;Solution;33.423746;Problem size; 10;Time; 0.000185;TSEARCH; ListLenght; 100; MaxIter;1000;
-RANDN;Solution;343.364059;Problem size; 50;Time; 0.543796;TSEARCH; ListLenght; 2500; MaxIter;125000;
-RANDN;Solution;974.146497;Problem size; 100;Time; 15.940725;TSEARCHDynamicTL; ListLenght; 100; MaxIter;1000000;
-RANDN;Solution;979.307076;Problem size; 100;Time; 16.361780;TSEARCHDynamicTL; ListLenght; 1000; MaxIter;1000000;
-RANDN;Solution;30.958312;Problem size; 10;Time; 0.000262;TSEARCHDynamicTL; ListLenght; 10; MaxIter;1000;
-RANDN;Solution;29.634585;Problem size; 10;Time; 0.000181;TSEARCHDynamicTL; ListLenght; 100; MaxIter;1000;
-RANDN;Solution;354.384528;Problem size; 50;Time; 0.548693;TSEARCHDynamicTL; ListLenght; 50; MaxIter;125000;
-RANDN;Solution;349.304080;Problem size; 50;Time; 0.544121;TSEARCHDynamicTL; ListLenght; 500; MaxIter;125000;
-RANDN;Solution;878.226502;Problem size; 100;Time; 1.739452;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;29.634585;Problem size; 10;Time; 0.016722;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;338.860018;Problem size; 50;Time; 0.431252;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;981.563424;Problem size; 100;Time; 1.629224;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;33.786051;Problem size; 10;Time; 0.017655;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;340.042712;Problem size; 50;Time; 0.449565;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;908.618523;Problem size; 100;Time; 1.823109;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;27.969439;Problem size; 10;Time; 0.019960;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;349.881978;Problem size; 50;Time; 0.436024;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
-RANDN;Solution;985.630554;Problem size; 100;Time; 1.656857;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;31.465567;Problem size; 10;Time; 0.015540;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
-RANDN;Solution;337.603683;Problem size; 50;Time; 0.436301;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
+RANDN;Solution;350.317359;Problem size; 50;Time; 0.897203;TSEARCH; ListLenght; 2500; MaxIter;125000;
+RANDN;Solution;350.562675;Problem size; 50;Time; 0.594190;TSEARCHDynamicTL; ListLenght; 50; MaxIter;125000;
+RANDN;Solution;363.150057;Problem size; 50;Time; 0.562069;TSEARCHDynamicTL; ListLenght; 500; MaxIter;125000;
+RANDN;Solution;343.829233;Problem size; 50;Time; 0.439244;TSEARCHDynamicTL; ListLenght; 100; MaxIter;100000;
+RANDN;Solution;351.253577;Problem size; 50;Time; 0.453652;TSEARCHDynamicTL; ListLenght; 100; MaxIter;100000;
+RANDN;Solution;351.253577;Problem size; 50;Time; 0.465789;TSEARCHDynamicTL; ListLenght; 100; MaxIter;100000;
+RANDN;Solution;351.253577;Problem size; 50;Time; 0.445997;TSEARCHDynamicTL; ListLenght; 100; MaxIter;100000;
+RANDN;Solution;350.562675;Problem size; 50;Time; 0.555640;TSEARCHDynamicTL; ListLenght; 50; MaxIter;125000;
+RANDN;Solution;363.150057;Problem size; 50;Time; 0.549932;TSEARCHDynamicTL; ListLenght; 500; MaxIter;125000;
+RANDN;Solution;343.829233;Problem size; 50;Time; 0.465227;TSEARCHDynamicTL; ListLenght; 100; MaxIter;100000;
+RANDN;Solution;351.253577;Problem size; 50;Time; 0.444021;TSEARCHDynamicTL; ListLenght; 100; MaxIter;100000;
+RANDN;Solution;351.253577;Problem size; 50;Time; 0.436701;TSEARCHDynamicTL; ListLenght; 100; MaxIter;100000;
+RANDN;Solution;351.253577;Problem size; 50;Time; 0.466095;TSEARCHDynamicTL; ListLenght; 100; MaxIter;100000;
+RANDN;Solution;350.317359;Problem size; 50;Time; 0.982044;TSEARCH; ListLenght; 2500; MaxIter;125000;
+RANDN;Solution;350.562675;Problem size; 50;Time; 0.512573;TSEARCHDynamicTL; ListLenght; 50; MaxIter;125000;
+RANDN;Solution;363.150057;Problem size; 50;Time; 0.535971;TSEARCHDynamicTL; ListLenght; 500; MaxIter;125000;
+RANDN;Solution;361.575099;Problem size; 50;Time; 0.395483;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
+RANDN;Solution;312.513664;Problem size; 50;Time; 0.435081;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
+RANDN;Solution;314.573186;Problem size; 50;Time; 0.415793;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
+RANDN;Solution;321.341297;Problem size; 50;Time; 0.406920;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
+RANDN;Solution;350.562675;Problem size; 50;Time; 0.518210;TSEARCHDynamicTL; ListLenght; 50; MaxIter;125000;
+RANDN;Solution;363.150057;Problem size; 50;Time; 0.509185;TSEARCHDynamicTL; ListLenght; 500; MaxIter;125000;
+RANDN;Solution;343.513713;Problem size; 50;Time; 0.424484;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
+RANDN;Solution;337.759343;Problem size; 50;Time; 0.404991;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
+RANDN;Solution;355.268523;Problem size; 50;Time; 0.414181;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
+RANDN;Solution;330.920596;Problem size; 50;Time; 0.422752;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
+RANDN;Solution;344.553817;Problem size; 50;Time; 0.402761;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
+RANDN;Solution;344.133562;Problem size; 50;Time; 0.433135;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
+RANDN;Solution;342.471531;Problem size; 50;Time; 0.409899;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
+RANDN;Solution;350.177427;Problem size; 50;Time; 0.413418;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
+RANDN;Solution;346.351184;Problem size; 50;Time; 0.707296;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
+RANDN;Solution;323.638369;Problem size; 50;Time; 0.453164;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
+RANDN;Solution;346.772083;Problem size; 50;Time; 0.453456;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
+RANDN;Solution;346.234382;Problem size; 50;Time; 0.459283;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
+RANDN;Solution;359.627527;Problem size; 50;Time; 0.671709;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
+RANDN;Solution;354.091180;Problem size; 50;Time; 0.462136;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
+RANDN;Solution;341.242860;Problem size; 50;Time; 0.456537;TSEARCHDynamicTL; ListLenght; 50; MaxIter;100000;
+RANDN;Solution;333.281597;Problem size; 50;Time; 0.472440;TSEARCHDynamicTL; ListLenght; 200; MaxIter;100000;
+RANDN;Solution;998.740994;Problem size; 50;Time; 14.156328;SIMANNEALING;Temperature;-2147483648;Delta;0.000050;
+RANDN;Solution;1146.888148;Problem size; 50;Time; 0.007011;SIMANNEALING;Temperature;-2147483648;Delta;0.100000;
+RANDN;Solution;1045.197120;Problem size; 50;Time; 9.417807;SIMANNEALING;Temperature;1000000;Delta;0.000050;
+RANDN;Solution;1091.109145;Problem size; 50;Time; 0.004220;SIMANNEALING;Temperature;1000000;Delta;0.100000;
+RANDN;Solution;1014.063264;Problem size; 50;Time; 8.299530;SIMANNEALING;Temperature;1000000;Delta;0.000050;
+RANDN;Solution;1133.574494;Problem size; 50;Time; 0.003957;SIMANNEALING;Temperature;1000000;Delta;0.100000;
+RANDN;Solution;368.615592;Problem size; 50;Time; 9.003815;SIMANNEALING;Temperature;1000000;Delta;0.000050;
+RANDN;Solution;368.107152;Problem size; 50;Time; 0.005772;SIMANNEALING;Temperature;1000000;Delta;0.100000;
