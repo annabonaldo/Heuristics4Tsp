@@ -179,10 +179,21 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 			std::cout << "----------------------------------------------------- " << std::endl;
 			break; */
 			TSearchSolver solver;
-			std::vector<double> lists = { 1e3, 1e6, 1e8, 1e10 };
+			std::vector<double> lists = { 1e2, 1e4, 1e6 };
 			for (int i = 0; i < lists.size(); i++)
 			{
-				solver = TSearchSolver(lists[i], lists[i] , (int)std::sqrt(lists[i]), 1e6);
+				solver = TSearchSolver(lists[i], 1e6);
+				ExecuteOnActiveDatasets(solver);			
+				ExecuteOnActiveDatasets(solver, true, true);
+
+				solver = TSearchSolver(lists[i], lists[i]*10, (int)std::sqrt(lists[i]), 1e6);
+				ExecuteOnActiveDatasets(solver);
+				ExecuteOnActiveDatasets(solver, true, true);
+
+				solver = TSearchSolver(lists[i],  lists[i] * 100, (int)std::sqrt(lists[i]), 1e6);
+
+				ExecuteOnActiveDatasets(solver);
+				ExecuteOnActiveDatasets(solver, true, true);
 			}
 			break;
 
@@ -193,13 +204,13 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 			std::cout << "TabuSearch_Dynamic_x2_x10" << std::endl;
 			TSearchSolver solver;
 			std::cout << "---------------------------  listLenght:1e3 to 1e3 * 2 iterVarLenght: 50   maxiter: 1e5" << std::endl;
-			solver = TSearchSolver(1e3, 1e3 * 2, 50, 1e5); ExecuteOnActiveDatasets(solver);
+			solver = TSearchSolver(1e3, 1e3 * 2, 50, 1e5); ExecuteOnActiveDatasets(solver, true, true);
 			std::cout << "---------------------------  listLenght:1e3 to 1e4 iterVarLenght: 200   maxiter: 1e5" << std::endl;
-			solver = TSearchSolver(1e3, 1e4, 200, 1e5); ExecuteOnActiveDatasets(solver);
+			solver = TSearchSolver(1e3, 1e4, 200, 1e5); ExecuteOnActiveDatasets(solver, true, true);
 			std::cout << "---------------------------  listLenght:1e5 to 1e5 * 2 iterVarLenght: 50   maxiter: 1e5" << std::endl;
-			solver = TSearchSolver(1e5, 1e5 * 2, 50, 1e5); ExecuteOnActiveDatasets(solver);
+			solver = TSearchSolver(1e5, 1e5 * 2, 50, 1e5); ExecuteOnActiveDatasets(solver, true, true);
 			std::cout << "---------------------------  listLenght:1e5 to 1e6 iterVarLenght: 200   maxiter: 1e5" << std::endl;
-			solver = TSearchSolver(1e5, 1e6, 200, 1e5); ExecuteOnActiveDatasets(solver);
+			solver = TSearchSolver(1e5, 1e6, 200, 1e5); ExecuteOnActiveDatasets(solver, true, true);
 
 			std::cout << "----------------------------------------------------- " << std::endl;
 			break;
@@ -232,7 +243,7 @@ void TestExecutor::ExecuteTest(Solver & solver, Dataset & dataset, std::string  
 		pre_solver.optimized = true;
 		std::string preLine = pre_solver.solve(tspInstance, aSolution, bestSolution);
 		aSolution = bestSolution;
-		writeResult(dataset.output_stats, dataset.name + ";" + preLine+ "greedy precomputed; ");
+		//writeResult(dataset.output_stats, dataset.name + ";" + preLine+ "greedy precomputed; ");
 	}
 	solver.precomputed = precompute; 
 	std::string resultline = solver.solve(tspInstance, aSolution, bestSolution);
@@ -307,8 +318,9 @@ void TestExecutor::ExecuteOnActiveDatasets(Solver & solver, bool optimize, bool 
 			std::cout << "--- on Dataset: [key: " << key;
 			std::cout << "] [size:" << dit->input_sizes.at(key);
 			std::cout << "] [filepath: " << dit->input_files.at(key) << "]" << std::endl;
-			if (optimize)
-				solver.optimized = true; 
+			
+			solver.optimized = optimize;
+			solver.precomputed = precompute;
 			ExecuteTest(solver, *dit, key, dit->input_sizes.at(key), precompute);
 		}
 	}

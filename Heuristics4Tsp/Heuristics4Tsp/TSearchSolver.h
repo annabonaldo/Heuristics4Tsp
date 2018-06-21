@@ -22,12 +22,13 @@ public:
 		minTabuLenght = tabuLength;
 		maxIter = iter;
 		nIterChangeTabuLenght = iterChangeTabuLenght;
-		maxTabuLenght = iterChangeTabuLenght;
+		maxTabuLenght = maxlenght;
 	}
 	
 	std::string name() override { 	
-		return "TSEARCH"+ moreFeatures()+"; ListLenght; "+std::to_string(tabuLength)+"; MaxIter;"
-		+ std::to_string(maxIter)+ ";" ;}
+		return "TSEARCH "+ moreFeatures()+"; ListLenght; "+std::to_string(minTabuLenght)+"; MaxIter;"
+		+ std::to_string(maxIter)+ "; MAXListLenght; "+std::to_string(this->maxTabuLenght)+"; nIterChangeTabuLenght; "
+			+ std::to_string(nIterChangeTabuLenght) + ";";}
 
 	 std::string solve(const TSP& tsp, const TSPSolution& initSol, TSPSolution& bestSol) override;
 	 std::string filename() override { return  "results"; };

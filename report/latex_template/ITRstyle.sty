@@ -1,0 +1,140 @@
+\documentclass[12pt,a4paper]{article}
+\input{DocCustomization/ITRdocCustomization.sty}
+\usepackage{tikz}
+\usepackage{tikz-uml}
+\usepackage{graphicx}    
+\usepackage{float}
+\usepackage{hyperref}                   % collegamenti ipertestuali
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[babel]{csquotes}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage[top=1cm,bottom=4cm,left=80pt,right=80pt]{geometry} %disegna la linea
+\usepackage{listings} %per grandi porzioni di codice
+\usepackage{booktabs,tabularx}
+\usepackage{makeidx}
+\usepackage{fixltx2e}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{color}
+\usepackage[T1]{fontenc}
+\usepackage{svg}
+\usepackage{amsmath}
+\usepackage[toc]{glossaries}
+\usepackage{dirtree}
+\usepackage{listings}
+\usepackage{siunitx}
+\usepackage[official]{eurosym}
+\usepackage[export]{adjustbox}
+\usepackage{calc}
+\usepackage{rotating}
+\usepackage{soul}
+\usepackage{amsmath}
+
+\pagestyle{fancy}
+\setlength{\headheight}{2cm} %settato grandezza header
+
+\renewcommand{\footrulewidth}{0.5pt} %ridefinisco il valore della riga di intestazione
+\renewcommand{\headrulewidth}{0.5pt} %ridefinisco il valore della riga di pie' di pagina
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+
+\fancyhead{} %annulla head di default
+\fancyfoot{} %annulla foot di default
+
+\newcommand{\pkg}{\section }
+\newcommand{\class}{\subsection}
+\newcommand{\pkgclass}[2]{\subsection{{#2}.{#1}}}
+\newcommand{\mainpkgclass}[2]{\subsection{{#2}.{#1}}}
+\newcommand{\oneclass}[2]{\paragraph{{#2}.{#1}}}
+
+\newcommand{\oo}[1]{\subitem[out]\texttt{ #1}}
+\newcommand{\ov}{\subitem[out]\texttt{ void}}
+\newcommand{\ob}{\subitem[out]\texttt{ bool}}
+\newcommand{\ii}[1]{\subitem[in]\texttt{ #1}}
+\newcommand{\ib}[1]{\subitem[in]\texttt{#1:bool}}
+\newcommand{\mh}[1]{\item\texttt{ #1}}
+\newcommand{\true}{\texttt{true}}
+\newcommand{\false}{\texttt{false}}
+\newcommand{\complex}[1]{\textit{\color{blue} {#1}}}
+\newcommand{\change}[1]{\textit{ \color{red}** {#1}}}
+
+\usepackage{listings}
+\usepackage[most]{tcolorbox}
+\usepackage{inconsolata}
+
+
+
+\newtcblisting[auto counter]{codebox}[2][]{sharp corners, 
+	fonttitle=\bfseries, colframe=gray, listing only, 
+	listing options={basicstyle=\ttfamily,language=java}, 
+	}
+
+%	Logo intestazione
+\rhead{\includegraphics[scale=0.15]{ITRspinoff.png}}
+
+%	footer
+\cfoot{
+	\projectfooter\\
+	{\doctitle}\\
+%	{\tiny Questo documento è distribuito sotto licenza {..}}
+}
+\rfoot{
+	\thepage\ di \pageref{LastPage}
+}
+
+
+%**************************************************************
+% Impostazioni di hyperref
+%**************************************************************
+\hypersetup{
+	%hyperfootnotes=false,
+	%pdfpagelabels,
+	%draft,	% = elimina tutti i link (utile per stampe in bianco e nero)
+	colorlinks=true,
+	linktocpage=true,
+	pdfstartpage=1,
+	pdfstartview=FitV,
+	% decommenta la riga seguente per avere link in nero (per esempio per la stampa in bianco e nero)
+	%colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=1, pdfstartview=FitV,
+	breaklinks=true,
+	pdfpagemode=UseNone,
+	pageanchor=true,
+	pdfpagemode=UseOutlines,
+	plainpages=false,
+	bookmarksnumbered,
+	bookmarksopen=true,
+	bookmarksopenlevel=1,
+	hypertexnames=true,
+	pdfhighlight=/O
+}
+\newcommand{\printTitle}{	
+	\begin{titlepage}
+		\begin{center}
+			
+			\begin{figure}[h!]	\vspace{5cm}
+				\centering
+				\includegraphics[width=0.7\linewidth]{ITRspinoff}
+			\end{figure}
+			\vspace{0.3cm}
+			\hrule
+			\vspace{0.3cm}	
+			\begin{Huge}
+				\doctitle  \\			
+			\end{Huge}
+			\vspace{0.3cm}
+			\begin{Large}
+				\docsubtitle
+			\end{Large}
+			\vspace{0.3cm}
+			
+		\end{center}
+		
+\end{titlepage}}
+
+
+
+

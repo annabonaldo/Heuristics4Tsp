@@ -1,0 +1,12 @@
+nt index = ... //starting vertex index
+VertexHandle vh = mesh.vertex_handle(index);
+if(fh.is_valid())
+{
+	for(VertexFaceIter vf_it=mesh.vf_begin(fh);
+	vf_it != mesh.vf_end(fh);
+	++vf_it )
+	{
+  	 // Mesh::VertexHandle current\_handle =*vf_it
+	 // do something with vertex handle
+    }
+}
