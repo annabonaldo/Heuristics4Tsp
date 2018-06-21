@@ -44,3 +44,17 @@ RANDN;Solution;1014.063264;Problem size; 50;Time; 8.299530;SIMANNEALING;Temperat
 RANDN;Solution;1133.574494;Problem size; 50;Time; 0.003957;SIMANNEALING;Temperature;1000000;Delta;0.100000;
 RANDN;Solution;368.615592;Problem size; 50;Time; 9.003815;SIMANNEALING;Temperature;1000000;Delta;0.000050;
 RANDN;Solution;368.107152;Problem size; 50;Time; 0.005772;SIMANNEALING;Temperature;1000000;Delta;0.100000;
+RANDN;Solution;980.073430;Problem size; 50;Time; 9.320299;SIMANNEALING;OPTTemperature;1000000;Delta;0.000050;
+RANDN;Solution;389.503286;Problem size; 50;Time; 0.000045;GREEDYOPTSolution;368.615592;Problem size; 50;Time; 0.009070;GREEDYOPT_2OPTgreedy precomputed; 
+RANDN;Solution;368.615592;Problem size; 50;Time; 8.216389;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0.000050;
+RANDN;Solution;389.503286;Problem size; 50;Time; 0.000045;GREEDYOPTSolution;368.615592;Problem size; 50;Time; 0.007516;GREEDYOPT_2OPTgreedy precomputed; 
+RANDN;Solution;368.615592;Problem size; 50;Time; 8.170890;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0.000050;
+RANDN;Solution;1142.180732;Problem size; 50;Time; 0.004252;SIMANNEALING;OPTTemperature;1000000;Delta;0.100000;
+RANDN;Solution;389.503286;Problem size; 50;Time; 0.000045;GREEDYOPTSolution;368.615592;Problem size; 50;Time; 0.007520;GREEDYOPT_2OPTgreedy precomputed; 
+RANDN;Solution;368.615592;Problem size; 50;Time; 0.004926;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0.100000;
+RANDN;Solution;389.503286;Problem size; 50;Time; 0.000065;GREEDYOPTSolution;368.615592;Problem size; 50;Time; 0.008941;GREEDYOPT_2OPTgreedy precomputed; 
+RANDN;Solution;368.615592;Problem size; 50;Time; 0.004258;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0.100000;
+RANDN;Solution;1034.113700;Problem size; 50;Time; 8.617082;SIMANNEALING;Temperature;1000000;Delta;0.000050;
+RANDN;Solution;1322.002374;Problem size; 50;Time; 0.004407;SIMANNEALING;Temperature;1000000;Delta;0.100000;
+RANDN;Solution;1081.748845;Problem size; 50;Time; 8.923428;SIMANNEALING;Temperature;1000000;Delta;0.000050;
+RANDN;Solution;1193.961299;Problem size; 50;Time; 0.004501;SIMANNEALING;Temperature;1000000;Delta;0.100000;

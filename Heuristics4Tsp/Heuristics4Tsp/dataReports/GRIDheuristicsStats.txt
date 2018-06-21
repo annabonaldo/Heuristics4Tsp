@@ -44,3 +44,17 @@ GRID;Solution;158.451081;Problem size; 50;Time; 8.364854;SIMANNEALING;Temperatur
 GRID;Solution;175.063127;Problem size; 50;Time; 0.005165;SIMANNEALING;Temperature;1000000;Delta;0.100000;
 GRID;Solution;60.170087;Problem size; 50;Time; 8.314189;SIMANNEALING;Temperature;1000000;Delta;0.000050;
 GRID;Solution;60.170087;Problem size; 50;Time; 0.003679;SIMANNEALING;Temperature;1000000;Delta;0.100000;
+GRID;Solution;147.326984;Problem size; 50;Time; 8.038854;SIMANNEALING;OPTTemperature;1000000;Delta;0.000050;
+GRID;Solution;60.170087;Problem size; 50;Time; 0.000037;GREEDYOPTSolution;60.170087;Problem size; 50;Time; 0.002325;GREEDYOPT_2OPTgreedy precomputed; 
+GRID;Solution;60.170087;Problem size; 50;Time; 8.277731;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0.000050;
+GRID;Solution;60.170087;Problem size; 50;Time; 0.000037;GREEDYOPTSolution;60.170087;Problem size; 50;Time; 0.002377;GREEDYOPT_2OPTgreedy precomputed; 
+GRID;Solution;56.335087;Problem size; 50;Time; 8.179336;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0.000050;
+GRID;Solution;179.322858;Problem size; 50;Time; 0.004489;SIMANNEALING;OPTTemperature;1000000;Delta;0.100000;
+GRID;Solution;60.170087;Problem size; 50;Time; 0.000039;GREEDYOPTSolution;60.170087;Problem size; 50;Time; 0.002309;GREEDYOPT_2OPTgreedy precomputed; 
+GRID;Solution;60.170087;Problem size; 50;Time; 0.004339;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0.100000;
+GRID;Solution;60.170087;Problem size; 50;Time; 0.000037;GREEDYOPTSolution;60.170087;Problem size; 50;Time; 0.002258;GREEDYOPT_2OPTgreedy precomputed; 
+GRID;Solution;60.170087;Problem size; 50;Time; 0.004461;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0.100000;
+GRID;Solution;147.415104;Problem size; 50;Time; 8.535396;SIMANNEALING;Temperature;1000000;Delta;0.000050;
+GRID;Solution;183.150767;Problem size; 50;Time; 0.004409;SIMANNEALING;Temperature;1000000;Delta;0.100000;
+GRID;Solution;153.429064;Problem size; 50;Time; 8.618994;SIMANNEALING;Temperature;1000000;Delta;0.000050;
+GRID;Solution;160.119237;Problem size; 50;Time; 0.004282;SIMANNEALING;Temperature;1000000;Delta;0.100000;

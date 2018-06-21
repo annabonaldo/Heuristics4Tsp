@@ -74,7 +74,7 @@ protected:
 	int randomINT(int min, int max); 
 	double randomDOUBLE(double min, double max);
 	static double randProb(); 
-	virtual std::string moreFeatures() { if (optimized) return "OPT"; else return "";  }
+	virtual std::string moreFeatures() { if (optimized && precomputed) return "PRECOMPandOPT"; if (precomputed) return "PRECOMP";  if (optimized) return "OPT"; else return ""; }
 
 	std::string getLine(std::string solSize, std::string  problemSize, std::string  time, bool timer_stop = false, bool optimized = false)
 	{

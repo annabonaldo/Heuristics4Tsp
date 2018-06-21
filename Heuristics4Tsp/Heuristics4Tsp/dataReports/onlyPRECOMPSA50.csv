@@ -1,0 +1,13 @@
+GRID;Solution;60,170087;Problem size; 50;Time; 0,000037;GREEDYOPTSolution;60,170087;Problem size; 50;Time; 0,002258;GREEDYOPT_2OPTgreedy precomputed; 
+GRID;Solution;60,170087;Problem size; 50;Time; 0,004461;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0,100000;
+GRID;Solution;147,415104;Problem size; 50;Time; 8,535396;SIMANNEALING;Temperature;1000000;Delta;0,000050;
+GRID;Solution;183,150767;Problem size; 50;Time; 0,004409;SIMANNEALING;Temperature;1000000;Delta;0,100000;
+GRID;Solution;153,429064;Problem size; 50;Time; 8,618994;SIMANNEALING;Temperature;1000000;Delta;0,000050;
+GRID;Solution;160,119237;Problem size; 50;Time; 0,004282;SIMANNEALING;Temperature;1000000;Delta;0,100000;
+
+RANDN;Solution;389,503286;Problem size; 50;Time; 0,000065;GREEDYOPTSolution;368,615592;Problem size; 50;Time; 0,008941;GREEDYOPT_2OPTgreedy precomputed; 
+RANDN;Solution;368,615592;Problem size; 50;Time; 0,004258;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0,100000;
+RANDN;Solution;1034,113700;Problem size; 50;Time; 8,617082;SIMANNEALING;Temperature;1000000;Delta;0,000050;
+RANDN;Solution;1322,002374;Problem size; 50;Time; 0,004407;SIMANNEALING;Temperature;1000000;Delta;0,100000;
+RANDN;Solution;1081,748845;Problem size; 50;Time; 8,923428;SIMANNEALING;Temperature;1000000;Delta;0,000050;
+RANDN;Solution;1193,961299;Problem size; 50;Time; 0,004501;SIMANNEALING;Temperature;1000000;Delta;0,100000;

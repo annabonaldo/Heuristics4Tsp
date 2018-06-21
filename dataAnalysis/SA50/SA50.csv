@@ -1,0 +1,23 @@
+GRID;Solution;147,326984;Problem size; 50;Time; 8,038854;SIMANNEALING;OPTTemperature;1000000;Delta;0,000050;
+GRID;Solution;60,170087;Problem size; 50;Time; 0,000037;GREEDYOPTSolution;60,170087;Problem size; 50;Time; 0,002325;GREEDYOPT_2OPTgreedy precomputed; 
+GRID;Solution;60,170087;Problem size; 50;Time; 8,277731;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0,000050;
+GRID;Solution;60,170087;Problem size; 50;Time; 0,000037;GREEDYOPTSolution;60,170087;Problem size; 50;Time; 0,002377;GREEDYOPT_2OPTgreedy precomputed; 
+GRID;Solution;56,335087;Problem size; 50;Time; 8,179336;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0,000050;
+GRID;Solution;179,322858;Problem size; 50;Time; 0,004489;SIMANNEALING;OPTTemperature;1000000;Delta;0,100000;
+GRID;Solution;60,170087;Problem size; 50;Time; 0,000039;GREEDYOPTSolution;60,170087;Problem size; 50;Time; 0,002309;GREEDYOPT_2OPTgreedy precomputed; 
+GRID;Solution;60,170087;Problem size; 50;Time; 0,004339;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0,100000;
+GRID;Solution;60,170087;Problem size; 50;Time; 0,000037;GREEDYOPTSolution;60,170087;Problem size; 50;Time; 0,002258;GREEDYOPT_2OPTgreedy precomputed; 
+GRID;Solution;60,170087;Problem size; 50;Time; 0,004461;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0,100000;
+
+RANDN;Solution;980,073430;Problem size; 50;Time; 9,320299;SIMANNEALING;OPTTemperature;1000000;Delta;0,000050;
+RANDN;Solution;389,503286;Problem size; 50;Time; 0,000045;GREEDYOPTSolution;368,615592;Problem size; 50;Time; 0,009070;GREEDYOPT_2OPTgreedy precomputed; 
+RANDN;Solution;368,615592;Problem size; 50;Time; 8,216389;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0,000050;
+RANDN;Solution;389,503286;Problem size; 50;Time; 0,000045;GREEDYOPTSolution;368,615592;Problem size; 50;Time; 0,007516;GREEDYOPT_2OPTgreedy precomputed; 
+RANDN;Solution;368,615592;Problem size; 50;Time; 8,170890;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0,000050;
+RANDN;Solution;1142,180732;Problem size; 50;Time; 0,004252;SIMANNEALING;OPTTemperature;1000000;Delta;0,100000;
+RANDN;Solution;389,503286;Problem size; 50;Time; 0,000045;GREEDYOPTSolution;368,615592;Problem size; 50;Time; 0,007520;GREEDYOPT_2OPTgreedy precomputed; 
+RANDN;Solution;368,615592;Problem size; 50;Time; 0,004926;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0,100000;
+RANDN;Solution;389,503286;Problem size; 50;Time; 0,000065;GREEDYOPTSolution;368,615592;Problem size; 50;Time; 0,008941;GREEDYOPT_2OPTgreedy precomputed; 
+RANDN;Solution;368,615592;Problem size; 50;Time; 0,004258;SIMANNEALING;PRECOMPandOPTTemperature;1000000;Delta;0,100000;
+
+

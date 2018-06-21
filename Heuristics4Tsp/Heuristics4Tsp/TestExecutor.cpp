@@ -74,7 +74,11 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 		{
 			srand(110);
 			SimAnnealingSolver solver = SimAnnealingSolver(1e6, 1e-1);
-			ExecuteOnActiveDatasets(solver, true, true);
+		//	ExecuteOnActiveDatasets(solver, false, false);
+			/*ExecuteOnActiveDatasets(solver, true, false);*/
+		
+			ExecuteOnActiveDatasets(solver, false, true);
+			//ExecuteOnActiveDatasets(solver, true, true);
 			break;
 		}
 
@@ -82,7 +86,10 @@ void TestExecutor::Execute(std::vector<ActiveTSPSolver> & activeAlgorithms, std:
 		{
 			srand(256);
 			SimAnnealingSolver solver = SimAnnealingSolver(1e6, 5e-5);
-			ExecuteOnActiveDatasets(solver, true, true);
+		//	ExecuteOnActiveDatasets(solver, false, false);
+			/*ExecuteOnActiveDatasets(solver, true, false);*/
+			ExecuteOnActiveDatasets(solver, false, true);
+			//ExecuteOnActiveDatasets(solver, true, true);
 			break;
 		}
 
@@ -223,8 +230,9 @@ void TestExecutor::ExecuteTest(Solver & solver, Dataset & dataset, std::string  
 	{
 		GreedySolver pre_solver = GreedySolver();
 		pre_solver.optimized = true;
-		pre_solver.solve(tspInstance, aSolution, bestSolution);
+		std::string preLine = pre_solver.solve(tspInstance, aSolution, bestSolution);
 		aSolution = bestSolution;
+		writeResult(dataset.output_stats, dataset.name + ";" + preLine+ "greedy precomputed; ");
 	}
 	solver.precomputed = precompute; 
 	std::string resultline = solver.solve(tspInstance, aSolution, bestSolution);
@@ -299,7 +307,8 @@ void TestExecutor::ExecuteOnActiveDatasets(Solver & solver, bool optimize, bool 
 			std::cout << "--- on Dataset: [key: " << key;
 			std::cout << "] [size:" << dit->input_sizes.at(key);
 			std::cout << "] [filepath: " << dit->input_files.at(key) << "]" << std::endl;
-
+			if (optimize)
+				solver.optimized = true; 
 			ExecuteTest(solver, *dit, key, dit->input_sizes.at(key), precompute);
 		}
 	}
